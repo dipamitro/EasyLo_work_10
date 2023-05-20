@@ -1,0 +1,25 @@
+.blog1 img{
+    padding: 0;
+
+}
+.blog a{
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-decoration: none;
+
+}
+.blog p{
+    font-family: "Chivo",sans-serif;
+    color: #4C5753;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.blog_right_sidebar .single_sidebar_widget {
+    background: #fbf9ff;
+    padding: 30px;
+    margin-bottom: 30px;
+}

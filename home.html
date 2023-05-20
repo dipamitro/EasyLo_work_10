@@ -26,58 +26,74 @@
       position:relative;
       z-index: 2;
       padding: 0px 0px 2px 0px">
-     
-    <div class="container-fluid  px-2 ">
+
+    <div class="container-fluid pr-sm-5 pl-sm-0">
       <div class="navbarr top " id="navbarr" style="height: 80px;">
         <div class="row">
           <nav class="navbar header-sticky navbar-expand-lg navbar-light">
-            <div class="container-lg p-0">
+            <div class="container-lg pr-5 pr-sm-5">
               <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" srcset=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              <button class="navbar-toggler " style="color: #fff;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;padding-right: 20%;"></i></span>
               </button>
               <div class="collapse dil navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav mr-4 ">
                   <li class="nav-item ">
-                    <a class="nav-link active text-white naav  px-4" href="#">Home</a>
+                    <a class="nav-link active text-white naav  px- px-4" href="home.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white naav px-4" href="#">About</a>
+                    <a class="nav-link text-white naav  px-4" href="#">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white naav px-4" href="#">Services</a>
+                    <a class="nav-link text-white naav  px-4" href="#">Services</a>
                   </li>
-                  <li class="nav-item cardd"><a class="nav-link text-white naav px-4" href="#">Blog</a>
+                  <!-- <li class="nav-item cardd"><a class="nav-link text-white naav px-4" href="blog.html">Blog</a>
                     <ul class="menu2 text-white" style="list-style: none;text-decoration: none;">
-                      <li><a class="nav-link text-dark naav " href="#" href="#">Blog</a>
+                      <li><a class="nav-link text-dark naav " href="#" href="blog.html">Blog</a>
                       </li>
                       <li><a class="nav-link text-dark naav " href="#">Blog
                           Details</a></li>
                       <li><a class="nav-link text-dark naav " href="#">Element</a>
                       </li>
                     </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white naav px-4" href="#">Contact</a>
+                  </li> -->
+
+                  <li class="nav-item cardd dropdown cardd2">
+                    <a class="nav-link text-white   px-4 main-sec dropdown-toggle naav main-sec " href="#" id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">Blog</a>
+                    <ul class="menu2 text-white dropdown-menu shows" aria-labelledby="navbarDropdownMenuLink"
+                    aria-expanded="false" style="list-style: none;text-decoration: none;">
+                      <li><a class="nav-link text-dark naav dropdown-item"  href="blog.html">Blog</a>
+                      </li>
+                      <li><a class="nav-link text-dark naav dropdown-item" href="blog.html">Blog
+                          Details</a></li>
+                      <li><a class="nav-link   naav dropdown-item" href="#">Element</a>
+                      </li>
+                    </ul>
                   </li>
 
+                  <li class="nav-item">
+                    <a class="nav-link text-white naav  px-4" href="#">Contact</a>
+                  </li>
                 </ul>
                 <form class="form-inline my-4 px-4 my-lg-0">
                   <button class="btn btn-outline-success lii my-2 px-0 my-sm-0" type="submit">Apply For Loan</button>
                 </form>
               </div>
-
             </div>
           </nav>
         </div>
       </div>
-   
+
 
       <!-- ==============After NAv===================== -->
-      <div class="container">
-        <div class="navpart1 row align-items-center justify-content-between" style="border: 2px solid blac;padding-bottom: 3.2%;">
-          <div class="sim  col-md-6 col-xl-5 col-lg-6 col-xxl-4 offset-xl-1 " style="border: 2px solid blac;">
+      <div class="container-md">
+        <div class="navpart1 row align-items-center justify-content-between"
+          style="border: 2px solid blac;padding-bottom: 1.1%;">
+          <div class="sim  col-md-6 col-xl-5 col-lg-6 col-xxl-4 offset-xl-1 " style="border: 2px solid blac;overflow: visible;">
             <div class="hero-caption">
               <h1 class="text-white">The simple
                 online home loan.</h1>
@@ -89,9 +105,10 @@
               </form>
             </div>
           </div>
-          <div class="col-md-6 col-xl-5 col-lg-6 col-xxl-4 offset-xl-1 " style="border: 2px solid blac; margin-top: 4px;">
+          <div class="col-md-6 col-xl-5 col-lg-6 col-xxl-4 px-0 shadow-lg offset-xl-1 "
+            style="border: 0.001em solid white; border-radius:0px ; margin-top: 4px;overflow: visible;">
             <div class="col-md-12 ">
-              <div class="card shadow-lg">
+              <div class="card ">
                 <div class="card-header text-center ">
                   <h3 style="margin-top:39px ;">
                     How much You want?
@@ -100,36 +117,40 @@
                 </div>
                 <div class="card-body">
                   <for>
-                    
+
                     <label for="option">AMOUNT YOU WANT</label>
-                    <select class="dropdown" placeholder="Select an option">
-                      <option value="" disabled selected>Select Amount</option>
-                      <option value="option1">Catagory 1</option>
-                      <option value="option2">Catagory 2</option>
-                      <option value="option3">Catagory 3</option>
-                    </select>
+                    <div style="opacity: .5;">
+                      <select class="dropdown" placeholder="Select an option">
+                        <option value="" disabled selected>Select Amount</option>
+                        <option value="option1">Catagory 1</option>
+                        <option value="option2">Catagory 2</option>
+                        <option value="option3">Catagory 3</option>
+                      </select>
+                    </div>
                     <label for="option">MONTH</label>
+                   <div style="opacity: .5;">
                     <select class="dropdown" placeholder="Select an option">
                       <option value="" disabled selected>Select Month</option>
                       <option value="option1">Week</option>
                       <option value="option2">Month</option>
                       <option value="option3">A Year</option>
                     </select>
-  
-  
-                   
+                   </div>
+
+
+
                     <div style="margin-top: 20px;margin-bottom: 0px;font-size: 11px;
                     text-transform: uppercase;
                     font-weight: 550;
                     color: #4C5753;">
-                       YOU HAVE TO PAY <span style="color: #10C98F !important;
+                      YOU HAVE TO PAY <span style="color: #10C98F !important;
                        font-size: 18px;
                        font-weight: 650;">$0</span>
                     </div>
                     <div class="d-grid yu">
-                      <div class="btn  mt-3 mb-3" type="submit">
-                        
-                       Apply Now
+                      <div class="btn  mt-3 mb-4" type="submit">
+
+                        Apply Now
                       </div>
                       <p class="text-center">We provide online instand cash loan</p>
                     </div>
@@ -137,20 +158,11 @@
                 </div>
               </div>
             </div>
-  
-  
           </div>
         </div>
       </div>
-
-
-
     </div>
-
-
   </section>
-
-
 
   <section>
     <div class="hero container">
@@ -159,9 +171,8 @@
         <p class="ri">The brochure must grab a viewer’s attention and hold it long
           enough to deliver the pertinent information.</p>
       </div>
-
-      <div class="row solution py-5">
-        <div class="col-md-5 col-lg-4  px-5">
+      <div class="row solution my-5">
+        <div class="col-md-6 ji col-lg-4  ">
           <img src="https://preview.colorlib.com/theme/easylo/assets/img/icon/services1.svg" alt="">
           <h6>Home Loan</h6>
           <a href="">What aree my options and the cost to exercise</a>
@@ -172,7 +183,7 @@
             Tools such as a profit and tax calculator show the value of your stock options and exercise cost.
           </p>
         </div>
-        <div class="col-md-5 col-lg-4  px-5">
+        <div class="col-md-6 ji col-lg-4 ">
           <img src="https://preview.colorlib.com/theme/easylo/assets/img/icon/services2.svg" alt="">
           <h6>Home Loan</h6>
           <a href="">What aree my options and the cost to exercise</a>
@@ -183,7 +194,7 @@
             Tools such as a profit and tax calculator show the value of your stock options and exercise cost.
           </p>
         </div>
-        <div class="col-md-5 col-lg-4  px-5 ">
+        <div class="col-md-6 ji col-lg-4  ">
           <img src="https://preview.colorlib.com/theme/easylo/assets/img/icon/services3.svg" alt="">
           <h6>Home Loan</h6>
           <a href="">What aree my options and the cost to exercise</a>
@@ -196,7 +207,6 @@
         </div>
       </div>
     </div>
-
   </section>
 
   <section class="about-area1 section-bg1 section-padding">
@@ -216,7 +226,6 @@
         </div>
         <div class="offset-xl-2 col-xxl-5 col-xl-5 col-lg-6 col-md-9">
           <div class="about-caption">
-
             <div class="section-tittle section-tittle2 mb-30">
               <h2>We guide projects and organizations in making the right decisions.</h2>
               <p>Tools such as a profit simulator and tax calculator show the value of your stock
@@ -224,28 +233,28 @@
                 long enough to deliver the pertinent information.</p>
             </div>
             <hr>
-
             <div class="about-single  d-flex mt-5">
               <div class="icon">
-                <img class="img-fluid" src="	https://preview.colorlib.com/theme/easylo/assets/img/icon/number1.svg" alt="">
+                <img class="img-fluid" src="	https://preview.colorlib.com/theme/easylo/assets/img/icon/number1.svg"
+                  alt="">
               </div>
               <div class="pera">
                 <p>Monthly recurring revenue</p>
               </div>
             </div>
-
             <div class="about-single  d-flex">
               <div class="icon">
-                <img class="img-fluid" src="	https://preview.colorlib.com/theme/easylo/assets/img/icon/number1.svg" alt="">
+                <img class="img-fluid" src="	https://preview.colorlib.com/theme/easylo/assets/img/icon/number1.svg"
+                  alt="">
               </div>
               <div class="pera">
                 <p>Customer acquisition cost</p>
               </div>
             </div>
-
             <div class="about-single d-flex mb-5">
               <div class="icon">
-                <img class="img-fluid" src="	https://preview.colorlib.com/theme/easylo/assets/img/icon/number1.svg" alt="">
+                <img class="img-fluid" src="	https://preview.colorlib.com/theme/easylo/assets/img/icon/number1.svg"
+                  alt="">
               </div>
               <div class="pera">
                 <p>Number of customers</p>
@@ -267,27 +276,27 @@
           enough to deliver the pertinent information.</p>
       </div>
       <div class="row pb-5 chos">
-        <div class="text-center col-md-6 col-xxl-3">
+        <div class="text-center col-md-6 col-lg-4 col-xxl-3">
           <img src="https://preview.colorlib.com/theme/easylo/assets/img/icon/services4.svg" alt="" srcset="">
           <h1>Quick Apply</h1>
           <p>Tools such as a profit simulator and tax simulator calculator show the value of your stock options and
             exercise cost.</p>
         </div>
-        <div class="text-center col-md-6 col-xxl-3">
+        <div class="text-center col-md-6 col-lg-4 col-xxl-3">
           <img src="https://preview.colorlib.com/theme/easylo/assets/img/icon/services5.svg" alt="" srcset="">
           <h1>Online & Secure</h1>
           <p class="text-center">Tools such as a profit simulator and tax simulator calculator show the value of your
             stock options and
             exercise cost.</p>
         </div>
-        <div class="text-center col-md-6 col-xxl-3">
+        <div class="text-center col-md-6 col-lg-4 col-xxl-3">
           <img src="https://preview.colorlib.com/theme/easylo/assets/img/icon/services6.svg
         " alt="" srcset="">
           <h1>Just Time</h1>
           <p>Tools such as a profit simulator and tax simulator calculator show the value of your stock options and
             exercise cost.</p>
         </div>
-        <div class="text-center col-md-6 col-xxl-3">
+        <div class="text-center col-md-6 col-lg-4 col-xxl-3">
           <img src="https://preview.colorlib.com/theme/easylo/assets/img/icon/services7.svg
         " alt="" srcset="">
           <h1>Low intrest</h1>
@@ -298,15 +307,12 @@
     </div>
   </section>
 
-
   <section id="blog" class="about-area1 flex-reverse fle section-bg1 section-padding">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-8 col-sm-10">
-
-
           <div class="section-tittle section-tittle2 mb-30">
-            <h2>We guide projects and organizations in making the right decisions.</h2>
+            <h2>Get loan in 3 easy steps</h2>
             <p>Tools such as a profit simulator and tax calculator show the value of your stock
               options and exercise cost. The brochure must grab a viewer’s attention and hold it
               long enough to deliver the pertinent information.</p>
@@ -320,7 +326,6 @@
               <p>Monthly recurring revenue</p>
             </div>
           </div>
-
           <div class="about-single  d-flex">
             <div class="icon">
               <img src="	https://preview.colorlib.com/theme/easylo/assets/img/icon/number1.svg" alt="">
@@ -329,7 +334,6 @@
               <p>Customer acquisition cost</p>
             </div>
           </div>
-
           <div class="about-single d-flex mb-5">
             <div class="icon">
               <img src="	https://preview.colorlib.com/theme/easylo/assets/img/icon/number1.svg" alt="">
@@ -352,7 +356,8 @@
     </div>
   </section>
 
-  <section class="slider" style="background-color: #0F4332; height: 44%; color: white; margin: 0 12px;padding-bottom: 74px;">
+  <section class="slider"
+    style="background-color: #0F4332; height: 44%; color: white; margin: 0 12px;padding-bottom: 74px;">
     <div class="container silo d-flex justify-content-center align-items-center">
       <div class="col-xl-8 col-lg-10 silo">
         <p style="font-size: 24px;
@@ -383,9 +388,8 @@
   <section class="latest">
     <div class="hero container">
       <div class="row text-center ">
-        <h2>Solution for every business need</h2>
-        <p class="ri">The brochure must grab a viewer’s attention and hold it long
-          enough to deliver the pertinent information.</p>
+        <h2>Latest News</h2>
+        
       </div>
 
       <div class="row solution py-5  ">
@@ -426,70 +430,6 @@
     </div>
 
   </section>
-  <!-- <section class="home-blog section-padding">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="cl-xl-7 col-lg-8 col-md-10">
-
-                <div class="section-tittle text-center mb-60" style="margin-bottom: 60px;">
-                    <h2>Latest News</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-blogs mb-30" style="margin-bottom: 30px;">
-                    <div class="blog-img">
-                        <a href="https://preview.colorlib.com/theme/easylo/blog_details.html"><img
-                                src="https://preview.colorlib.com/theme/easylo/assets/img/gallery/blog1.jpg" alt=""></a>
-                    </div>
-                    <div class="blogs-cap">
-                        <span>20 March 2021</span>
-                        <h5><a href="https://preview.colorlib.com/theme/easylo/blog_details.html">What are my
-                                options worth and the cost to exercise</a></h5>
-                        <p>Tools such as a profit simulator and tax calculator show the value of your stock
-                            options and exercise cost.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-blogs mb-30" style="margin-bottom: 30px;">
-                    <div class="blog-img">
-                        <a href="https://preview.colorlib.com/theme/easylo/blog_details.html"><img
-                                src="https://preview.colorlib.com/theme/easylo/assets/img/gallery/blog2.jpg" alt=""></a>
-                    </div>
-                    <div class="blogs-cap">
-                        <span>20 March 2021</span>
-                        <h5><a href="https://preview.colorlib.com/theme/easylo/blog_details.html">From start to
-                                finish, we were acquired within 30-days </a></h5>
-                        <p>Tools such as a profit simulator and tax calculator show the value of your stock
-                            options and exercise cost.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-blogs mb-30" style="margin-bottom: 30px;">
-                    <div class="blog-img">
-                        <a href="https://preview.colorlib.com/theme/easylo/blog_details.html"><img
-                                src="https://preview.colorlib.com/theme/easylo/assets/img/gallery/blog3.jpg" alt=""></a>
-                    </div>
-                    <div class="blogs-cap">
-                        <span>20 March 2021</span>
-                        <h5><a href="https://preview.colorlib.com/theme/easylo/blog_details.html">We’ll connect
-                                you with the right people to start</a></h5>
-                        <p>Tools such as a profit simulator and tax calculator show the value of your stock
-                            options and exercise cost.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-
-
-
-
-
 
   <footer>
     <div class="footer-wrapper gray-bg ">
@@ -540,19 +480,19 @@
             <div class=" fa col-xl-4 col-lg-6 col-md-8 col-sm-10">
               <div class="single-footer-caption mb-50">
                 <div class="footer-tittle mt-4">
-                  <h4 >Newsletter</h4>
+                  <h4>Newsletter</h4>
                   <p>Subscribe newsletter to get updates.</p>
                 </div>
 
-                <div class="footer-form mb-20">
+                <div class="footer-form">
                   <div id="mc_embed_signup">
                     <form target="_blank"
                       action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
                       method="get" class="subscribe_form relative mail_part" novalidate="true">
-                      <input type="email"  placeholder="Enter your email"
-                     style="padding: 19px 38px;border: 3px solid #10C98F;">
+                      <input type="email" placeholder="Enter your email"
+                        style="padding: 19px 38px;width: 100%; border: 3px solid #10C98F;">
                       <div class="form-icon">
-                        <button type="submit" name="submit" id="newsletter-submit">
+                        <button type="submit">
                           <img src="https://preview.colorlib.com/theme/easylo/assets/img/icon/Icon-send.svg" alt="">
                         </button>
                       </div>
@@ -562,18 +502,18 @@
                 </div>
 
                 <div class="footer-social ">
-                  <a href="#" style="font-size: 30px;"><i class="fab fa-facebook mx-2"></i></a>
-                  <a href="#"><i class="fab fa-instagram  mx-2"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in mx-2"></i></a>
-                  <a href="l#"><i mx-2 class="fab fa-youtube mx-2"></i></a>
+                  <a href="#"  ><i class="fab fa-facebook fa-lg mx-2"></i></a>
+                  <a href="#"><i class="fab fa-instagram fa-lg mx-2"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in fa-xl mx-2"></i></a>
+                  <a href="#"><i mx-2 class="fab fa-youtube fa-lg mx-2"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
+
       </div>
-     
+
       <div class="footer-bottom-area">
         <div class="container">
           <div class="footer-border">
@@ -594,6 +534,37 @@
       </div>
     </div>
   </footer>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+  <div id="myBtn" class="cercl align-items-center justify-content-center d-flex" style="border:2px solid #10C98F; height: 50px; width: 50px;font-size: 9px; border-radius: 50%;background-color: #10C98F; color: #fff;">
+    <div class="text-center">
+      <span><i class="fas fa-long-arrow-alt-up "></i></span>
+    </div>
+  </div>
+</button>
+
+
+  
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
 
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"
     integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
@@ -634,23 +605,34 @@
       }
     });
   </script> -->
+  <script>
+    const cardd = document.querySelector(".cardd");
+const dn = document.querySelector(".d-none");
+const cardd2 = document.querySelector(".cardd2");
+$(window).onResize = function () {
+  if (window.innerWidth <= 992) cardd.classList.add("d-none");
+  else cardd.classList.remove("d.none");
+  if (window.innerWidth >= 992) cardd2.classList.add("d-none");
+  else cardd2.classList.remove("d.none");
+};
+  </script>
 
 
 
 
 
-  
 
 
-<script>
-$(window).scroll(function () {
-  var top = $(window).scrollTop();
-  if (top >= 100) {
-    $(".header-sticky").addClass("sticky-bar");
-  } else if ($(".header-sticky").hasClass("sticky-bar")) {
-    $(".header-sticky").removeClass("sticky-bar");
-  }
-});</script>
+
+  <script>
+    $(window).scroll(function () {
+      var top = $(window).scrollTop();
+      if (top >= 100) {
+        $(".header-sticky").addClass("sticky-bar");
+      } else if ($(".header-sticky").hasClass("sticky-bar")) {
+        $(".header-sticky").removeClass("sticky-bar");
+      }
+    });</script>
 
 
 

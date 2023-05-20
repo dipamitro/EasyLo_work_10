@@ -66,12 +66,7 @@
         padding: 0 3%;
     
     }
-     /* body{
-      padding-right: 2%;
-    }
-    p{
-      padding: 1%;
-    } */
+    
 }
 
 @media only screen and (max-width: 430px){
@@ -83,10 +78,10 @@
 
 
 
-  @media only screen and (max-width: 350px){
+  /* @media only screen and (max-width: 350px){
     .footer-form input {
       padding: 0 !important;
-  }
+  } */
 } 
 
 @media only screen and (max-width: 430px){
@@ -97,4 +92,107 @@
   }
 .solution{
   box-sizing: border-box;
+}
+@media only screen and (min-width: 1200px){
+.hero .solution .ji {
+ padding-left: 34px;
+ padding-right: 56px;
+  }
+}
+@media only screen and (max-width: 768px){
+  .hero .solution a{
+   font-size: 21px;
+   
+    }
+    .hero p{
+      padding: 4px;
+      
+       }
+  }
+  @media only screen and (max-width: 1200px){
+ 
+    .footer-form form .form-icon button {
+      position: absolute;
+      top: 0;
+      right: 3px;
+      border: 0;
+     
+  }
+}
+@media only screen and(max-width:575) {
+  .footer-form form .form-icon button {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    border: 0;
+   
+}
+.footer-form form input{
+  max-width: 100% !important;
+  
+}
+  
+}
+@media only screen and (max-width: 575px){
+.dil .navbar .cardd .dropdown {
+    width: 90%;
+    padding: 0px;}
+
+    .dil .navbar .cardd .dropdown .manu2 li a{
+      color: #fff;
+    }
+}
+
+
+@media only screen and (max-width:575px) {
+  .sim h1 {
+     position: absolute;
+      font-size: 41px;
+      font-weight: 500;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 18px;
+      padding-bottom: 20px;
+      font-family: "Inter", sans-serif;
+      position: relative;
+      margin-top: 0;
+  }
+  .sim{
+      margin-bottom: 2px;
+      margin-left: 0px;
+  }
+  
+  .ri {
+    color: #6D6D6D;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1;
+    padding: 0 3%;
+
+}
+.sim p {
+  margin-bottom:11px;
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+.hero h2, .choose h2 {
+ 
+  font-size: 26px;
+ 
+}
+.about-area1 h2 {
+  font-size: 24px; 
+}
+.cardbody .dropdown {
+  width: 90%;
+  padding: 12px;
+}
+.up{
+   
+    padding-right: 0rem!important;
+    padding-left: 0rem!important;
+
+}
 }

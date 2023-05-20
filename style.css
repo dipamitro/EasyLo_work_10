@@ -9,6 +9,7 @@
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
+    overflow: visible;
 }
 /* .navbarr {
     display: flex;
@@ -70,7 +71,8 @@
   
 }
 .card-body{
-    padding: 0rem 1rem 1rem 2rem;
+    padding: 1.5rem;
+    
 }
 .card-header{
     background-color: #fff;
@@ -85,7 +87,7 @@
     margin-bottom: 6px;
 }
 .sim h1 {
-    position: relative;
+    
     font-size: 61px;
     font-weight: 672;
     color: #fff;
@@ -93,7 +95,6 @@
     margin-bottom: 20px;
     padding-bottom: 29px;
     font-family: "Inter", sans-serif;
-    position: relative;
     margin-top: 0;
 }
 /* .sim{
@@ -116,9 +117,9 @@
     width: 400px;
   }
 
-  .dropdown {
-    width: 95%;
-    padding: 14px;
+  .card-body .dropdown {
+    width: 100%;
+    padding: 14px 9px 14px 9px;
   }
 
 @media only screen and (min-width: 1200px) {
@@ -164,9 +165,7 @@ label{
     font-weight: 500;
 }
 
-.cardd a {
-    position: relative;
-}
+
 
 .card-header{
     background-color: rgb(255, 255, 255);
@@ -212,13 +211,11 @@ label{
     font-size: 16px;
     border-radius: 0px;
     text-transform: uppercase;
+    text-align: center;
     font-weight: 600;
-    width: 95%;
+    width: 100%;
 }
-.yo .btn{
-    height: 4.3rem;
-    
-}
+
 
 /* =========navbtn===== */
 
@@ -232,8 +229,8 @@ label{
     position: absolute;
     width: 170px;
     background: #fff;
-    left: 900px;
-    top: 90%;
+    left: 60%;
+    top: 0;
     visibility: hidden;
     opacity: 0;
     padding: 17px 0;
@@ -242,6 +239,13 @@ label{
     .main-header .main-menu ul li:hover>a {
         color: #fff;
     }
+
+
+/* .drp.dropdown {
+    width: 100%;
+    padding: 2px 0px 9px 0px;
+} */
+
 /* =====how much===== */
 
 /* =============hero================== */
@@ -250,7 +254,7 @@ label{
 
 .hero {
     padding-top: 90px;
-    padding-bottom: 70px;
+    padding-bottom: 16px;
 }
 
 .hero h2,.choose h2{
@@ -262,7 +266,7 @@ label{
     line-height: 1.3;
     letter-spacing: -.04em;
     margin-bottom: 0;
-    position: relative;
+    
     padding-bottom: 24px
 }
 .hero h2::after {
@@ -280,7 +284,7 @@ label{
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    padding: 0 32%;
+    padding: 12px 31%;
 
 }
 
@@ -298,6 +302,14 @@ label{
     font-weight: 500;
     color: #4C5753;
     line-height: 1.6;
+}
+.hero .solution h6{
+    color: #0C8760;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+   
 }
 
 /* .solution{
@@ -331,7 +343,7 @@ p {
 
 .section-padding {
     padding-top: 110px;
-    padding-bottom: 90px;
+    padding-bottom: 81px;
 }
 
 .section-bg1 {
@@ -349,14 +361,14 @@ p {
 
 }
 
-.guide {
+/* .guide {
     position: relative;
-}
+} */
 .m{
     margin-top: 30px;
 }
 .section-padding {
-    padding-top: 110px;
+    padding-top: 102px;
     padding-bottom: 90px;
 }
 
@@ -376,16 +388,16 @@ p {
     line-height: 1.3;
     letter-spacing: -.04em;
     margin-bottom: 22px;
-    position: relative;
+    /* position: relative; */
     font-family: "Inter", sans-serif;
 }
 .about-area1 .about-img .info-man {
     background: #10C98F;
     display: inline-block;
-    padding: 63px 47px;
+    padding: 55px 50px;
     position: absolute;
-    bottom: -65px;
-    right: -100px;
+    bottom: -52px;
+    right: -102px;
 }
 @media only screen and (max-width:1200px) {
     .about-area1 .about-img .info-man {
@@ -507,7 +519,6 @@ p {
     line-height: 1.3;
     letter-spacing: -.04em;
     margin-bottom: 0;
-    position: relative;
     padding-bottom: 24px;
     margin-top: 98px;
 }
@@ -557,7 +568,7 @@ p {
     line-height: 1.3;
     letter-spacing: -.04em;
     margin-bottom: 22px;
-    position: relative;
+    /* position: relative; */
     padding-bottom: 24px;
 }
 .latest h6{
@@ -576,7 +587,7 @@ p {
 }
 /* ============Fotter----------- */
 .footer-wrapper {
-    background: #dce6e3;
+    background:#eef8f5;
 }
 .footer-area p{
     font-family: "Chivo",sans-serif;
@@ -661,12 +672,12 @@ footer ul {
     margin-bottom: 20px
 }
 .footer-social .fab{
-    font-weight: 400;
+    font-weight: 500;
 }
 .footer-form form .form-icon button {
     position: absolute;
     top: 0;
-    right: 22px;
+    right: 3px;
     border: 0;
     cursor: pointer;
     padding: 21px 34px;
@@ -678,3 +689,54 @@ footer ul {
 .footer-form form {
     position: relative;
 } 
+.footer-social a{
+    color: #4C5753;
+    /* font-size: 20px;
+    height: 30px;
+    width: 30px; */
+    display: inline-block;
+    text-align: center;
+    margin-right: 9px;
+    margin-top: 18px;
+}
+.footer-social a:hover{
+    color: #10C98F;
+    animation: rotate 1s linear;
+    /* animation: rotate-btn .5s linear 3; */
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* @keyframes rotate-btn {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  } */
+  #myBtn{
+    display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 1;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  }
+  /* ===========BLog CSS=========== */
+
+  .joo{
+    margin-top: 114px;
+  }
