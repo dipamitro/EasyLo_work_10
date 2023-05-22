@@ -11,6 +11,13 @@
     font-size: 16px;
     overflow: visible;
 }
+@media (min-width: 1400px)
+{
+     .container-lg {
+        max-width: 1366px;
+    }
+}
+
 /* .navbarr {
     display: flex;
     align-items: center;
@@ -25,6 +32,15 @@
     padding: 0 30px;
     transition: 0.5s;
 } */
+.navbar {
+    
+    padding-top: 0.8rem;
+   
+}
+.top .px-3 {
+    padding-right: 1.1rem!important;
+    padding-left: 1.1rem!important;
+}
 
  .navbarr.top {
     background-color:transparent;      
@@ -58,8 +74,11 @@
     background-color: transparent;
     color: white;
     border: 2px solid #ffffff;
-    height: 58px;
-    padding: 4px;
+    height: 66px;
+    /* padding: 7px 0px 7x 0px !important; */
+    border-radius: 0;
+    padding: 0px;
+    width:206px ;
 }
 
 .naav {
@@ -70,9 +89,15 @@
     border-radius: 0;
   
 }
-.card-body{
-    padding: 1.5rem;
+.card{
+    border-radius: 0;
+    border: 0; 
+    max-width: 416px;
     
+    
+}
+.card-body {
+    padding: 0.5rem 2.4rem 1.4rem 2.4rem;
 }
 .card-header{
     background-color: #fff;
@@ -124,8 +149,11 @@
 
 @media only screen and (min-width: 1200px) {
     .sim{
-        margin-bottom: 82px;
-        margin-left: 90px;
+        /* margin-bottom: 75px;
+        margin-left: 90px; */
+
+        margin-bottom: 98px;
+        margin-left: 104px;
     }
   }
 label{
@@ -142,7 +170,7 @@ label{
 .navpart1 h1::after {
     content: "";
     position: absolute;
-    width: 110px;
+    width: 109px;
     bottom: 0px;
     height: 3px;
     left: 0;
@@ -191,20 +219,20 @@ label{
     display: block;
     height: .2rem;
     background: #10C98F;
-    width: 8.2rem;
+    width: 6.6rem;
     margin: auto;
-    margin-top: 1.2rem;
+    margin-top: 1.5rem;
 
 }
 
 .navpart1 {
-    margin: 72px 6px 60px 6px;
+    margin: 72px 6px 40px 6px;
     z-index: 2;
 }
 .yu .btn{
     background: #10C98F;
     height: 50px;
-    padding: 10px 36px;
+    padding: 14px 36px;
     border: 0;
     color: #fff;
     cursor: pointer;
@@ -214,6 +242,11 @@ label{
     text-align: center;
     font-weight: 600;
     width: 100%;
+}
+sim2{
+    
+    margin-left: 90px !important;
+
 }
 
 
@@ -552,11 +585,20 @@ p {
     display: flex;
     flex-direction: row-reverse;
 } */
+/* =============Slider========= */
 
 .silo1 p {
     font-size: 14px;
     color: #D5ECE5;
+    position: relative;
 
+}
+.tilo{
+    background-image:url(https://preview.colorlib.com/theme/easylo/assets/img/icon/quotes-sign.png.webp); 
+    background-repeat: no-repeat;
+    background-position:left center;
+  
+  
 }
 
 /* ========Latest==== */
