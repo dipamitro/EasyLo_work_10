@@ -22,7 +22,7 @@
 
 <body class="bg-light">
 
-  <section class="img fstpara" id="section-counter" style="background:linear-gradient(53deg, #10c98f66 0%, #10c98f66 100%),url(img/h1_hero1.jpg); 
+  <section class="img fstpara " id="section-counter" style="background:linear-gradient(53deg, #10c98f66 0%, #10c98f66 100%),url(img/h1_hero1.jpg); 
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
@@ -30,22 +30,22 @@
       z-index: 2;
       padding: 0px 0px 2px 0px">
 
-    <div class="container-lg pr-sm-5 pl-sm-0">
+    <div class="container-lg  pl-sm-0">
       <div class="navbarr top  " id="navbarr" style="height: 80px;">
         <div class="row">
           <nav class="navbar header-sticky navbar-expand-lg navbar-light">
-            <div class="container-lg pr-5 pr-sm-5">
+            <div class="container-lg pr-5 ">
               <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" srcset=""></a>
-              <button class="navbar-toggler " style="color: #fff;" type="button" data-bs-toggle="collapse"
+              <button class="navbar-toggler" style="color: #fff; border: 1px solid transparent;" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fas fa-bars"
                     style="color:#fff; font-size:28px;padding-right: 20%;"></i></span>
               </button>
-              <div class="collapse dil navbar-collapse justify-content-end" id="navbarNav">
+              <div class="collapse  dil navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav mr-5 " >
                   <li class="nav-item ">
-                    <a class="nav-link active text-white naav   px- px-3" href="home.html">Home</a>
+                    <a class="nav-link active text-white naav    px-3" href="home.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-white naav   px-3" href="#">About</a>
@@ -53,33 +53,21 @@
                   <li class="nav-item">
                     <a class="nav-link text-white naav   px-3" href="#">Services</a>
                   </li>
-                  <!-- <li class="nav-item cardd"><a class="nav-link text-white naav px-4" href="blog.html">Blog</a>
-                    <ul class="menu2 text-white" style="list-style: none;text-decoration: none;">
-                      <li><a class="nav-link text-dark naav " href="#" href="blog.html">Blog</a>
-                      </li>
-                      <li><a class="nav-link text-dark naav " href="#">Blog
-                          Details</a></li>
-                      <li><a class="nav-link text-dark naav " href="#">Element</a>
-                      </li>
-                    </ul>
-                  </li> -->
-
-                  <li class="nav-item cardd dropdown cardd2">
-                    <a class="nav-link text-white   px-3 main-sec dropdown-toggle naav main-sec " href="#"
-                      id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-                    <ul class="menu2 text-white dropdown-menu shows" aria-labelledby="navbarDropdownMenuLink"
-                      aria-expanded="false" style="list-style: none;text-decoration: none;">
-                      <li><a class="nav-link text-dark naav dropdown-item" href="blog.html">Blog</a>
-                      </li>
-                      <li><a class="nav-link text-dark naav dropdown-item" href="blog.html">Blog
-                          Details</a></li>
-                      <li><a class="nav-link   naav dropdown-item" href="#">Element</a>
-                      </li>
-                    </ul>
-                  </li>
+                  <ul class="nav2">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white naav px-3" href="#">Blog</a>
+                        <ul class="dropdown-menu py-2">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a 
+                             href="#">Blog Details</a></li>
+                            <li><a 
+                            href="#">Element</a></li>
+                        </ul>
+                    </li>
+                </ul>
 
                   <li class="nav-item">
-                    <a class="nav-link text-white naav  px-4" href="#">Contact</a>
+                    <a class="nav-link text-white naav  px-3" href="#">Contact</a>
                   </li>
                 </ul>
                 <form class="form-inline my-4 px-4 my-lg-0">
@@ -124,20 +112,21 @@
 
                     <label for="option">AMOUNT YOU WANT</label>
                     <div style="opacity: .5;">
-                      <select class="dropdown" placeholder="Select an option">
+                      <select class="dropdown"placeholder="Select an option">
                         <option value="" disabled selected>Select Amount</option>
-                        <option value="option1">Catagory 1</option>
-                        <option value="option2">Catagory 2</option>
-                        <option value="option3">Catagory 3</option>
+                        <option style="background-color: #10C98F;" value="option1">Catagory 1</option>
+                        <option style="background-color: #10C98F;" value="option2">Catagory 2</option>
+                        <option style="background-color: #10C98F; margin-top: 10px;" value="option3">Catagory 3</option>
+
                       </select>
                     </div>
                     <label for="option">MONTH</label>
                     <div style="opacity: .5;">
                       <select class="dropdown" placeholder="Select an option">
                         <option value="" disabled selected>Select Month</option>
-                        <option value="option1">Week</option>
-                        <option value="option2">Month</option>
-                        <option value="option3">A Year</option>
+                        <option style="background-color: #10C98F;" value="option1">Week</option>
+                        <option style="background-color: #10C98F;" value="option2">Month</option>
+                        <option style="background-color: #10C98F;" value="option3">A Year</option>
                       </select>
                     </div>
 
@@ -423,43 +412,16 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <div class="container silo d-flex justify-content-center align-items-center">
-            <div class="col-xl-8 col-lg-10 silo">
-              <p class="tilo" style="font-size: 24px;
-              color: #D5ECE5;
-              line-height: 1.6;
-              margin-bottom: 25px;
-              font-weight: 500;
-              padding: 11.6% 0% 0% 5.8%;
-              z-index: 3;">"I had 15+ folks reach out to me on EasyLo. I was completely blown
-              away by how easy it's been to reach these prospective buyers. We
-              weren't necessarily looking to sell but EasyLo has been A+. From
-              start to finish, we were acquired within 30-days at full asking
-              price."</p>
-              <div class="d-flex silo1">
-                <div>
-                  <img src="img/testimonial.png" alt="" srcset="">
-                </div>
-                <div class="px-3">
-                  <h3>
-                    Ash Wednesday
-                  </h3>
-                  <p>Designer at colorlib</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
         data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="carousel-control-prev-ico" style="font-weight: bolder;" aria-hidden="true">1&nbsp;&nbsp;___</span>
         <span class="visually-hidden">Previous</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
         data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="carousel-control-next-ico" style="font-weight: bolder;" aria-hidden="true">____&nbsp;&nbsp;2</span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
@@ -477,7 +439,7 @@
       </div>
 
       <div class="row solution py-5  ">
-        <div class="col-lg-4  col-md-6 col-sm-12  px-4 ">
+        <div class="col-lg-4  col-md-6 col-sm-6  px-4 ">
           <img class="img-fluid" src="https://preview.colorlib.com/theme/easylo/assets/img/gallery/blog1.jpg" alt="">
           <h6> 20 March 2021</h6>
           <a href="">What aree my options worth and the cost to exercise</a>
@@ -488,7 +450,7 @@
             Tools such as a profit and tax calculator show the value of your stock options and exercise cost.
           </p>
         </div>
-        <div class="col-lg-4  col-md-6 col-sm-12 px-4">
+        <div class="col-lg-4  col-md-6 col-sm-6 px-4">
           <img class="img-fluid" src="	https://preview.colorlib.com/theme/easylo/assets/img/gallery/blog2.jpg" alt="">
           <h6>20 March 2021</h6>
           <a href="">What aree my options worth and the cost to exercise</a>
@@ -499,7 +461,7 @@
             Tools such as a profit and tax calculator show the value of your stock options and exercise cost.
           </p>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12  px-4 ">
+        <div class="col-lg-4 col-md-6 col-sm-6  px-4 ">
           <img class="img-fluid" src="	https://preview.colorlib.com/theme/easylo/assets/img/gallery/blog3.jpg" alt="">
           <h6>20 March 2021</h6>
           <a href="">What aree my options worth and the cost to exercise</a>
@@ -519,7 +481,7 @@
     <div class="footer-wrapper gray-bg ">
       <div class="footer-area footer-padding">
         <div class="container">
-          <div class="row justify-content-between">
+          <div class="row justify-content-between" style="margin-bottom: 77px;">
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 fa">
               <div class="single-footer-caption ">
                 <div class="footer-logo mt-5">
@@ -529,7 +491,7 @@
                   options and exercise cost.</p>
               </div>
             </div>
-            <div class="offset-xl-1 col-xl-2 col-lg-2 col-md-4 fa col-sm-6">
+            <div class="offset-xl-1 col-xl-2 col-lg-2 col-md-4 faa fa col-sm-6">
               <div class="single-footer-caption mt-5">
                 <div class="footer-tittle">
                   <h4>Quick Links</h4>
@@ -561,13 +523,12 @@
                 </div>
               </div>
             </div>
-            <div class=" fa col-xl-4 col-lg-6 col-md-8 col-sm-10">
+            <div class=" fa faaa col-xl-4 col-lg-6 col-md-8 col-sm-10">
               <div class="single-footer-caption mb-50">
                 <div class="footer-tittle mt-4">
                   <h4>Newsletter</h4>
                   <p>Subscribe newsletter to get updates.</p>
                 </div>
-
                 <div class="footer-form">
                   <div id="mc_embed_signup">
                     <form target="_blank"
@@ -584,7 +545,6 @@
                     </form>
                   </div>
                 </div>
-
                 <div class="footer-social ">
                   <a href="#"><i class="fab fa-facebook fa-lg mx-2"></i></a>
                   <a href="#"><i class="fab fa-instagram fa-lg mx-2"></i></a>
@@ -594,26 +554,17 @@
               </div>
             </div>
           </div>
-        </div>
-
-      </div>
-
-      <div class="footer-bottom-area">
-        <div class="container">
-          <div class="footer-border">
-            <div class="row">
-              <hr>
-              <div class="col-xl-12 ">
-                <div class="footer-copy-right text-center">
-                  <p>Copyright ©
-                    2023 All rights
-                    reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by
-                    <a href="https://colorlib.com/" target="_blank" rel="nofollow noopener">Colorlib</a>
+          <footer>
+            <div class="container pb-0 ptt-4" style="border-top: 1px solid rgb(228, 222, 222); opacity: 0.9;">
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="text-center ">Copyright
+                    &copy; 2023 All rights reserved | This template is made with ❤ by Colorlib
                   </p>
                 </div>
               </div>
             </div>
-          </div>
+          </footer>
         </div>
       </div>
     </div>
@@ -626,9 +577,6 @@
       </div>
     </div>
   </button>
-
-
-
   <script>
     // Get the button
     let mybutton = document.getElementById("myBtn");
@@ -690,17 +638,7 @@
       }
     });
   </script> -->
-  <script>
-    const cardd = document.querySelector(".cardd");
-    const dn = document.querySelector(".d-none");
-    const cardd2 = document.querySelector(".cardd2");
-    $(window).onResize = function () {
-      if (window.innerWidth <= 992) cardd.classList.add("d-none");
-      else cardd.classList.remove("d.none");
-      if (window.innerWidth >= 992) cardd2.classList.add("d-none");
-      else cardd2.classList.remove("d.none");
-    };
-  </script>
+  
 
 
 
@@ -712,7 +650,7 @@
   <script>
     $(window).scroll(function () {
       var top = $(window).scrollTop();
-      if (top >= 90) {
+      if (top >= 60) {
         $(".header-sticky").addClass("sticky-bar");
       } else if ($(".header-sticky").hasClass("sticky-bar")) {
         $(".header-sticky").removeClass("sticky-bar");
