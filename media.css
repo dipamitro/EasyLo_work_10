@@ -83,7 +83,7 @@
   }
 
 @media only screen and (max-width: 430px){
-  .about-area1 .about-caption h2,.section-tittle2 h2 {
+  .about-area1 .about-caption h2 {
  font-size: 24px;
  font-weight: 300;
   }
@@ -142,20 +142,22 @@
    
 }
 @media only screen and (max-width: 575px){
-   /* .container-fluid, .container-lg {
+   .container-fluid, .container-lg {
     width: 100%;
     padding-right: 0;
     padding-left: 0;
     margin-right: 0;
-    margin-left: 0;} */
+    margin-left: 0;}
     .navbar-toggler {
-      /* padding: 0.25rem 1.75rem; */
+      padding: 0rem 1.5rem;
       font-size: 1.25rem;
       line-height: 1;
       background-color: transparent;
       border: 1px solid transparent;
-      border-radius: 0.25rem;
-      
+      border-radius: 0.25rem;  
+  }
+  .navbar-toggler:focus{
+    outline: none;
   }
   .card-body {
     padding: 0.5rem 1rem 1.4rem 1rem;
@@ -197,20 +199,78 @@
   height: 33%;
   width: 100%;
 }
+.testimonial-founder {
+  display: none;
 }
-/* @media (max-width:575px) and (min-width:150px) {
-  .hero .solution img {
-    height: 33%;
-    width: 100%;
-  }
+.toni{font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-weight: 400;
+  padding: 12.6% 0% 0% 5.8%;
+}
+.silo h3{
+  font-size: 17px;
+  line-height: 1.2;
+  margin-bottom: 1px;
+  font-weight: 400;
+}
+/* 
+}
+@media only screen and (min-width:576px)  {
+  .secondnone{
+    display: none;
+}}
+.secondnone .lipi p{
+  font-size: 17px;
+}
+.secondnone span{
+  font-size: 18px;
+  font-weight: 600;
+}
+.secondnone .lima p{
+  font-style: 12px;
+  font-weight: 400;
+}
+.secondnone .slide-1, .slide-2 {
+  padding-top: 81px;
+  padding-left: 24px;
 } */
 
+@media only screen and (max-width:575px){
+   .lipi img {
+    display: none;
+}
+.secondnone .lipi p{
+  font-size: 17px;
+}
+.secondnone span{
+  font-size: 18px;
+  font-weight: 600;
+}
+.secondnone .lima p{
+  font-style: 12px;
+  font-weight: 400;
+}
+.secondnone .slide-1, .slide-2 {
+  padding-top: 81px;
+  padding-left: 24px;
+}
+}
 
+@media only screen and (max-width:500px){
+  .secondnone button, .dash-m{
+    display: none;
+}
+@media only screen and (max-width:992.9px){
+
+.secondnone .lipi p{
+  font-size: 19px;
+}
 @media only screen and (max-width:575px) {
   .sim h1 {
      position: absolute;
       font-size: 41px;
-      font-weight: 500;
+      font-weight: 700;
       color: #fff;
       line-height: 1.1;
       margin-bottom: 18px;
@@ -235,9 +295,9 @@
 .sim p {
   margin-bottom:11px;
   color: #fff;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.1;
-  font-weight: 400;
+  font-weight: 500;
 }
 .hero h2, .choose h2 {
  

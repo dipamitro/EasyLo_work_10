@@ -11,8 +11,12 @@
     font-size: 16px;
     overflow: visible;
 }
-p{
-    font-family: "Chivo",sans-serif;
+.pd{
+    padding-left: 1px;
+    padding-right: 1px;
+}
+p {
+    font-family: "Chivo", sans-serif;
 }
 
 @media (min-width: 1400px) {
@@ -33,7 +37,8 @@ nav ul li {
     display: inline-block;
 
 }
-nav ul li a{
+
+nav ul li a {
     margin-right: 6.8px;
 
 }
@@ -100,6 +105,11 @@ nav ul li:hover {
     padding: 10px 20px;
 }
 
+
+input[type=text]:focus {
+    border: 1px solid transparent;
+    outline: none;
+  }
 
 @media only screen and (min-width: 992px) {
 
@@ -706,20 +716,36 @@ p {
 } */
 /* =============Slider========= */
 
-.silo1 p {
-    font-size: 14px;
+.toni{font-size: 24px;
     color: #D5ECE5;
-    position: relative;
-
-}
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-weight: 500;
+    padding: 11.6% 0% 0% 5.8%;
+    z-index: 3;}
 
 .tilo {
     background-image: url(https://preview.colorlib.com/theme/easylo/assets/img/icon/quotes-sign.png.webp);
     background-repeat: no-repeat;
     background-position: left center;
-
-
 }
+
+/* ===========doing ulot_palot========== */
+/* .carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+} */
+/* ======ending ulot_palot========== */
 
 /* ========Latest==== */
 .home-blogg h2 {
@@ -739,15 +765,19 @@ p {
     margin-bottom: 14px;
     display: block;
 }
- .latest p{
+
+.latest p {
     margin-top: 0;
 }
-.latest a{
+
+.latest a {
     margin-bottom: 12px;
-} 
+}
+
 .latest .hero {
     padding-bottom: 0px;
 }
+
 /* ============Fotter----------- */
 .footer-wrapper {
     background: #eef8f5;
@@ -763,9 +793,11 @@ p {
     line-height: 1.6;
 
 }
-.ptt-4{
-    padding-top: 1.2rem!important;
+
+.ptt-4 {
+    padding-top: 1.2rem !important;
 }
+
 footer ul li a {
     list-style-type: none;
     text-decoration: none;
@@ -785,16 +817,19 @@ footer ul {
 .fa {
     margin-top: 52px;
 }
+
 .footer-wrapper .footer-area .footer-tittle h4 {
     color: #0F4332;
     font-size: 20px;
     margin-bottom: 30px;
     font-weight: 600;
 }
+
 .footer-wrapper {
     margin-top: 51px;
 
 }
+
 .form-wrapper {
     background: #fff;
     padding: 45px 35px 35px 35px;
@@ -802,11 +837,13 @@ footer ul {
     margin-bottom: -100px;
     box-shadow: 0px 16px 30px rgba(15, 67, 50, 0.1);
 }
+
 .form-wrapper .form-tittle {
     position: relative;
     margin-bottom: 12px;
     padding-bottom: 13px;
 }
+
 .form-wrapper .nice-select {
     line-height: 30px;
     border: 1px solid #C9D6CB;
@@ -818,11 +855,13 @@ footer ul {
     padding-top: 10px;
     border-radius: 0px;
 }
+
 .footer-bottom .footer-border {
-    border-top: 1px solid rgba(76,87,83,0.15);
+    border-top: 1px solid rgba(76, 87, 83, 0.15);
     padding-top: 24px;
     padding-bottom: 1px;
 }
+
 .form-wrapper .nice-select .list {
     width: 100%;
     border-radius: 0;
@@ -836,9 +875,11 @@ footer ul {
     padding-top: 15px;
     margin-bottom: 15px;
 }
+
 .mb-20 {
     margin-bottom: 20px
 }
+
 .footer-social .fab {
     font-weight: 500;
 }
@@ -875,7 +916,7 @@ footer ul {
     margin-top: 32px;
 }
 
-hr{
+hr {
     margin: 0;
 }
 
@@ -922,5 +963,148 @@ hr{
 /* ===========BLog CSS=========== */
 
 .joo {
-    margin-top: 114px;
+    margin-top: 54px;
 }
+
+
+
+/* / TESTIMONIAL SECTION /
+/ *************** */
+*/ .testimonial-section {
+    background: #0f4332;
+    padding-bottom: 74px;
+}
+
+.carousel-item {
+    background: #0f4332;
+    transition: all ease-in 1s;
+}
+
+.slide-1,
+.slide-2 {
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.testimonial-caption {
+    position: relative;
+}
+
+.testimonial-caption img {
+    position: absolute;
+    top: -33px;
+    left: -34px;
+}
+
+.testimonial-caption p {
+    z-index: 30;
+    font-size: 24px;
+    color: #d5ece5;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+
+.founder-img {
+    margin-left: -15px;
+}
+
+.founder-text {
+    margin-left: 24px;
+}
+
+.founder-text span {
+    font-size: 24px;
+    color: #d5ece5;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.founder-text p {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel .btn-slide-1,
+.carousel .btn-slide-2 {
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.carousel .btn-slide-1:active,
+.carousel .btn-slide-2:active {
+    background-color: #0c8760;
+}
+
+.carousel .btn-slide-1 {
+    position: absolute;
+    bottom: 4%;
+    right: 9%;
+}
+
+.carousel .btn-slide-2 {
+    position: absolute;
+    bottom: 4%;
+    right: 0%;
+}
+
+.carousel .dash-m {
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    bottom: 4%;
+    right: 2%;
+    opacity: 20%;
+}
+
+
+@media only screen and (max-width:768.9px)  {
+    .carousel .btn-slide-2 {
+        position: absolute;
+        bottom: 4%;
+        right: 0%;
+        left: 515px;
+}
+.carousel .btn-slide-1 {
+    position: absolute;
+    bottom: 4%;
+    right: 13%;
+}
+  }
+
+  @media only screen and (max-width:992.9px)  {
+    .carousel .btn-slide-2 {
+        position: absolute;
+        bottom: 4%;
+        right: 0%;
+        left: 99%;
+}
+.carousel .btn-slide-1 {
+    position: absolute;
+    bottom: 4%;
+    right: 9%;
+}
+  }
+  @media only screen and (max-width:754.9px)  {
+    .carousel .btn-slide-2 {
+        position: absolute;
+        bottom: 4%;
+        right: 0%;
+        left: 99%;
+}
+.carousel .btn-slide-1 {
+    position: absolute;
+    bottom: 4%;
+    right: 13%;
+}
+  }
+  

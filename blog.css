@@ -174,13 +174,13 @@ input:focus{
     color: #ffffff !important;
     background-color: #10C98F;
 }
-.asidepart2{
-    margin-bottom: 94rem;
-}
+/* .asidepart2{
+    margin-bottom: 123rem;
+} */
 
 @media only screen and (max-width: 992px) {
     .asidepart2 {
-        margin-bottom: -0.5rem;
+        margin-bottom: .5rem;
     }
     
   }
