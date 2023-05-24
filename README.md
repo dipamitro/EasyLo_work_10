@@ -1,2 +1,2 @@
 # EasyLo_work_10
-https://646652f16accdd23eb6fcb1b--wondrous-licorice-5b1d8c.netlify.app/
+https://646ae135a4054b0894b3cd23--resonant-pastelito-06b8d8.netlify.app/
