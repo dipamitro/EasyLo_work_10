@@ -2,6 +2,9 @@
     padding: 0;
 
 }
+mt-100{
+    margin-top: 100px !important;
+}
 .blog a{
     font-size: 18px;
     margin-bottom: 15px;
@@ -24,6 +27,13 @@
     margin-bottom: 30px;
 }
 .joo a{
+    text-decoration: none;
+        color: #2d2d2d;
+        font-size: 24px;
+        margin-bottom: -3px; 
+        font-weight: bold;
+}
+.ti .jo a{
     text-decoration: none;
         color: #2d2d2d;
         font-size: 24px;
@@ -55,7 +65,7 @@ ul{
 .blog .single {
     background: #fbf9ff;
     
-    padding: 30px;
+    padding: 33px;
     margin-bottom: 30px;
 }
 .btn2{
@@ -102,12 +112,12 @@ h4{
     cursor: pointer;
     color: #10C98F;
 }
+.list{
+    margin-top: 38px;
+}
 .list li {
   display: inline;} 
-/* .dv{
-    background-color:#fff;
-    padding: 4px 0px 0px 4px;
-} */
+
 .blog .single .dv a{
        border-color: rgb(57, 55, 50);
     background-image: initial;
@@ -129,6 +139,11 @@ h4{
    grid-template-columns: repeat(3,1fr);
    padding-left: 0;
    grid-gap: 14px;
+}
+.sqr{
+    height: 30px;
+    width: 30px;
+    border: 1x solid black;
 }
 .mt-4{
     margin-top: 2.5rem !important;
@@ -184,4 +199,195 @@ input:focus{
     }
     
   }
- 
+  .joo{
+    margin-top: 50px;
+  }
+.im
+{
+    position: relative;
+}
+.reltv{
+    
+ position: absolute;
+   left: 5%;
+   bottom: 34%;
+}
+.reltv:hover{
+    background-color: transparent;
+    color: #10C98F;
+}
+.im h3{
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 1.2;
+    font-style:30px;
+}
+ .im p{
+    font-weight: 500;
+    font-size: 18px;
+ }
+ /* ========pagination====== */
+ .page ul li a{
+    color: #e93a3a !important;
+
+ }
+ .page-link{
+    padding: .5rem 1rem;
+    color: #6d6a6a;
+ }
+ /* ===========Blog-Details===== */
+.ti{
+    font-family: "Chivo",sans-serif;
+    color: #4C5753;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.scdiv{
+    padding: 30px;
+}
+/* ======lily========= */
+.borderleft{
+    border-left: 2px solid rgb(185, 182, 182);
+}
+.lily p{
+    font-style: 10px !important;
+    font-weight: 400;
+}
+.lily h6{
+    font-style: 18px;
+    font-weight: 700;
+}
+.lily .nav-left img{
+    height: 70%;
+    width: 70%;
+}
+.lily .nav-right img{
+    height: 100%;
+    width: 100%;
+}
+
+.lis ul li{
+    display: inline;
+}
+p {
+    font-family: "Chivo",sans-serif;
+    color: #4C5753;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+.single-post-area .navigation-area h4 {
+    font-size: .5rem !important;
+    line-height: 25px;
+}
+.social-icons li{
+margin: 6px;
+
+}
+.flebl{
+     padding: 40px 0px !important;
+        
+        margin-top: 30px 0;
+    
+}
+/* ==05cmt======= */
+.pipo h5 a{
+    
+    
+        text-decoration: none;
+            color: #2d2d2d;
+            font-size: 16px;
+            font-weight:500;
+    
+}
+.nextP p{
+    padding-left: 70px;
+}
+.nextP{
+    padding-right: 20px;
+}
+.dlab{
+    background-color:#fbf9ff ;
+}
+.harP{
+    padding-left: 29px;
+}
+.pipo{
+    margin-top: 46px;
+}
+.pipo a{ 
+    text-decoration: none;
+        color: #626161;
+        font-size: 14px;
+        font-weight:400;
+}
+.st{
+    margin-top: 46px;
+}
+.date{
+    margin-left: 20px;
+    font-size: 14px;
+}
+.btn-reply{
+    font-size: 15px;
+}
+.comment{
+    margin-bottom: .9rem;
+}
+.comments-area .thumb img {
+    width: 70px;
+    border-radius: 50%;
+}
+.desc{
+    padding: 0px 1.3rem;
+    padding: 0 15px 48px 1.3rem;
+}
+/* 
+===========media Quary for blog dtls========= */
+@media only screen and (max-width: 768px){
+    .like-info{
+     height: 30px;
+    }
+    .nav-left{
+        padding-bottom:33px ;
+    }
+    .lily .fa{
+        margin-top: 0;
+        
+    }
+    .lily p{
+        padding-top: 15px;
+    }
+    .social-icons{
+        padding-top: 8px;
+        text-align: center;
+        padding-left: 0;
+    }
+    .dlab img{
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-self: center;
+        padding-right: 11px;
+        
+    }
+    .dlab {
+        padding: 18px 5px 18px !important;
+    }
+    .dlab h4{
+        font-style: 16px;
+        font-weight: 500;
+
+    }
+    .dlab p{
+        font-style: 15px;
+        font-weight: 400;
+
+    }
+}

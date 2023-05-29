@@ -814,7 +814,7 @@ footer ul {
     padding-left: 0;
 }
 
-.fa {
+.footer-wrapper .fa {
     margin-top: 52px;
 }
 
@@ -961,10 +961,6 @@ hr {
 }
 
 /* ===========BLog CSS=========== */
-
-.joo {
-    margin-top: 54px;
-}
 
 
 
