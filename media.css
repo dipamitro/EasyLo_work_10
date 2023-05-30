@@ -3,6 +3,9 @@
       background-color: transparent;
 
     }
+    .navbar {
+      padding-top: 0.9rem 2rem 0.7rem !important;
+  }
   }
   @media only screen and (max-width: 992px) {
     .navbar ul ul.menu2 {
@@ -16,6 +19,19 @@
         padding: 17px 0;
         z-index: 1;
     }
+    
+.navbar-brand img {
+    margin-left: 28px !important;
+}
+.spialnav .naav{
+  font-size: 15px !important;
+        font-weight: 400 !important;
+}
+nav .filr ul li a {
+  display: block;
+  padding: 10px 60px;
+  text-decoration: none;
+}
   }
   @media only screen and (max-width:992px) {
     .sim h1 {
@@ -39,6 +55,7 @@
         font-weight: 600;
 
     }
+   
   }
     @media only screen and (max-width:992px) {
       .sim h1 {
@@ -118,6 +135,9 @@
   }
 }
 @media only screen and(max-width:575) {
+
+ 
+ 
   .footer-form form .form-icon button {
     position: absolute;
     top: 0;
@@ -131,6 +151,17 @@
 }
   
 }
+@media only screen and(min-width:575) {
+  .card {
+    border-radius: 0;
+    border: 0;
+    max-width: 418px;
+    margin-left: auto !important;
+
+
+}
+  
+}
 @media only screen and (max-width: 575px){
 .dil .navbar .cardd .dropdown {
     width: 90%;
@@ -139,26 +170,67 @@
     .dil .navbar .cardd .dropdown .manu2 li a{
       color: #fff;
     }
+  
    
 }
-@media only screen and (max-width: 575px){
-   .container-fluid, .container-lg {
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: 0;
-    margin-left: 0;}
+
+@media (min-width: 1400px){
+ .container-lg{
+    max-width: 1341px;
+}
+
+}
+
+
+@media (min-width: 575px){
+
+.card {
+  border-radius: 0;
+  border: 0;
+  max-width: 418px;
+}
+}
+@media (min-width: 992px){
+.navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    justify-content: center;
+}
+ /* =====for blog +/_ button=== */
+ .hide{
+  display: none !important;
+
+      
+ }
+
+}
+.filr .row{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.filr li{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+
+}
+@media only screen and (max-width: 575.98px){
+  
     .navbar-toggler {
-      padding: 0rem 1.5rem;
+      padding: 0rem 1.9rem 0 0;
       font-size: 1.25rem;
       line-height: 1;
       background-color: transparent;
-      border: 1px solid transparent;
-      border-radius: 0.25rem;  
+      border: 0px solid transparent;
+      border-radius: 0rem;  
   }
-  .navbar-toggler:focus{
-    outline: none;
+  .navbar-brand img{
+    margin-left: 28px !important;
   }
+  
   .card-body {
     padding: 0.5rem 1rem 1.4rem 1rem;
 }
@@ -214,8 +286,8 @@
   margin-bottom: 1px;
   font-weight: 400;
 }
-/* 
 }
+/* 
 @media only screen and (min-width:576px)  {
   .secondnone{
     display: none;
@@ -261,11 +333,31 @@
   .secondnone button, .dash-m{
     display: none;
 }
-@media only screen and (max-width:992.9px){
+}
+@media only screen and (max-width:991.9px) and (min-width:574.9.9px){
 
 .secondnone .lipi p{
   font-size: 19px;
 }
+.navbar-toggler {
+  padding: 0rem 0rem;
+   
+}
+.btn70 {
+  padding-right: 15px !important;
+}
+.card {
+  border-radius: 0;
+  border: 0;
+  max-width: 418px;
+  margin-left: auto !important;
+
+
+}
+
+}
+
+
 @media only screen and (max-width:575px) {
   .sim h1 {
      position: absolute;
@@ -296,8 +388,11 @@
   margin-bottom:11px;
   color: #fff;
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.6;
   font-weight: 500;
+}
+.navpart1 {
+  margin: 84px 6px 40px 6px;
 }
 .hero h2, .choose h2 {
  
@@ -318,3 +413,13 @@
 
 }
 }
+@media (max-width: 575.98px) {
+  .titoo {
+ 
+  padding-right: .01px !important;
+  padding-left: 1px;
+  
+  
+}
+}
+

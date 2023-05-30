@@ -1,0 +1,7 @@
+
+@media only screen and (max-width: 768px) {
+    .navpart1 {
+        margin: 72px 2px 40px 2px;
+        z-index: 2;
+    }
+  }

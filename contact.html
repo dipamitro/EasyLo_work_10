@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="lightbox.min.css">
     <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="styl2.css">
     <script src="https://kit.fontawesome.com/4cf05cf765.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title>Document</title>
@@ -31,7 +32,7 @@
       z-index: 2;
       padding: 0px 0px 2px 0px">
 
-        <div class="container-fluid  px-2 ">
+        <div class="container-fluid  px-2">
             <div class="navbarr top " id="navbarr" style="height: 80px;">
                 <div class="row">
                     <nav class="navbar header-sticky navbar-expand-lg navbar-light">
@@ -81,9 +82,9 @@
 
 
             <!-- ==============After NAv===================== -->
-            <div class="container">
+            <div class="container-fluid">
                 <div class="navpart1 row align-s" style="border: 2px solid blac;padding-bottom: 3.2%;">
-                    <div class="sim  col-md-6 col-xl-5 col-lg-6 col-xxl-4 offset-xl-1 " style="border: 2px solid blac;">
+                    <div class="sim px-2 col-md-6 col-xl-5 col-lg-6 col-xxl-4 offset-xl-1 " style="border: 2px solid blac;">
                         <div class="hero-caption">
                             <h1 class="text-white">Blog</h1>
                         </div>
@@ -151,19 +152,36 @@
             </div>
         </div>
     </section>
-   
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<a href="#" class="show_hide">+</a>
 
+<div class="slidingDiv">
+    <ul class=" py-2">
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog_details.html">Blog Details</a></li>
+        <li><a href="element.html">Element</a></li>
+      </ul>
+
+</div>
+
+<script>
+    $(document).ready(function() {
+  $(".slidingDiv").hide();
+
+  $('.show_hide').click(function(e) {
+    $(".slidingDiv").slideToggle("fast");
+    var val = $(this).text() == "-" ? "+" : "-";
+    $(this).hide().text(val).fadeIn("fast");
+    e.preventDefault();
+  });
+});
+</script>
 
 
 
     
-
-
-
-
-
-
+    
 
 
 

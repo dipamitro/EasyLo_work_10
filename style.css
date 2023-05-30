@@ -11,19 +11,17 @@
     font-size: 16px;
     overflow: visible;
 }
-.pd{
+
+.pd {
     padding-left: 1px;
     padding-right: 1px;
 }
+
 p {
     font-family: "Chivo", sans-serif;
 }
 
-@media (min-width: 1400px) {
-    .container-lg {
-        max-width: 1366px;
-    }
-}
+
 
 /* ============For Blog Hover last try ============= */
 
@@ -43,12 +41,7 @@ nav ul li a {
 
 }
 
-.nav2 ul a {
-    color: #0F4332;
-    padding: 8px 21px 10px 21px !important;
-    font-size: 16px;
-    font-weight: Bold;
-}
+
 
 nav ul li a {
     display: block;
@@ -61,17 +54,10 @@ nav ul li:hover {
     background-color: transparent;
 }
 
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 0;
-    border-radius: 0px;
-}
+
 
 @media only screen and (max-width: 992px) {
-    .dropdown-menu {
+    .blogsmdvs {
         display: none;
         position: absolute;
         background-color: #0F4332;
@@ -80,45 +66,64 @@ nav ul li:hover {
         color: #e2e2e2;
     }
 
-    .nav2 ul a {
+    .nav2 .blogsmdvs ul a {
         color: #ffffff;
         margin-left: 24px;
     }
 
-    .dropdown-menu li a:hover {
+    .blogsmdvs li a:hover {
         color: #10C98F;
 
     }
 }
+/* ============for Blog hover css========= */
 
+    @media only screen and (min-width: 992px) {
 
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.dropdown-menu li {
-    display: block;
-}
-
-.dropdown-menu li a {
-    padding: 10px 20px;
-}
-
-
-input[type=text]:focus {
-    border: 1px solid transparent;
-    outline: none;
-  }
-
-@media only screen and (min-width: 992px) {
-
-    .dropdown-menu li a:hover {
-        color: #10C98F;
-        padding-left: 28px;
-
+        .dropdown-menu li a:hover {
+            color: #10C98F;
+            padding-left: 28px;
+    
+        }
+        .nav2 ul a {
+            color: #0F4332;
+            padding: 8px 21px 10px 21px !important;
+            font-size: 16px;
+            font-weight: Bold;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 0;
+            border-radius: 0px;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        
+        .dropdown-menu li {
+            display: block;
+        }
+        
+        .dropdown-menu li a {
+            padding: 10px 20px;
+        }
+        
+        
+        input[type=text]:focus {
+            border: 1px solid transparent;
+            outline: none;
+        }
     }
-}
+
+
+
+
+
+
+
 
 /* ===========the blog end ======== */
 
@@ -127,11 +132,43 @@ input[type=text]:focus {
     padding-top: 0.8rem;
 
 }
-
+/* ===for small sreen nav== */
 .top .px-3 {
     padding-right: 1.1rem !important;
     padding-left: 1.1rem !important;
 }
+@media (max-width: 575.98px) {
+    .top .px-3 {
+        padding-right: 1.1rem !important;
+        padding-left: 2.1rem !important;
+    }
+    .lils{
+             padding-top: 2rem !important;
+    }
+    .top li a{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+  }
+  @media (max-width: 992.98px) {
+    .top .px-3 {
+        padding-right: 1.1rem !important;
+        padding-left: 2.1rem !important;
+    }
+    .lils{
+             padding-top: 2rem !important;
+    }
+    .top li a{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    /* .naav {
+        font-size: 15px;
+        font-weight: 400;
+    } */
+  }
+  
 
 .navbarr.top {
     background-color: transparent;
@@ -151,7 +188,10 @@ input[type=text]:focus {
     -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
     background-color: #26BE9F;
 }
-
+.navbar-light .navbar-toggler {
+    color: transparent !important;
+    border-color:transparent !important;
+}
 
 .lii {
     background-color: #10C98F;
@@ -183,16 +223,23 @@ input[type=text]:focus {
 
 }
 
-.card {
-    border-radius: 0;
-    border: 0;
-    max-width: 416px;
+/* for nav header */
+.sim h1 {
 
-
+    font-size: 62px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    padding-bottom: 29px;
+    font-family: "Inter", sans-serif;
+    margin-top: 0;
 }
 
+/* =======card========= */
+
 .card-body {
-    padding: 0.5rem 2.4rem 1.4rem 2.4rem;
+    padding: 0.5rem 2.4rem 2.2rem 2.4rem;
 }
 
 .card-header {
@@ -209,17 +256,7 @@ input[type=text]:focus {
     margin-bottom: 6px;
 }
 
-.sim h1 {
 
-    font-size: 61px;
-    font-weight: 672;
-    color: #fff;
-    line-height: 1.1;
-    margin-bottom: 20px;
-    padding-bottom: 29px;
-    font-family: "Inter", sans-serif;
-    margin-top: 0;
-}
 
 /* .sim{
     margin-bottom: 82px;
@@ -251,9 +288,21 @@ input[type=text]:focus {
         /* margin-bottom: 75px;
         margin-left: 90px; */
 
-        margin-bottom: 98px;
-        margin-left: 104px;
+        margin-bottom: 77px;
+        margin-left: 66px;
     }
+}
+
+.btn70:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn70 {
+    color: #fff;
+    border: 1px solid transparent;
+    padding-right: 56px;
+
 }
 
 label {
@@ -282,7 +331,7 @@ label {
     background-color: #0F4332;
     padding-right: 0;
     padding-left: 0;
-    width: 1400px !important;
+    width: 100% !important;
     z-index: 1;
 
 }
@@ -716,13 +765,15 @@ p {
 } */
 /* =============Slider========= */
 
-.toni{font-size: 24px;
+.toni {
+    font-size: 24px;
     color: #D5ECE5;
     line-height: 1.6;
     margin-bottom: 25px;
     font-weight: 500;
     padding: 11.6% 0% 0% 5.8%;
-    z-index: 3;}
+    z-index: 3;
+}
 
 .tilo {
     background-image: url(https://preview.colorlib.com/theme/easylo/assets/img/icon/quotes-sign.png.webp);
@@ -1063,44 +1114,47 @@ hr {
 }
 
 
-@media only screen and (max-width:768.9px)  {
+@media only screen and (max-width:768.9px) {
     .carousel .btn-slide-2 {
         position: absolute;
         bottom: 4%;
         right: 0%;
         left: 515px;
-}
-.carousel .btn-slide-1 {
-    position: absolute;
-    bottom: 4%;
-    right: 13%;
-}
-  }
+    }
 
-  @media only screen and (max-width:992.9px)  {
+    .carousel .btn-slide-1 {
+        position: absolute;
+        bottom: 4%;
+        right: 13%;
+    }
+}
+
+@media only screen and (max-width:992.9px) {
     .carousel .btn-slide-2 {
         position: absolute;
         bottom: 4%;
         right: 0%;
         left: 99%;
+    }
+
+    .carousel .btn-slide-1 {
+        position: absolute;
+        bottom: 4%;
+        right: 9%;
+    }
 }
-.carousel .btn-slide-1 {
-    position: absolute;
-    bottom: 4%;
-    right: 9%;
-}
-  }
-  @media only screen and (max-width:754.9px)  {
+
+@media only screen and (max-width:754.9px) {
     .carousel .btn-slide-2 {
         position: absolute;
         bottom: 4%;
         right: 0%;
         left: 99%;
+    }
+
+    .carousel .btn-slide-1 {
+        position: absolute;
+        bottom: 4%;
+        right: 13%;
+    }
 }
-.carousel .btn-slide-1 {
-    position: absolute;
-    bottom: 4%;
-    right: 13%;
-}
-  }
-  

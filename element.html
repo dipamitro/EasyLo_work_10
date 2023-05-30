@@ -32,7 +32,7 @@
       z-index: 2;
       padding: 0px 0px 2px 0px">
 
-        <div class="container-fluid  px-2 ">
+        <div class="container-fluid  px-2">
             <div class="navbarr top " id="navbarr" style="height: 80px;">
                 <div class="row">
                     <nav class="navbar header-sticky navbar-expand-lg navbar-light">
@@ -41,7 +41,7 @@
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                                 aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                <div class="text-white"><span  class="navbar-toggler-icon "></span></div>
                             </button>
                             <div class="collapse dil navbar-collapse justify-content-end" id="navbarNav">
                                 <ul class="navbar-nav mr-4 ">
@@ -618,45 +618,27 @@
                             </div>
                             <div class="input-group-icon mt-10">
                                 <div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
-                                <div class="form-select" id="default-select">
-                                    <select style=" display: none;">
-                                    <option value=" 1">City</option>
+                                <select style="border-color:transparent; width: 100%;background-color: #f9f9ff; font-size: 15px;  font-weight: 500; color: #8f9392; padding-left: 10px;"
+                                class="dropdown py-3 px-5" placeholder="Select an option">
+                                <option value="" disabled selected>City</option>
+                                <option value="1">City</option>
                                     <option value="1">Dhaka</option>
                                     <option value="1">Dilli</option>
                                     <option value="1">Newyork</option>
                                     <option value="1">Islamabad</option>
-                                    </select>
-                                    <div class="nice-select" tabindex="0"><span class="current">City</span>
-                                        <ul class="list">
-                                            <li data-value=" 1" class="option selected">City</li>
-                                            <li data-value="1" class="option">Dhaka</li>
-                                            <li data-value="1" class="option">Dilli</li>
-                                            <li data-value="1" class="option">Newyork</li>
-                                            <li data-value="1" class="option">Islamabad</li>
-                                        </ul>
-                                    </div>
-                                </div>
+        
+                              </select>
                             </div>
                             <div class="input-group-icon mt-10">
                                 <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
-                                <div class="form-select" id="default-select" "="">
-<select style=" display: none;">
-                                    <option value=" 1">Country</option>
-                                    <option value="1">Bangladesh</option>
-                                    <option value="1">India</option>
-                                    <option value="1">England</option>
-                                    <option value="1">Srilanka</option>
-                                    </select>
-                                    <div class="nice-select" tabindex="0"><span class="current">Country</span>
-                                        <ul class="list">
-                                            <li data-value=" 1" class="option selected">Country</li>
-                                            <li data-value="1" class="option">Bangladesh</li>
-                                            <li data-value="1" class="option">India</li>
-                                            <li data-value="1" class="option">England</li>
-                                            <li data-value="1" class="option">Srilanka</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <select style="border-color:transparent; width: 100%;background-color: #f9f9ff; font-size: 15px;  font-weight: 500; color: #a7a5a5; padding-left: 10px; "
+                                class="dropdown py-3 px-5 " placeholder="Select an option">
+                                  <option style="color: #8f9392;" value="1" disabled selected>Country</option>
+                                  <option value="1">Bangladesh</option>
+                                  <option value="1">India</option>
+                                  <option value="1">England</option>
+                                  <option value="1">Srilanka</option>
+                                </select>
                             </div>
                             <div class="mt-10">
                                 <textarea class="single-textarea" placeholder="Message"
@@ -706,23 +688,15 @@
                         </div>
                         <div class="single-element-widget mt-30">
                             <h3 class="mb-30">Selectboxes</h3>
-                            <div class="default-select" id="default-select" >
-                                 <select style=" display: none;">
-                                <option value=" 1">English</option>
-                                <option value="1">Spanish</option>
-                                <option value="1">Arabic</option>
-                                <option value="1">Portuguise</option>
-                                <option value="1">Bengali</option>
+                            <div>
+                                <select style="border-color:transparent; width: 100%;background-color: #f9f9ff; font-size: 15px;  font-weight: 500; color: #a7a5a5; padding-left: 10px; "
+                                class="dropdown py-2 " placeholder="Select an option">
+                                <div class="list"><option value=" 1" disabled selected>English</option>
+                                    <option value="1">Spanish</option>
+                                    <option value="1">Arabic</option>
+                                    <option value="1">Portuguise</option>
+                                    <option value="1">Bengali</option></div>
                                 </select>
-                                <div class="nice-select" tabindex="0"><span class="current">English</span>
-                                    <ul class="list">
-                                        <li data-value=" 1" class="option selected">English</li>
-                                        <li data-value="1" class="option">Spanish</li>
-                                        <li data-value="1" class="option">Arabic</li>
-                                        <li data-value="1" class="option">Portuguise</li>
-                                        <li data-value="1" class="option">Bengali</li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                         <div class="single-element-widget mt-30">

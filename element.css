@@ -1,3 +1,10 @@
+.navbar-toggler-icon{
+    color: white !important;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    color: white;
+}
 .element{
     margin: 70px 15px;
 }
@@ -10,9 +17,7 @@
     margin-left: .24rem;
     margin-right: .24rem;
 }
-.margintop19{
-    margin: 1.5rem 1rem;
-}
+
 .button-area {
     background: #fff
 }
@@ -272,7 +277,7 @@
 .mt-40{
     margin-top: 40px;
 }
-/* =========Aligned========= */
+/* ========Table========= */
 .section-top-border {
     padding: 50px 0;
     border-top: 1px dotted #eee
@@ -784,7 +789,7 @@
 }
 
 .primary-checkbox input:checked+label {
-    background: url(../img/elements/primary-check.png) no-repeat center center/cover;
+    background: url("https://preview.colorlib.com/theme/easylo/assets/img/elements/primary-check.png") no-repeat center center/cover;
     border: none
 }
 
@@ -821,7 +826,7 @@
     border: 1px solid #f1f1f1
 }
 .confirm-checkbox input:checked+label {
-    background: url(../img/elements/success-check.png) no-repeat center center/cover;
+    background: url("https://preview.colorlib.com/theme/easylo/assets/img/elements/success-check.png") no-repeat center center/cover;
     border: none
 }
 
@@ -864,7 +869,7 @@
 }
 
 .disabled-checkbox input:checked+label {
-    background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
+    background: url("https://preview.colorlib.com/theme/easylo/assets/img/elements/disabled-check.png") no-repeat center center/cover;
     border: none
 }
 
@@ -902,7 +907,7 @@
 }
 
 .primary-radio input:checked+label {
-    background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
+    background: url("https://preview.colorlib.com/theme/easylo/assets/img/elements/primary-check.png") no-repeat center center/cover;
     border: none
 }
 
@@ -942,7 +947,7 @@
 }
 
 .confirm-radio input:checked+label {
-    background: url(../img/elements/success-radio.png) no-repeat center center/cover;
+    background: url("https://preview.colorlib.com/theme/easylo/assets/img/elements/success-radio.png") no-repeat center center/cover;
     border: none
 }
 
@@ -985,7 +990,7 @@
 }
 
 .disabled-radio input:checked+label {
-    background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
+    background: url("https://preview.colorlib.com/theme/easylo/assets/img/elements/disabled-radio.png") no-repeat center center/cover;
     border: none
 }
 
