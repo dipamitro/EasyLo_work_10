@@ -32,6 +32,8 @@ nav .filr ul li a {
   padding: 10px 60px;
   text-decoration: none;
 }
+
+
   }
   @media only screen and (max-width:992px) {
     .sim h1 {
@@ -113,7 +115,12 @@ nav .filr ul li a {
  padding-left: 34px;
  padding-right: 56px;
   }
+
+  
+
 }
+
+
 @media only screen and (max-width: 768px){
   .hero .solution a{
    font-size: 21px;
@@ -196,6 +203,7 @@ nav .filr ul li a {
     justify-content: flex-start;
     justify-content: center;
 }
+
  /* =====for blog +/_ button=== */
  .hide{
   display: none !important;

@@ -1,18 +1,21 @@
-.blog1 img{
+.blog1 img {
     padding: 0;
 
 }
-mt-100{
+
+mt-100 {
     margin-top: 100px !important;
 }
-.blog a{
+
+.blog a {
     font-size: 18px;
     margin-bottom: 15px;
     text-decoration: none;
 
 }
-.blog p{
-    font-family: "Chivo",sans-serif;
+
+.blog p {
+    font-family: "Chivo", sans-serif;
     color: #4C5753;
     font-size: 16px;
     line-height: 30px;
@@ -21,31 +24,43 @@ mt-100{
     line-height: 1.6;
     margin-bottom: 30px;
 }
+
 .blog_right_sidebar .single_sidebar_widget {
     background: #fbf9ff;
     padding: 30px;
     margin-bottom: 30px;
 }
-.joo a{
+
+.joo a {
     text-decoration: none;
-        color: #2d2d2d;
-        font-size: 24px;
-        margin-bottom: -3px; 
-        font-weight: bold;
-}
-.ti .jo a{
-    text-decoration: none;
-        color: #2d2d2d;
-        font-size: 24px;
-        margin-bottom: -3px; 
-        font-weight: bold;
+    color: #2d2d2d;
+    font-size: 24px;
+    margin-bottom: -3px;
+    font-weight: bold;
 }
 
-.trav span{
+.joa a {
+    text-decoration: none;
+    color: #2d2d2d;
+    font-size: 24px;
+    margin-bottom: -3px;
+    font-weight: bold;
+}
+
+.ti .jo a {
+    text-decoration: none;
+    color: #2d2d2d;
+    font-size: 24px;
+    margin-bottom: -3px;
+    font-weight: bold;
+}
+
+.trav span {
     color: #999999;
 }
-.tra{
-    font-family: "Chivo",sans-serif;
+
+.tra {
+    font-family: "Chivo", sans-serif;
     color: #4C5753;
     font-size: 16px;
     line-height: 30px;
@@ -54,21 +69,24 @@ mt-100{
     line-height: 1.6;
 
 }
-li a{
+
+li a {
     text-decoration: none;
-    
+
 }
-ul{
+
+ul {
     list-style: none;
 }
 
 .blog .single {
     background: #fbf9ff;
-    
+
     padding: 33px;
     margin-bottom: 30px;
 }
-.btn2{
+
+.btn2 {
     padding: 10px 18px 10px 18px;
     border: none;
     color: white;
@@ -76,50 +94,60 @@ ul{
     cursor: pointer;
     border-radius: 0;
 }
-input{
+
+input {
     border-radius: 0;
 }
 
-h4{
+h4 {
     color: #2d2d2d;
 }
-.blog p{
+
+.blog p {
     margin-bottom: 0;
 }
-.single ul a::after{
+
+.single ul a::after {
     content: "";
 
     top: 0;
 }
-.media img{
+
+.media img {
     height: 79px;
     width: 75px;
 }
-.media h3{
+
+.media h3 {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 6px;
     margin-left: 20px;
     transition: all 0.3s linear;
 }
-.media p{
+
+.media p {
     margin-left: 20px;
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 0px;
 }
-.media a h3:hover{
+
+.media a h3:hover {
     cursor: pointer;
     color: #10C98F;
 }
-.list{
+
+.list {
     margin-top: 38px;
 }
-.list li {
-  display: inline;} 
 
-.blog .single .dv a{
-       border-color: rgb(57, 55, 50);
+.list li {
+    display: inline;
+}
+
+.blog .single .dv a {
+    border-color: rgb(57, 55, 50);
     background-image: initial;
     background-color: rgb(26, 25, 23);
     color: rgb(156, 145, 127);
@@ -134,34 +162,41 @@ h4{
     font-size: 13px;
 
 }
-.feed ul{
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
-   padding-left: 0;
-   grid-gap: 14px;
+
+.feed ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 0;
+    grid-gap: 14px;
 }
-.sqr{
+
+.sqr {
     height: 30px;
     width: 30px;
     border: 1x solid black;
 }
-.mt-4{
+
+.mt-4 {
     margin-top: 2.5rem !important;
 }
-.boxed-btn{
+
+.boxed-btn {
     height: 58px;
     margin-top: 20px;
 
 }
-input{
+
+input {
     height: 50px;
     border-radius: none;
     border: none;
 }
-input:focus{
+
+input:focus {
     outline: none;
 
 }
+
 /* *:focus {
     outline: none;
 } */
@@ -169,13 +204,14 @@ input:focus{
     border-color: inherit;
     opacity: .5;
     box-shadow: none;
-  }
+}
+
 .boxed-btn {
     background: #fff;
     color: #10C98F !important;
     display: inline-block;
     padding: 18px 44px;
-    font-family: "Inter",sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 400;
     border: 0;
@@ -185,10 +221,12 @@ input:focus{
     color: #10C98F;
     text-transform: uppercase;
 }
-.boxed-btn:hover{
+
+.boxed-btn:hover {
     color: #ffffff !important;
     background-color: #10C98F;
 }
+
 /* .asidepart2{
     margin-bottom: 123rem;
 } */
@@ -197,48 +235,91 @@ input:focus{
     .asidepart2 {
         margin-bottom: .5rem;
     }
-    
-  }
-  .joo{
+
+}
+
+.joo {
     margin-top: 50px;
-  }
-.im
-{
+}
+
+.im {
     position: relative;
 }
-.reltv{
-    
- position: absolute;
-   left: 5%;
-   bottom: 34%;
+
+.reltv {
+    height: 91px;
+    width: 91.5px;
+    background-color: #10C98F;
+    color: white;
+    border-radius: 10px;
 }
-.reltv:hover{
+
+.reltv {
+
+    position: absolute;
+    left:-10;
+    bottom:10;
+}
+
+.reltv:hover {
     background-color: transparent;
     color: #10C98F;
 }
-.im h3{
+
+
+.reltv {
+    bottom: -20px;
+    left: 40px;
+   
+}
+
+@media only screen and (max-width: 768px) {
+
+    .reltv {
+        
+        height: 79px;
+        width: 62px;
+    }
+
+}
+@media only screen and (max-width: 443.9px) and (min-width:280px) {
+
+    .reltv {
+        
+        height: 79px;
+        width: 62px;
+    }
+
+}
+
+
+.im h3 {
     font-weight: 600;
     color: #fff;
     margin-bottom: 0;
     line-height: 1.2;
-    font-style:30px;
+    font-style: 30px;
 }
- .im p{
+
+.im p {
     font-weight: 500;
     font-size: 18px;
- }
- /* ========pagination====== */
- .page ul li a{
+}
+
+/* ========pagination====== */
+.page ul li a {
     color: #e93a3a !important;
 
- }
- .page-link{
+}
+
+.page-link {
     padding: .5rem 1rem;
     color: #6d6a6a;
- }
- /* ===========Blog-Details===== */
-.ti{
-    font-family: "Chivo",sans-serif;
+}
+
+/* ===========Blog-Details===== */
+.ti {
+    font-family: "Chivo", sans-serif;
     color: #4C5753;
     font-size: 16px;
     line-height: 30px;
@@ -246,35 +327,42 @@ input:focus{
     font-weight: 400;
     line-height: 1.6;
 }
-.scdiv{
+
+.scdiv {
     padding: 30px;
 }
+
 /* ======lily========= */
-.borderleft{
+.borderleft {
     border-left: 2px solid rgb(185, 182, 182);
 }
-.lily p{
+
+.lily p {
     font-style: 10px !important;
     font-weight: 400;
 }
-.lily h6{
+
+.lily h6 {
     font-style: 18px;
     font-weight: 700;
 }
-.lily .nav-left img{
+
+.lily .nav-left img {
     height: 70%;
     width: 70%;
 }
-.lily .nav-right img{
+
+.lily .nav-right img {
     height: 100%;
     width: 100%;
 }
 
-.lis ul li{
+.lis ul li {
     display: inline;
 }
+
 p {
-    font-family: "Chivo",sans-serif;
+    font-family: "Chivo", sans-serif;
     color: #4C5753;
     font-size: 16px;
     line-height: 30px;
@@ -282,110 +370,135 @@ p {
     line-height: 1.6;
     margin-bottom: 0;
 }
+
 .single-post-area .navigation-area h4 {
     font-size: .5rem !important;
     line-height: 25px;
 }
-.social-icons li{
-margin: 6px;
+
+.social-icons li {
+    margin: 6px;
 
 }
-.flebl{
-     padding: 40px 0px !important;
-        
-        margin-top: 30px 0;
-    
+
+.flebl {
+    padding: 40px 0px !important;
+
+    margin-top: 30px 0;
+
 }
+
 /* ==05cmt======= */
-.pipo h5 a{
-    
-    
-        text-decoration: none;
-            color: #2d2d2d;
-            font-size: 16px;
-            font-weight:500;
-    
+.pipo h5 a {
+
+
+    text-decoration: none;
+    color: #2d2d2d;
+    font-size: 16px;
+    font-weight: 500;
+
 }
-.nextP p{
+
+.nextP p {
     padding-left: 70px;
 }
-.nextP{
+
+.nextP {
     padding-right: 20px;
 }
-.dlab{
-    background-color:#fbf9ff ;
+
+.dlab {
+    background-color: #fbf9ff;
 }
-.harP{
+
+.harP {
     padding-left: 29px;
 }
-.pipo{
+
+.pipo {
     margin-top: 46px;
 }
-.pipo a{ 
+
+.pipo a {
     text-decoration: none;
-        color: #626161;
-        font-size: 14px;
-        font-weight:400;
+    color: #626161;
+    font-size: 14px;
+    font-weight: 400;
 }
-.st{
+
+.st {
     margin-top: 46px;
 }
-.date{
+
+.date {
     margin-left: 20px;
     font-size: 14px;
 }
-.btn-reply{
+
+.btn-reply {
     font-size: 15px;
 }
-.comment{
+
+.comment {
     margin-bottom: .9rem;
 }
+
 .comments-area .thumb img {
     width: 70px;
     border-radius: 50%;
 }
-.desc{
+
+.desc {
     padding: 0px 1.3rem;
     padding: 0 15px 48px 1.3rem;
 }
+
 /* 
 ===========media Quary for blog dtls========= */
-@media only screen and (max-width: 768px){
-    .like-info{
-     height: 30px;
+@media only screen and (max-width: 768px) {
+    .like-info {
+        height: 30px;
     }
-    .nav-left{
-        padding-bottom:33px ;
+
+    .nav-left {
+        padding-bottom: 33px;
     }
-    .lily .fa{
+
+    .lily .fa {
         margin-top: 0;
-        
+
     }
-    .lily p{
+
+    .lily p {
         padding-top: 15px;
     }
-    .social-icons{
+
+    .social-icons {
         padding-top: 8px;
         text-align: center;
         padding-left: 0;
     }
-    .dlab img{
+
+    .dlab img {
         height: 50px;
         width: 50px;
         display: flex;
         align-self: center;
         padding-right: 11px;
-        
+
     }
+
     .dlab {
         padding: 18px 5px 18px !important;
     }
-    .dlab h4{
+
+    .dlab h4 {
         font-style: 16px;
         font-weight: 500;
 
     }
-    .dlab p{
+
+    .dlab p {
         font-style: 15px;
         font-weight: 400;
 
