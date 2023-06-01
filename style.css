@@ -202,6 +202,15 @@ nav ul li:hover {
     border-radius: 0;
 
 }
+.liia {
+    background-color: #10C98F;
+    color: white;
+    border: none;
+    height: 3.3rem;
+    width: 11.0rem;
+    border-radius: 0;
+    padding-top: 14px;
+}
 
 .li {
     background-color: transparent;
@@ -287,9 +296,8 @@ nav ul li:hover {
     .sim {
         /* margin-bottom: 75px;
         margin-left: 90px; */
-
-        margin-bottom: 77px;
-        margin-left: 66px;
+        margin-bottom: 93px;
+        margin-left: 101px;
     }
 }
 
@@ -342,6 +350,7 @@ label {
     font-size: 24px;
     line-height: 1.6;
     font-weight: 500;
+    margin-right: 26px;
 }
 
 

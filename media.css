@@ -38,7 +38,7 @@ nav .filr ul li a {
   @media only screen and (max-width:992px) {
     .sim h1 {
        position: absolute;
-        font-size: 47px;
+        font-size: 48px;
         font-weight: 600;
         color: #fff;
         line-height: 1.1;
@@ -57,12 +57,18 @@ nav .filr ul li a {
         font-weight: 600;
 
     }
+    .ri {
+      color: #6D6D6D;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      padding: 0 3%;
    
   }
-    @media only screen and (max-width:992px) {
+    /* @media only screen and (max-width:992px) {
       .sim h1 {
          position: absolute;
-          font-size: 47px;
+          font-size: 48px;
           font-weight: 600;
           color: #fff;
           line-height: 1.1;
@@ -84,7 +90,7 @@ nav .filr ul li a {
         line-height: 1.5;
         padding: 0 3%;
     
-    }
+    } */
     /* .container-fluid, .container-lg {
       width: 100%;
       padding-right: 0;
@@ -363,6 +369,25 @@ nav .filr ul li a {
 
 }
 
+}
+
+@media only screen and (max-width:767px) {
+  .sim h1 {
+     position: absolute;
+      font-size: 45px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 18px;
+      padding-bottom: 20px;
+      font-family: "Inter", sans-serif;
+      position: relative;
+      margin-top: 0;
+  }
+  .sim{
+      margin-bottom: 2px;
+      margin-left: 0px;
+  }
 }
 
 
