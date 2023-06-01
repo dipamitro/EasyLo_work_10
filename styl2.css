@@ -5,3 +5,30 @@
         z-index: 2;
     }
   }
+  .navpart1 h1::after {
+    content: "";
+    position: absolute;
+    width: 109px;
+    bottom: 0px;
+    height: 3px;
+    left: 0;
+    background: #fff;
+}
+.navpart1 h1{
+    position: relative;
+}
+.media h3 {
+    font-size: 17px;
+    margin-bottom: 0;
+    font-size: 17px;
+    color: #2a2a2a;
+    line-height: 1.2;
+   
+}
+.media p {
+    color: #8a8a8a;
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .5px;
+}

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="lightbox.min.css">
     <link rel="stylesheet" href="blog.css">
     <link rel="stylesheet" href="element.css">
+    <link rel="stylesheet" href="path/to/nice-select.css">
     <script src="https://kit.fontawesome.com/4cf05cf765.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title>Document</title>
@@ -126,17 +127,17 @@
                 <a href="#" class="alls-btn  disable">Disable</a>
             </div>
             <div class="button-group-area mt-10">
-                <a href="#" class="alls-btn default-border">Default</a>
+                <a href="#" class="alls-btn text-white default-border">Default</a>
                 <a href="#" class="alls-btn primary-border">Primary</a>
                 <a href="#" class="alls-btn success-border">Success</a>
                 <a href="#" class="alls-btn info-border">Info</a>
                 <a href="#" class="alls-btn warning-border">Warning</a>
                 <a href="#" class="alls-btn danger-border">Danger</a>
                 <a href="#" class="alls-btn link-border">Link</a>
-                <a href="#" class="alls-btn disable">Disable</a>
+                <a href="#" class="alls-btn text-white disable">Disable</a>
             </div>
             <div class="button-group-area mt-40">
-                <a href="#" class="alls-btn default radius">Default</a>
+                <a href="#" class="alls-btn  default radius">Default</a>
                 <a href="#" class="alls-btn primary radius">Primary</a>
                 <a href="#" class="alls-btn success radius">Success</a>
                 <a href="#" class="alls-btn info radius">Info</a>
@@ -146,7 +147,7 @@
                 <a href="#" class="alls-btn disable radius">Disable</a>
             </div>
             <div class="button-group-area mt-10">
-                <a href="#" class="alls-btn default-border radius">Default</a>
+                <a href="#" class="alls-btn text-white default-border radius">Default</a>
                 <a href="#" class="alls-btn primary-border radius">Primary</a>
                 <a href="#" class="alls-btn success-border radius">Success</a>
                 <a href="#" class="alls-btn info-border radius">Info</a>
@@ -166,7 +167,7 @@
                 <a href="#" class="alls-btn disable circle">Disable</a>
             </div>
             <div class="button-group-area mt-10">
-                <a href="#" class="alls-btn default-border circle">Default</a>
+                <a href="#" class="alls-btn text-white default-border circle">Default</a>
                 <a href="#" class="alls-btn primary-border circle">Primary</a>
                 <a href="#" class="alls-btn success-border circle">Success</a>
                 <a href="#" class="alls-btn info-border circle">Info</a>
@@ -188,7 +189,7 @@
             </div>
             <div class="button-group-area mt-10">
                 <a href="#"
-                    class="alls-btn default-border circle arrow">Default<span class="lnr lnr-arrow-right"></span></a>
+                    class="alls-btn text-white default-border circle arrow">Default<span class="lnr lnr-arrow-right"></span></a>
                 <a href="#"
                     class="alls-btn primary-border circle arrow">Primary<span class="lnr lnr-arrow-right"></span></a>
                 <a href="#"
@@ -226,6 +227,36 @@
             </div>
         </div>
     </section>
+
+    <!-- <div class="form-check form-switch d-flex justify-content-between">
+        <label for="form-check" class="form-check-label">0.2 primary color</label>
+        <input type="checkbox" class="form-check-input">
+    </div>
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+        <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+      </div> -->
+    <!-- ==============nice====== -->
+
+  <!-- <select class="form-control form-select" id="mySelect">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+  </select>
+  
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  
+<script>
+    $(document).ready(function() {
+      $('#mySelect').niceSelect();
+    });
+  </script> -->
 
     <!-- ========Left Aligned======== -->
     <div class="whole-wrap">
@@ -362,8 +393,8 @@
             </div>
             <div class="section-top-border">
                 <h3 class="mb-30">Table</h3>
-                <div class="progress-table-wrap">
-                    <div class="progress-table">
+                <div class="table-wrap">
+                    <div class="table">
                         <div class="table-head">
                             <div class="serial">#</div>
                             <div class="country">Countries</div>
@@ -396,7 +427,7 @@
                         </div>
                         <div class="table-row">
                             <div class="serial">03</div>
-                            <div class="country"> <img src="https://preview.colorlib.com/theme/easylo/assets/img/elements/f3.jpg.webp.jpg.webp" alt="flag">Canada
+                            <div class="country"> <img src="	https://preview.colorlib.com/theme/easylo/assets/img/elements/f3.jpg" alt="flag">Canada
                             </div>
                             <div class="visit">645032</div>
                             <div class="percentage">
@@ -588,12 +619,12 @@
                 </div>
             </div>
             <div class="section-top-border">
-                <div class="row">
+                <div class="row d-flex justify-content-start align-items-start">
                     <div class="col-lg-8 col-md-8">
                         <h3 class="mb-30">Form Element</h3>
                         <form action="#">
                             <div class="mt-10">
-                                <input style="border: 1px solid black;" type="text" name="first_name" placeholder="First Name"
+                                <input type="text" name="first_name" placeholder="First Name"
                                     placeholder = "First Name" required=""
                                     class="single-input">
                             </div>
@@ -616,30 +647,31 @@
                                 <input type="text" name="address" placeholder="Address"
                                     class="single-input">
                             </div>
-                            <div class="input-group-icon mt-10">
+                            <div class="input-group-icon nicee mt-10">
                                 <div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
-                                <select style="border-color:transparent; width: 100%;background-color: #f9f9ff; font-size: 15px;  font-weight: 500; color: #8f9392; padding-left: 10px;"
-                                class="dropdown py-3 px-5" placeholder="Select an option">
+                                
+                              <select class="form-select form-select-lg mb-3  px-5 " style="border-color:transparent; width: 100%;background-color: #f9f9ff; font-size: 15px;  font-weight: 500;color: #8f9392 ; padding-left: 10px;" aria-label=".form-select-lg example">
                                 <option value="" disabled selected>City</option>
-                                <option value="1">City</option>
+                                <option value="">City</option>
                                     <option value="1">Dhaka</option>
                                     <option value="1">Dilli</option>
                                     <option value="1">Newyork</option>
                                     <option value="1">Islamabad</option>
-        
                               </select>
                             </div>
-                            <div class="input-group-icon mt-10">
+                            
+                            <div class="input-group-icon nicee mt-10">
                                 <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
-                                <select style="border-color:transparent; width: 100%;background-color: #f9f9ff; font-size: 15px;  font-weight: 500; color: #a7a5a5; padding-left: 10px; "
-                                class="dropdown py-3 px-5 " placeholder="Select an option">
-                                  <option style="color: #8f9392;" value="1" disabled selected>Country</option>
+                                <select class="form-select form-select-lg mb-3  px-5 " style="border-color:transparent; width: 100%;background-color: #f9f9ff; font-size: 15px;  font-weight: 500;color: #8f9392; padding-left: 10px;" aria-label=".form-select-lg example">
+                                    <option  value="" disabled selected>Country</option>
                                   <option value="1">Bangladesh</option>
                                   <option value="1">India</option>
                                   <option value="1">England</option>
                                   <option value="1">Srilanka</option>
                                 </select>
                             </div>
+
+                            
                             <div class="mt-10">
                                 <textarea class="single-textarea" placeholder="Message"
                                   placeholder ="Message" required=""></textarea>
@@ -671,13 +703,14 @@
                                     <label for="default-switch"></label>
                                 </div>
                             </div>
-                            <div class="switch-wrap d-flex justify-content-between">
+                            <div class="switch-wrap d-flex justify-content-between   mb-10">
                                 <p>02. Primary Color Switch</p>
                                 <div class="primary-switch">
                                     <input type="checkbox" id="primary-switch" checked="">
                                     <label for="primary-switch"></label>
                                 </div>
                             </div>
+                            
                             <div class="switch-wrap d-flex justify-content-between">
                                 <p>03. Confirm Color Switch</p>
                                 <div class="confirm-switch">
@@ -905,6 +938,36 @@
             </div>
         </div>
     </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <div id="myBtn" class="cercl align-items-center justify-content-center d-flex"
+          style="border:2px solid #10C98F; height: 50px; width: 50px;font-size: 9px; border-radius: 50%;background-color: #10C98F; color: #fff;">
+          <div class="text-center">
+            <span><i class="fas fa-long-arrow-alt-up "></i></span>
+          </div>
+        </div>
+      </button>
+      <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+    
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+    
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+    
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+    
 
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"
         integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
@@ -926,8 +989,6 @@
                 $(".header-sticky").removeClass("sticky-bar");
             }
         });</script>
-
-
 
 
 

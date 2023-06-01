@@ -1,18 +1,47 @@
-.navbar-toggler-icon{
+@import 'nice-select';
+
+.navbar-toggler-icon {
     color: white !important;
 }
+
 .navbar-light .navbar-toggler-icon {
-    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     color: white;
 }
-.element{
+
+.element {
     margin: 70px 15px;
 }
-.roe{
+
+.roe {
     margin-top: 30px;
-    
+
 }
-.px4{
+
+/* ===select_option_color=== */
+select,
+select option {
+    color: #000000;
+}
+
+select,
+select option:hover {
+    color: #1a1a1a !important;
+}
+
+/* ===select_option_color given value=== */
+select:invalid,
+select option[value="1"] {
+    color: #000000;
+}
+
+/* ===for select focuse==== */
+.nicee select:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.px4 {
     padding: .75rem 1.5rem;
     margin-left: .24rem;
     margin-right: .24rem;
@@ -21,10 +50,12 @@
 .button-area {
     background: #fff
 }
+
 .button-area .border-top-generic {
     padding: 70px 15px;
     border-top: 1px dotted #eee
 }
+
 .button-group-area .alls-btn {
     margin-right: 10px;
     margin-top: 10px
@@ -33,6 +64,7 @@
 .button-group-area .alls-btn:last-child {
     margin-right: 0
 }
+
 .alls-btn {
     display: inline-block;
     outline: none;
@@ -271,46 +303,50 @@
     background: #f9f9ff;
     border-left: 2px solid #97A7AF
 }
-.mt-10{
+
+.mt-10 {
     margin-top: 10;
 }
-.mt-40{
+
+.mt-40 {
     margin-top: 40px;
 }
+
 /* ========Table========= */
 .section-top-border {
     padding: 50px 0;
     border-top: 1px dotted #eee
 }
-.progress-table-wrap {
+
+.table-wrap {
     overflow-x: scroll
 }
 
-.progress-table {
+.table {
     background: #f9f9ff;
     padding: 15px 0px 30px 0px;
     min-width: 800px
 }
 
-.progress-table .serial {
+.table .serial {
     width: 11.83%;
     padding-left: 30px
 }
 
-.progress-table .country {
+.table .country {
     width: 28.07%
 }
 
-.progress-table .visit {
+.table .visit {
     width: 19.74%
 }
 
-.progress-table .percentage {
+.table .percentage {
     width: 40.36%;
     padding-right: 50px
 }
 
-.progress-table .table-head {
+.table .table-head {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -318,17 +354,17 @@
     display: flex
 }
 
-.progress-table .table-head .serial,
-.progress-table .table-head .country,
-.progress-table .table-head .visit,
-.progress-table .table-head .percentage {
+.table .table-head .serial,
+.table .table-head .country,
+.table .table-head .visit,
+.table .table-head .percentage {
     color: #415094;
     line-height: 40px;
     text-transform: uppercase;
     font-weight: 500
 }
 
-.progress-table .table-row {
+.table .table-row {
     padding: 15px 0;
     border-top: 1px solid #edf3fd;
     display: -webkit-box;
@@ -338,10 +374,10 @@
     display: flex
 }
 
-.progress-table .table-row .serial,
-.progress-table .table-row .country,
-.progress-table .table-row .visit,
-.progress-table .table-row .percentage {
+.table .table-row .serial,
+.table .table-row .country,
+.table .table-row .visit,
+.table .table-row .percentage {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -350,50 +386,50 @@
     align-items: center
 }
 
-.progress-table .table-row .country img {
+.table .table-row .country img {
     margin-right: 15px
 }
 
-.progress-table .table-row .percentage .progress {
+.table .table-row .percentage .progress {
     width: 80%;
     border-radius: 0px;
     background: transparent
 }
 
-.progress-table .table-row .percentage .progress .progress-bar {
+.table .table-row .percentage .progress .progress-bar {
     height: 5px;
     line-height: 5px
 }
 
-.progress-table .table-row .percentage .progress .progress-bar.color-1 {
+.table .table-row .percentage .progress .progress-bar.color-1 {
     background-color: #6382e6
 }
 
-.progress-table .table-row .percentage .progress .progress-bar.color-2 {
+.table .table-row .percentage .progress .progress-bar.color-2 {
     background-color: #e66686
 }
 
-.progress-table .table-row .percentage .progress .progress-bar.color-3 {
+.table .table-row .percentage .progress .progress-bar.color-3 {
     background-color: #f09359
 }
 
-.progress-table .table-row .percentage .progress .progress-bar.color-4 {
+.table .table-row .percentage .progress .progress-bar.color-4 {
     background-color: #73fbaf
 }
 
-.progress-table .table-row .percentage .progress .progress-bar.color-5 {
+.table .table-row .percentage .progress .progress-bar.color-5 {
     background-color: #73fbaf
 }
 
-.progress-table .table-row .percentage .progress .progress-bar.color-6 {
+.table .table-row .percentage .progress .progress-bar.color-6 {
     background-color: #6382e6
 }
 
-.progress-table .table-row .percentage .progress .progress-bar.color-7 {
+.table .table-row .percentage .progress .progress-bar.color-7 {
     background-color: #a367e7
 }
 
-.progress-table .table-row .percentage .progress .progress-bar.color-8 {
+.table .table-row .percentage .progress .progress-bar.color-8 {
     background-color: #e66686
 }
 
@@ -404,6 +440,7 @@
     background-size: cover !important;
     height: 200px
 }
+
 .typography h1,
 .typography h2,
 .typography h3,
@@ -472,6 +509,7 @@
     font-weight: 300;
     color: #828bb2
 }
+
 /* ===========checkBox input====== */
 .single-input {
     display: block;
@@ -666,10 +704,7 @@
     height: 15px;
     border-radius: 50%;
     background: #fff;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
+    transition: 0.2s;
     box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
     cursor: pointer
 }
@@ -723,9 +758,7 @@
     height: 100%;
     background: transparent;
     border-radius: 8.5px;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
+    
     transition: all 0.2s;
     cursor: pointer
 }
@@ -739,9 +772,6 @@
     height: 15px;
     border-radius: 50%;
     background: #fff;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
     transition: all 0.2s;
     box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
     cursor: pointer
@@ -825,6 +855,7 @@
     cursor: pointer;
     border: 1px solid #f1f1f1
 }
+
 .confirm-checkbox input:checked+label {
     background: url("https://preview.colorlib.com/theme/easylo/assets/img/elements/success-check.png") no-repeat center center/cover;
     border: none
@@ -930,9 +961,11 @@
     height: 100%;
     opacity: 0
 }
-.disable{
+
+.disable {
     color: #ffffff;
 }
+
 .confirm-radio input+label {
     position: absolute;
     left: 0;
@@ -998,7 +1031,7 @@
     height: 40px
 }
 
-.default-select .nice-select {
+.default-select na{
     border: none;
     border-radius: 0px;
     height: 40px;
@@ -1007,7 +1040,7 @@
     padding-right: 40px
 }
 
-.default-select .nice-select .list {
+.default-select na {
     margin-top: 0;
     border: none;
     border-radius: 0px;
@@ -1016,7 +1049,7 @@
     padding: 10px 0 10px 0px
 }
 
-.default-select .nice-select .list .option {
+.default-select na .option {
     font-weight: 300;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -1028,12 +1061,12 @@
     padding-left: 20px
 }
 
-.default-select .nice-select .list .option.selected {
+.default-select na .option.selected {
     color: #97A7AF;
     background: transparent
 }
 
-.default-select .nice-select .list .option:hover {
+.default-select na .option:hover {
     color: #97A7AF;
     background: transparent
 }
@@ -1043,7 +1076,7 @@
     font-weight: 300
 }
 
-.default-select .nice-select::after {
+.default-select .na::after {
     right: 20px
 }
 
@@ -1052,7 +1085,7 @@
     width: 100%
 }
 
-.form-select .nice-select {
+.form-select na {
     border: none;
     border-radius: 0px;
     height: 40px;
@@ -1062,7 +1095,7 @@
     width: 100%
 }
 
-.form-select .nice-select .list {
+.form-select na {
     margin-top: 0;
     border: none;
     border-radius: 0px;
@@ -1071,24 +1104,21 @@
     padding: 10px 0 10px 0px
 }
 
-.form-select .nice-select .list .option {
-    font-weight: 300;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+.form-select na .option {
+    font-weight: 300; 
+    transition: all 0.3s;
     line-height: 28px;
     min-height: 28px;
     font-size: 12px;
     padding-left: 45px
 }
 
-.form-select .nice-select .list .option.selected {
+.form-select na .option.selected {
     color: #97A7AF;
     background: transparent
 }
 
-.form-select .nice-select .list .option:hover {
+.form-select na .option:hover {
     color: #97A7AF;
     background: transparent
 }
@@ -1098,14 +1128,16 @@
     font-weight: 300
 }
 
-.form-select .nice-select::after {
+.form-select na::after {
     right: 20px
 }
 
 .mt-10 {
     margin-top: 10px
 }
-
+.mb-10 {
+    margin-bottom: 20px;
+}
 .section-top-border {
     padding: 50px 0;
     border-top: 1px dotted #eee
@@ -1120,7 +1152,5 @@
 }
 
 .switch-wrap {
-    margin-bottom: 10px
+    margin-bottom: 25px
 }
-
-

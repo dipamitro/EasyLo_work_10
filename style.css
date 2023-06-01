@@ -895,7 +895,7 @@ footer ul {
     padding-bottom: 13px;
 }
 
-.form-wrapper .nice-select {
+.form-wrapper na{
     line-height: 30px;
     border: 1px solid #C9D6CB;
     height: 50px;
@@ -913,7 +913,7 @@ footer ul {
     padding-bottom: 1px;
 }
 
-.form-wrapper .nice-select .list {
+.form-wrapper na {
     width: 100%;
     border-radius: 0;
 }
