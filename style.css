@@ -1,0 +1,430 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Calibri", sans-serif;
+}
+.o-wrper {
+  max-width: 1200px !important;
+}
+.fstnav {
+  height: 81px;
+  background-color: #18a3ba;
+}
+.c-socialbar ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  list-style-type: none;
+  height: 40px;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  border-radius: 40px;
+  width: 168px;
+  padding-left: 23px;
+}
+.c-socialbar li:first-child {
+  margin-left: 2px;
+}
+.c-socialbar li a {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  text-decoration: none;
+  margin-right: 2px;
+  color: white;
+}
+.c-socialbar li a:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  background-color: #18a3ba;
+  top: 5px;
+  right: 10px;
+}
+.c-language-menu ul {
+  padding: 10px 0;
+}
+.c-language-menu ul li {
+  display: block;
+  position: relative;
+}
+
+.c-language-menu {
+  margin-left: 30px;
+}
+.c-language-menu ul {
+  list-style-type: none;
+  margin: 0;
+  line-height: 1;
+}
+
+.c-flag--nl {
+  background-image: url(https://taleninstituut.nl/wp-content/themes/ysd-wandconsulting/assets/dist/images/flag-nl.svg);
+}
+.c-flag--round {
+  border-radius: 50%;
+}
+.c-flag {
+  display: inline-block;
+  background-size: cover;
+  background-position: 50%;
+  width: 28px;
+  height: 28px;
+}
+.c-language-menu ul li a .ico-wrap {
+  position: relative;
+  top: -5px;
+  left: 12px;
+  font-size: 24px;
+}
+.c-flag--en {
+  background-image: url(https://taleninstituut.nl/wp-content/themes/ysd-wandconsulting/assets/dist/images/flag-nl.svg);
+}
+
+.c-flag--de {
+  background-image: url(https://taleninstituut.nl/wp-content/themes/ysd-wandconsulting/assets/dist/images/flag-de.svg);
+}
+.c-language-menu ul li a > div {
+  list-style: none;
+  margin: 0;
+  line-height: 1;
+}
+
+.c-language-manu li {
+  padding: 15px 25px;
+}
+.flagdiv {
+  position: relative;
+}
+.threeflag {
+  position: absolute;
+  right: -11px;
+  top: -29px;
+}
+.bg-blue {
+  background-color: #0094ad;
+ 
+}
+.language-sub.bg-blue li a:hover {
+  background-color: #4295a3 !important;
+}
+.c-bottom-header {
+  background-color: #fff;
+  padding: 8px 0;
+}
+
+.c-bottom-header .a-link a {
+  padding: 6px 19.2px;
+  height: 58px;
+  border: 2px solid #de115f;
+  color: #de115f;
+  font-weight: 700;
+  border-radius: 100px;
+  text-decoration: none;
+}
+.c-bottom-header .a-link a:hover {
+  border: 2px solid #de115f;
+  background-color: #de115f;
+  color: #ffffff;
+}
+.c-bottom-header .a-link,
+.nav-item {
+  padding: 6px 19.2px;
+  list-style-type: none;
+}
+.nav-item {
+  padding: 1px 11.2px;
+}
+.nav-item a {
+  font-size: 16px;
+  font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+ 
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.active {
+  color: #de115f;
+}
+ /* =============Hero image first section================ */
+ .navpart1_imgSide_padding{
+  padding: 24px 0px 0px 24px;
+ }
+.img1{
+    background-image: url(https://taleninstituut.nl/wp-content/uploads/2020/05/taleninstituut-nederland-amsterdam.jpg);
+    background-position: center center;
+    position:relative;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100% 100%;
+    display: block;
+    overflow: hidden;
+    padding: 95px 85px;
+    height: 503px;
+    max-width: 100%;
+    line-height: 1;    
+}
+.img1::after {
+    content: "";
+    position: absolute;
+    opacity: 0.83;
+    background-color: #de115f;
+    top: 0;
+    bottom: 0;
+    left: 0 !important;
+    max-width: 456px;
+    width: 100%;
+    height: 100%;
+    transform: skew(217deg); 
+}
+.navpart1{
+    background-color: #dfedf4;
+  
+}
+.navpart1 .container h1{
+    padding:0 794px 0 0 ;
+    font-size:60px ;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+.imgbtn{
+    background-color: #2980b9;
+    z-index: 3 !important;
+    position: absolute;
+    border-radius: 100px;
+    bottom: 97px;
+    padding: 11px 24px ;   
+}
+.imgbtn a{
+    color: white;
+    font-size:25 ;
+    font-weight: 700;
+    text-decoration: none;
+}
+/* ======second TrainingSection================= */
+.d-section{
+  background-color: #E7F4F8;
+}
+
+.c-usp-icon {
+  position: relative;
+    display: flex;
+    align-items: center;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    padding: 15px;
+    height: 100%;
+    margin-bottom: 15px;
+}
+.ico-wrap{
+    font-size: 40px;
+    padding: 0 9px;
+}
+.language-coloum{
+padding: 24px 0px;
+}
+.d-section{
+    padding: 54px 0;
+}
+.c-callout-block {
+   
+    text-align: center;
+    border-radius: 20px;
+    padding: 24px 0px 24px 0px;
+}
+.cardHader h5{
+    font-weight: 600;
+    color: #2980b9;
+}
+.c-callout-block .c-usp-icon{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    padding: 24px;
+    height: 100%;
+    margin-bottom: 15px;
+    height: 270px;
+    width: 204px;
+
+}
+.flg_for_thard_section{
+    position: absolute;
+    top: -67px;
+    left: 78px;
+}
+.flg_for_thard_section .c-flag{
+  width: 90px;
+  height: 90px;
+} 
+/* ==========third Tailor_section========== */
+.hero{
+  background-color: #D9EEF2;
+  padding-top: 54px;
+}
+.hero h2{
+  color: #2980b9;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.hero .c-bottom-header {
+  background-color: transparent;
+  padding: 8px 0;
+}
+.hero .o-wrp{
+  position: relative;
+}
+.hero .o-wrp::after{
+    /* position: absolute;
+    content: "";
+    z-index: -6;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 0; */
+
+
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    top: -9px;
+    bottom: 0;
+    left: -62px !important;
+    /* max-width: 443rem; */
+    width: 95.5%;
+    height: 49%;
+    border-radius: 30px;
+    
+}
+.heroz-index{
+  z-index: 0;
+}
+
+
+.hero .c-bottom-header .a-link a {
+  padding: 6px 19.2px;
+  height: 58px;
+  border: 2px solid #de115f;
+  color: #de115f;
+  font-weight: 700;
+  border-radius: 100px;
+  text-decoration: none;
+}
+.hero .c-bottom-header .a-link a:hover {
+
+  border: 2px solid #de115f;
+  background-color: #de115f;
+  color: #ffffff;
+}
+ 
+.aCartoon_background{
+  background-image:url( https://taleninstituut.nl/wp-content/uploads/2020/04/introductie-video-thumbnail-nl.png);
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.aCartoon_background::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 45px;
+    height: 45px;
+    background-image: url(https://taleninstituut.nl/wp-content/themes/ysd-wandconsulting/assets/dist/images/play-btn.svg);
+    background-size: contain;
+    background-position: 50%;
+}
+/* ==========third Training forms_section========== */
+/* ===========Forth_Interested_section===== */
+.call-to-action {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  margin: auto;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.3333333333;
+}
+.call-to-action h2{
+  font-weight: 600;
+}
+.call-to-action .pmargin{
+  margin-bottom: 1.5rem;
+}
+.call-to-action p{
+  margin-bottom: 0;
+}
+.hero_firstpart{
+  padding: 54px 0px 54px 24px;
+}
+.heroz-index2{
+  padding: 54px 0px;
+}
+.hero_secondpart{
+  padding-left: 24px;
+}
+/* =========Forth_Interested_section===== */
+.interested {
+  position: relative;
+  text-align: center;
+  padding: 32px;
+  color: #fff;
+  background-color: #18a3ba;
+}
+.interested:after {
+  z-index: 1;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(https://taleninstituut.nl/wp-content/themes/ysd-wandconsulting/assets/dist/images/footer-bg-logo.svg);
+  background-position: right 8% center;
+  background-repeat: no-repeat;
+  opacity: .1;
+}
+.interested .a-link a{
+text-decoration: none;
+color: #fff;
+background-color: #de115f;
+padding: 6px 19.2px;
+border-radius: 100px;
+font-weight: 700;
+}
+.interested .a-link a:hover{
+background-color: #a80d48;
+}
+/* ========footer========= */
+.site-footer {
+  background-color: var(--background-color-three);
+  padding: 48px 0;
+  line-height: 2;
+  font-size: .8rem;
+}
+.menu-footer1-container ul li a{
+  text-decoration: none;
+  color: #de115f;
+
+
+}
+.menu-footer1-container ul{
+list-style: none;
+
+
+}

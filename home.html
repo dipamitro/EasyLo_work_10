@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- ======google_fonts====== -->
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="lightbox.min.css">
+    <script src="https://kit.fontawesome.com/4cf05cf765.js" crossorigin="anonymous"></script>
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- fontawasome Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fontawasome Js -->
+    <script src="https://kit.fontawesome.com/4cf05cf765.js" crossorigin="anonymous"></script>
+    <!-- ==========Aos_Library============== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Taleninstituut Nederland</title>
+    <link rel="shortcut icon" type="image/png" href="image/redlogo.png" />
+</head>
+<body class="bg-light">
+    <header>
+        <div class="o-wrpe">
+            <div class="top-header">
+                <div class="container-fluid fstnav">
+                    <div class="container o-wrper px-4">
+                        <div class="fstnav d-flex w-100  justify-content-between align-items-center">
+                            <div class="hadername d-flex align-items-center">
+                                <nav class="navbar navbar-expand-lg navbar-light minimiznav  ">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                            <li class="nav-item active">
+                                                <a class="nav-link" href="#">Home <span
+                                                        class="sr-only">(current)</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Language training</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Why us?</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Training forms</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Clients</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Blog</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                                <img src="image/favicon-4-150x150.png" alt="" srcset=""
+                                    style="width: 45px;height: 45px;">
+                                <h4 class="text-white px-3">Language Institute Netherlands</h4>
+                            </div>
+                            <div class="sidehader d-flex align-items-center">
+                                <div class="c-socialbar">
+                                    <ul>
+                                        <li><a href=""><i class='bx bxl-linkedin'></i></a></i> </li>
+                                        <li><a href=""><i class='bx bxl-facebook'></i></a></li>
+                                        <li><a href=""><i class='bx bxl-instagram'></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="c-language-menu d-flex align-items-center justify-content-between">
+                                    <div class="px-2">
+                                        <ul>
+                                            <li id="language-dropdown" class="">
+                                                <a href="https://taleninstituut.nl/#">
+                                                    <div class="c-flag c-flag--nl c-flag--round">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="c-language-manu flagdiv ">
+                                            <a href="#" class="show_hide text-white"><i class='bx bxs-chevron-down'
+                                                    style='color:#ffffff'></i></a>
+
+                                            <div class="slidingDiv threeflag" style="position: absolute; z-index: 1;">
+                                                <ul id="language-sub" class="bg-blue">
+                                                    <li><a href="#">
+                                                            <div class="c-flag c-flag--en c-flag--round"></div>
+                                                        </a></li>
+                                                    <li><a href="#">
+                                                            <div class="c-flag c-flag--de c-flag--round"></div>
+                                                        </a></li>
+                                                    <li><a href="#">
+                                                            <div class="c-flag c-flag--nl c-flag--round"></div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-bottom-header">
+                <div class="container o-wrper d-flex justify-content-between align-items-center">
+                    <div>
+                        <div class="a-link">
+                            <a href="">Offerte</a>
+                            <a href="">Contact</a>
+                        </div>
+                    </div>
+                    <div>
+                        <nav class="navbar navbar-expand-lg maximizenav navbar-light ">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" style="color:#de115f;" href="#">Home <span
+                                                class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Language training</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Why us?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Training forms</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Clients</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ============Hero image first section=============== -->
+    <section class="navpart1">
+        <div class="container navpart1_imgSide_padding ">
+            <div class=" img1" id="section-counter">
+                <h1 style="z-index: 3 !important;position: absolute;color: #ffffff;">Tailor-made business language
+                    training
+                </h1>
+                <div class="list-unstyled">
+                    <button class="btn imgbtn "><a href="https://taleninstituut.nl/wp-content/uploads/2019/06/Talentinstituut-Nederland-We-make-sure-you-speak-the-right-language..mp4">watch the video</video></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- =======first section 2ndpart====== -->
+        <div class="language-coloum">
+            <div class=" o-wrper container">
+                <div class="row ">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="c-usp-icon">
+                            <div class="c-usp-icon__icon"><span class="ico-wrap"><i class='bx bx-menu-alt-left'
+                                        style='color:#2980b9'></i></span></div>
+                            <div class="c-usp-icon__text">
+                                Language training
+                                tailored to personal goals
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="c-usp-icon">
+                            <div class="c-usp-icon__icon"><span class="ico-wrap"><i class='bx bx-menu-alt-left'
+                                        style='color:#2980b9'></i></span></div>
+                            <div class="c-usp-icon__text">
+                                Language training
+                                tailored to personal goals
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="c-usp-icon">
+                            <div class="c-usp-icon__icon"><span class="ico-wrap"><i class='bx bx-menu-alt-left'
+                                        style='color:#2980b9'></i></span></div>
+                            <div class="c-usp-icon__text">
+                                Language training
+                                tailored to personal goals
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="c-usp-icon">
+                            <div class="c-usp-icon__icon"><span class="ico-wrap"><i class='bx bx-menu-alt-left'
+                                        style='color:#2980b9'></i></span></div>
+                            <div class="c-usp-icon__text">
+                                Language training
+                                tailored to personal goals
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======second TrainingSection================= -->
+    <section>
+        <div class="d-section">
+            <div class="container">
+                    <div class="c-callout-block">
+                        <div class="row d-flex griddt">
+                            <div class="flagfive col-lg">
+                                <div class="c-usp-icon">
+                                    <div class="flg_for_thard_section">
+                                        <a href="#">
+                                            <div class="c-flag c-flag--en c-flag--round"></div>
+                                        </a>
+                                    </div>
+                                    <div class="cardHader">
+                                        <h5>
+                                            Training Dutch
+                                        </h5>
+                                        <div class="c-usp-icon__text">
+                                            Business Dutch for (non-Dutch speaking) employees / expats who want to build
+                                            up
+                                            a
+                                            solid basic knowledge or improve their language skills.
+                                        </div>
+                                        <div class="c-bottom-header">
+                                            <div class="a-link">
+                                                <a href="">Offerte</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flagfive col-lg">
+                                <div class="c-usp-icon">
+                                    <div class="flg_for_thard_section">
+                                        <a href="#">
+                                            <div class="c-flag c-flag--de c-flag--round"></div>
+                                        </a>
+                                    </div>
+                                    <div class="cardHader">
+                                        <h5>
+                                            Training Dutch
+                                        </h5>
+
+
+                                        <div class="c-usp-icon__text">
+                                            Business Dutch for (non-Dutch speaking) employees / expats who want to build
+                                            up
+                                            a
+                                            solid basic knowledge or improve their language skills.
+                                        </div>
+                                        <div class="c-bottom-header">
+                                            <div class="a-link">
+                                                <a href="">Offerte</a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flagfive col-lg">
+                                <div class="c-usp-icon">
+                                    <div class="flg_for_thard_section">
+                                        <a href="#">
+                                            <div class="c-flag c-flag--nl c-flag--round"></div>
+                                        </a>
+                                    </div>
+                                    <div class="cardHader">
+                                        <h5>
+                                            Training Dutch
+                                        </h5>
+
+
+                                        <div class="c-usp-icon__text">
+                                            Business Dutch for (non-Dutch speaking) employees / expats who want to build
+                                            up
+                                            a
+                                            solid basic knowledge or improve their language skills.
+                                        </div>
+                                        <div class="c-bottom-header">
+                                            <div class="a-link">
+                                                <a href="">Offerte</a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flagfive col-lg">
+                                <div class="c-usp-icon">
+                                    <div class="flg_for_thard_section">
+                                        <a href="#">
+                                            <div class="c-flag c-flag--nl c-flag--round"></div>
+                                        </a>
+                                    </div>
+                                    <div class="cardHader">
+                                        <h5>
+                                            Training Dutch
+                                        </h5>
+
+
+                                        <div class="c-usp-icon__text">
+                                            Business Dutch for (non-Dutch speaking) employees / expats who want to build
+                                            up
+                                            a
+                                            solid basic knowledge or improve their language skills.
+                                        </div>
+                                        <div class="c-bottom-header">
+                                            <div class="a-link">
+                                                <a href="">Offerte</a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flagfive col-lg">
+                                <div class="c-usp-icon">
+                                    <div class="flg_for_thard_section">
+                                        <a href="#">
+                                            <div class="c-flag c-flag--en c-flag--round"></div>
+                                        </a>
+                                    </div>
+                                    <div class="cardHader">
+                                        <h5>
+                                            Training Dutch
+                                        </h5>
+
+
+                                        <div class="c-usp-icon__text">
+                                            Business Dutch for (non-Dutch speaking) employees / expats who want to build
+                                            up
+                                            a
+                                            solid basic knowledge or improve their language skills.
+                                        </div>
+                                        <div class="c-bottom-header">
+                                            <div class="a-link">
+                                                <a href="">Offerte</a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="flagfive flagfivehidden">
+                                <div class="c-usp-icon">
+                                    <div class="flg_for_thard_section">
+                                        <a href="#">
+                                            <div class="c-flag c-flag--en c-flag--round"></div>
+                                        </a>
+                                    </div>
+                                    <div class="cardHader">
+                                        <h5>
+                                            Training Dutch
+                                        </h5>
+
+
+                                        <div class="c-usp-icon__text">
+                                            Business Dutch for (non-Dutch speaking) employees / expats who want to build
+                                            up
+                                            a
+                                            solid basic knowledge or improve their language skills.
+                                        </div>
+                                        <div class="c-bottom-header">
+                                            <div class="a-link">
+                                                <a href="">Offerte</a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <!-- ==========third Tailor_section========== -->
+    <section class="hero">
+        <div class="o-wrper o-wrp container">
+            <div class="d-flex heroz-index justify-content-between align-items-center">
+                <div class="hero_firstpart" style="z-index: 3;">
+                    <h2>
+                        Tailor-made business language training
+                    </h2>
+                    <p>
+                        The practical employability of your language skills is of great importance for business success.
+                        That is why our business language courses focus on the communication skills that are essential
+                        in your specific business situation.</p>
+                    <p> We tailor our approach to each individual student or team. With us you learn to use the language
+                        that suits your own (learning) style, situation, position, sector, goal and wishes. You learn
+                        exactly what you need, focused on practice and without ballast. We have included specially
+                        developed modules in our course material for typical business conversation situations such as
+                        negotiating, meeting or presenting your products at a trade fair.</p>
+                    <div class="c-bottom-header">
+
+                        <div class="a-link">
+                            <a href="">More Information</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero_secondpart" style="z-index: 4;">
+                   <a href="https://taleninstituut.nl/pdf/Taleninstituut-Nederland-zakelijke-taaltrainingen.mp4">
+                    <div class="aCartoon_background">
+                        <img src="https://taleninstituut.nl/wp-content/uploads/2020/04/introductie-video-thumbnail-nl.png"
+                            alt="" srcset="">
+                    </div>
+                   </a>
+                </div>
+            </div>
+            <div class="d-flex heroz-index justify-content-between align-items-center">
+                
+                <div class="hero_secondpart" style="z-index: 4;">
+                   <a href="https://taleninstituut.nl/pdf/promo-taleninstituut.mp4">
+                    <div class="aCartoon_background">
+                        <img src="https://taleninstituut.nl/wp-content/uploads/2021/06/video-make-your-words-count.jpg"
+                            alt="" srcset="">
+                    </div>
+                   </a>
+                </div>
+                <div class="hero_firstpart" style="z-index: 3;">
+                    <h2>
+                        Tailor-made business language training
+                    </h2>
+                    <p>
+                        The practical employability of your language skills is of great importance for business success.
+                        That is why our business language courses focus on the communication skills that are essential
+                        in your specific business situation.</p>
+                    <p> We tailor our approach to each individual student or team. With us you learn to use the language
+                        that suits your own (learning) style, situation, position, sector, goal and wishes. You learn
+                        exactly what you need, focused on practice and without ballast. We have included specially
+                        developed modules in our course material for typical business conversation situations such as
+                        negotiating, meeting or presenting your products at a trade fair.</p>
+                    <div class="c-bottom-header">
+                        <div class="a-link">
+                            <a href="">More Information</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========Forth_Interested_section==== -->
+    <section class="interested">
+        <div class="o-wrper container">
+            <div class="call-to-action">
+                <h2>Interested?</h2>
+            <p>
+                Have you become curious about what we do and would you like more information? 
+            </p>
+            <p class="pmargin">
+                Please feel free to contact us or simply request a quote online.
+            </p>
+            <div>
+                <div class="a-link">
+                    <a href="">Quotation</a>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========Footer========== -->
+    <footer id="colophon" class="site-footer" role="contentinfo">
+
+        <div class="o-wrper container">
+
+            <div class="row footer_manu">
+                <div id="nav_menu-2" class="">
+                    <div class="menu-footer1-container">
+                        <ul id="menu-footer1" class="menu" style=" list-style: none;">
+                            <li id="menu-item-17580"
+                                class="" >
+                                <a style="text-decoration: none;" href="https://taleninstituut.nl/">
+                                    Home page
+                                </a>
+                             </li>
+                             <li id="menu-item-17580"
+                             class="">
+                             <a href="https://taleninstituut.nl/">
+                                 Tailor-made language training
+                             </a>
+                         </li>
+                            <li>
+                                <a href="https://taleninstituut.nl/taaltrainingen-op-maat/">
+                                        Why us?
+                                   
+                                </a></li>
+                            <li ><a
+                                    href="https://taleninstituut.nl/trainingsvormen/">
+                                    Training forms
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+               
+                <div id="nav_menu-2" class="">
+                    <div class="menu-footer1-container">
+                        <ul id="menu-footer1" class="menu">
+                            <li id="menu-item-17580"
+                                class="">
+                                <a href="https://taleninstituut.nl/">
+                                    Training Dutch
+                                </a>
+                             </li>
+                             <li id="menu-item-17580"
+                             class="">
+                             <a href="https://taleninstituut.nl/">
+                                Training English
+                             </a>
+                         </li>
+                            <li>
+                                <a href="https://taleninstituut.nl/taaltrainingen-op-maat/">
+                                    Training German
+                                   
+                                </a></li>
+                            <li ><a
+                                    href="https://taleninstituut.nl/trainingsvormen/">
+                                    Training French
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav_menu-2" class="">
+                    <div class="menu-footer1-container">
+                        <ul id="menu-footer1" class="menu">
+                            <li id="menu-item-17580"
+                                class="">
+                                <a href="https://taleninstituut.nl/">
+                                    Blog
+                                </a>
+                             </li>
+                             <li id="menu-item-17580"
+                             class="">
+                             <a href="https://taleninstituut.nl/">
+                                 Linkedln
+                             </a>
+                         </li>
+                            <li>
+                                <a href="https://taleninstituut.nl/taaltrainingen-op-maat/">
+                                        Facebook
+                                   
+                                </a></li>
+                            <li ><a
+                                    href="https://taleninstituut.nl/trainingsvormen/">
+                                    Instagram
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav_menu-2" class="">
+                    <div class="menu-footer1-container">
+                        <ul id="menu-footer1" class="menu">
+                            <li id="menu-item-17580"
+                                class="">
+                                <a href="https://taleninstituut.nl/">
+                                   Video
+                                </a>
+                             </li>
+                             <li id="menu-item-17580"
+                             class="">
+                             <a href="https://taleninstituut.nl/">
+                                Work at
+                             </a>
+                         </li>
+                            <li>
+                                <a href="https://taleninstituut.nl/taaltrainingen-op-maat/">
+                                        Site map
+                                   
+                                </a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav_menu-2" class="">
+                    <div class="menu-footer1-container">
+                        <ul id="menu-footer1" class="menu">
+                            <li id="menu-item-17580"
+                                class="">
+                                <a href="https://taleninstituut.nl/">
+                                    Contact
+                                </a>
+                             </li>
+                             <li id="menu-item-17580"
+                             class="">
+                             <a href="https://taleninstituut.nl/">
+                                 Request quote
+                             </a>
+                         </li>
+                            <li>
+                                <a href="https://taleninstituut.nl/taaltrainingen-op-maat/">
+                                        Terms and Condition
+                                   
+                                </a></li>
+                            <li ><a
+                                    href="https://taleninstituut.nl/trainingsvormen/">
+                                    Privacy
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+               
+                <div >
+                    <div class="textwidget custom-html-widget"><span class="u-text-color-primary">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Netherlands Language Institute</font>
+                            </font>
+                        </span><br>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">
+                                Keizersgracht 62 </font>
+                        </font><br>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">
+                                1015 CS Amsterdam </font>
+                        </font><br>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">
+                                Chamber of Commerce: 34283254</font>
+                        </font><br>
+                    </div>
+                </div>
+            </div>
+        </div><!-- wrapper -->
+
+    </footer><!-- #colophon -->
+    
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+<!-- ========for flag click========== -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $(".slidingDiv").hide();
+
+        $('.show_hide').click(function (e) {
+            $(".slidingDiv").slideToggle("fast");
+            var val = $(this).text() == "-" ? "+" : "-";
+            $(this).hide().text(val).fadeIn("fast");
+            e.preventDefault();
+        });
+    });
+</script>
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
