@@ -3,13 +3,49 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Calibri", sans-serif;
+  letter-spacing: .01rem;
+  background-color: #43b0c3;
 }
 .o-wrper {
   max-width: 1200px !important;
 }
+.hadername img{
+ width: 45px;
+ height: 45px;
+}
+.hadername h4{
+  font-size: 1.75rem; font-weight: 800;
+}
 .fstnav {
   height: 81px;
   background-color: #18a3ba;
+}
+.px-30{
+  padding-right: 1rem!important; 
+  padding-left: 1rem!important
+}
+.nav5{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.px-40 {
+  padding-right: 1.2rem!important; 
+   padding-left: 1.5rem!important;
+}
+.uppernav {
+  margin-top: 1.4rem!important;
+  position: absolute;
+  z-index: 6;
+  background-color: #f9f7f7;
+  /* max-width: 100%; */
+  width: 400px;
+  /* float: left; */
+  height: 850px;
+  display: inline-block;
+  transition: 0s;
+  left: -111px;
+  text-align: center;
 }
 .c-socialbar ul {
   display: flex;
@@ -43,7 +79,7 @@ body {
   right: 10px;
 }
 .c-language-menu ul {
-  padding: 10px 0;
+  padding: 5px 0;
 }
 .c-language-menu ul li {
   display: block;
@@ -52,15 +88,26 @@ body {
 
 .c-language-menu {
   margin-left: 30px;
+  /* margin-right: 20px; */
 }
 .c-language-menu ul {
   list-style-type: none;
   margin: 0;
   line-height: 1;
 }
+.sidehader{
+  padding-right: 0px;
+}
+
+.bx {
+    font-weight: 600;
+    font-style: 30PX;}
 
 .c-flag--nl {
   background-image: url(https://taleninstituut.nl/wp-content/themes/ysd-wandconsulting/assets/dist/images/flag-nl.svg);
+}
+.c-flag--li {
+  background-image: url(https://taleninstituut.nl/wp-content/themes/ysd-wandconsulting/assets/dist/images/flag-en.svg);
 }
 .c-flag--round {
   border-radius: 50%;
@@ -85,6 +132,17 @@ body {
 .c-flag--de {
   background-image: url(https://taleninstituut.nl/wp-content/themes/ysd-wandconsulting/assets/dist/images/flag-de.svg);
 }
+.c-flag--pe {
+  background-image: url(	https://taleninstituut.nl/wp-content/themes/ysd-wandconsulting/assets/dist/images/flag-fr.svg);
+}
+.c-flag--pi {
+  background-image: url(https://taleninstituut.nl/wp-content/themes/ysd-wandconsulting/assets/dist/images/flag-sp.svg);
+}
+.c-flag--pl {
+  background-image: url(https://taleninstituut.nl/wp-content/uploads/2014/07/Icoon-e-learning_TIN-150x150.png);
+}
+
+
 .c-language-menu ul li a > div {
   list-style: none;
   margin: 0;
@@ -92,7 +150,7 @@ body {
 }
 
 .c-language-manu li {
-  padding: 15px 25px;
+  padding: 16px 25px;
 }
 .flagdiv {
   position: relative;
@@ -102,22 +160,24 @@ body {
   right: -11px;
   top: -29px;
 }
-.bg-blue {
+.bg-blue li {
   background-color: #0094ad;
  
 }
-.language-sub.bg-blue li a:hover {
-  background-color: #4295a3 !important;
+.bg-blue li:hover{
+ 
+  background-color: #0f7183;
 }
+
 .c-bottom-header {
   background-color: #fff;
-  padding: 8px 0;
+  padding: 10px 0px 9px;
 }
 
 .c-bottom-header .a-link a {
-  padding: 6px 19.2px;
+  padding: 11px 20.2px 8px;
   height: 58px;
-  border: 2px solid #de115f;
+  border: 3px solid #de115f;
   color: #de115f;
   font-weight: 700;
   border-radius: 100px;
@@ -128,16 +188,21 @@ body {
   background-color: #de115f;
   color: #ffffff;
 }
-.c-bottom-header .a-link,
+.c-bottom-header .a-link
+{
+  padding: 0px 0px;
+  list-style-type: none;
+}
+
 .nav-item {
   padding: 6px 19.2px;
   list-style-type: none;
 }
 .nav-item {
-  padding: 1px 11.2px;
+  padding: 1px 11px;
 }
 .nav-item a {
-  font-size: 16px;
+  font-size: 16.4px;
   font-weight: bold;
 }
 .navbar-light .navbar-nav .nav-link {
@@ -148,10 +213,25 @@ body {
 .active {
   color: #de115f;
 }
+
+.sticky-bar {
+  left: 0;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
  /* =============Hero image first section================ */
  .navpart1_imgSide_padding{
-  padding: 24px 0px 0px 24px;
+  padding: 24px 0px 0px 21px;
  }
+ .navbar {
+
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
 .img1{
     background-image: url(https://taleninstituut.nl/wp-content/uploads/2020/05/taleninstituut-nederland-amsterdam.jpg);
     background-position: center center;
@@ -163,10 +243,13 @@ body {
     display: block;
     overflow: hidden;
     padding: 95px 85px;
+    padding-right: 100px;
     height: 503px;
     max-width: 100%;
     line-height: 1;    
 }
+.we{
+  max-width: 1350px}
 .img1::after {
     content: "";
     position: absolute;
@@ -175,13 +258,19 @@ body {
     top: 0;
     bottom: 0;
     left: 0 !important;
-    max-width: 456px;
+    max-width: 500px;
     width: 100%;
     height: 100%;
-    transform: skew(217deg); 
+    transform: skew(209deg); 
+}
+.img1 h1{
+  font-size: 3.75rem;
+  font-weight: 600;
+  padding-right: 61%;
+  line-height: 1;
 }
 .navpart1{
-    background-color: #dfedf4;
+    background-color: #d9eef2;
   
 }
 .navpart1 .container h1{
@@ -192,32 +281,40 @@ body {
     margin-bottom: 24px;
 }
 .imgbtn{
-    background-color: #2980b9;
+    background-color: #18a3ba;
     z-index: 3 !important;
     position: absolute;
     border-radius: 100px;
     bottom: 97px;
-    padding: 11px 24px ;   
+    padding: 11px 24px ; 
+   
+}
+.imgbtn:hover{
+    background-color: #148da2;
+   
 }
 .imgbtn a{
     color: white;
-    font-size:25 ;
+    font-size:17px ;
     font-weight: 700;
     text-decoration: none;
 }
 /* ======second TrainingSection================= */
 .d-section{
-  background-color: #E7F4F8;
+  background-color: #e7f4f8;
+}
+.d-section-second{
+  background-color: #e7f4f8;
 }
 
 .c-usp-icon {
-  position: relative;
+  
     display: flex;
     align-items: center;
     border: 3px solid #fff;
     border-radius: 15px;
     padding: 15px;
-    height: 100%;
+    height: 91%;
     margin-bottom: 15px;
 }
 .ico-wrap{
@@ -228,7 +325,7 @@ body {
 padding: 24px 0px;
 }
 .d-section{
-    padding: 54px 0;
+    padding: 77px 0;
 }
 .c-callout-block {
    
@@ -238,7 +335,14 @@ padding: 24px 0px;
 }
 .cardHader h5{
     font-weight: 600;
-    color: #2980b9;
+    color: #18A3BA;
+    font-size: 17px;
+    margin-bottom: 0;
+    margin-top: 1.1rem;
+    
+}
+.cardHader .c-usp-icon__text{
+  margin-bottom: 40px;
 }
 .c-callout-block .c-usp-icon{
     background-color: #fff;
@@ -249,28 +353,62 @@ padding: 24px 0px;
     padding: 24px;
     height: 100%;
     margin-bottom: 15px;
-    height: 270px;
-    width: 204px;
+    width: 92.5%;
+}
 
-}
-.flg_for_thard_section{
-    position: absolute;
-    top: -67px;
-    left: 78px;
-}
+
 .flg_for_thard_section .c-flag{
   width: 90px;
   height: 90px;
 } 
+/* .cardHader{
+  position: relative;
+} */
+.for_relativeWork{
+  position: relative;
+}
+.flg_for_thard_section {
+  position: absolute;
+  top: -107px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.flagfive{
+  position: relative;
+}
+.flagfive .c-bottom-header {
+  position: absolute;
+  left: -21px;
+  bottom: -23px;
+  right: 0px;
+}
+
+
+.c-usp-icon .c-bottom-header{
+  background-color: transparent;
+}
+.c-usp-icon .c-bottom-header .a-link a{
+  background-color: #fff;
+ 
+}
+.c-usp-icon .c-bottom-header .a-link a:hover{
+  background-color: #de115f;
+  color: #ffffff;
+ 
+}
 /* ==========third Tailor_section========== */
 .hero{
-  background-color: #D9EEF2;
+  background-color: #d9eef2;
   padding-top: 54px;
 }
 .hero h2{
-  color: #2980b9;
+  color: #18A3BA;
   font-weight: 700;
-  margin-bottom: 24px;
+ 
+}
+.hero h3{
+  margin-bottom: 17px;
 }
 
 .hero .c-bottom-header {
@@ -280,36 +418,35 @@ padding: 24px 0px;
 .hero .o-wrp{
   position: relative;
 }
-.hero .o-wrp::after{
-    /* position: absolute;
-    content: "";
-    z-index: -6;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 200px;
-    height: 200px;
-    background-color: #fff;
-    border-radius: 0; */
-
-
-    content: "";
-    position: absolute;
-    background-color: #ffffff;
-    top: -9px;
-    bottom: 0;
-    left: -62px !important;
-    /* max-width: 443rem; */
-    width: 95.5%;
-    height: 49%;
-    border-radius: 30px;
-    
+.hero .o-wrp::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  top: 18px;
+  bottom: 0;
+  left: -62px !important;
+  /* max-width: 443rem; */
+  width: 95.5%;
+  height: 46%;
+  border-radius: 30px;
 }
-.heroz-index{
+
+@media (min-width: 720px) { 
+  .heroz-index{
   z-index: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  align-items: center;
+  /* justify-content: space-between; */
 }
-
+  }
+.heroz-index p {
+  margin-bottom: 1.5rem !important;
+}
+.heroz-index .a-link{
+  margin-bottom: 1rem !important;
+}
 
 .hero .c-bottom-header .a-link a {
   padding: 6px 19.2px;
@@ -328,13 +465,12 @@ padding: 24px 0px;
 }
  
 .aCartoon_background{
-  background-image:url( https://taleninstituut.nl/wp-content/uploads/2020/04/introductie-video-thumbnail-nl.png);
+  /* background-image:url( https://taleninstituut.nl/wp-content/uploads/2020/04/introductie-video-thumbnail-nl.png); */
     position: relative;
     display: inline-block;
     border-radius: 20px;
     overflow: hidden;
 }
-
 .aCartoon_background::after{
     content: "";
     position: absolute;
@@ -359,9 +495,11 @@ padding: 24px 0px;
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.3333333333;
+  margin: 10px;
 }
 .call-to-action h2{
   font-weight: 600;
+  font-size:28px ;
 }
 .call-to-action .pmargin{
   margin-bottom: 1.5rem;
@@ -369,14 +507,14 @@ padding: 24px 0px;
 .call-to-action p{
   margin-bottom: 0;
 }
-.hero_firstpart{
-  padding: 54px 0px 54px 24px;
+.hero_firstpart {
+  padding: 70px 0px 54px 10px;
 }
 .heroz-index2{
   padding: 54px 0px;
 }
 .hero_secondpart{
-  padding-left: 24px;
+  padding-left: 4px;
 }
 /* =========Forth_Interested_section===== */
 .interested {
@@ -412,19 +550,59 @@ background-color: #a80d48;
 }
 /* ========footer========= */
 .site-footer {
-  background-color: var(--background-color-three);
-  padding: 48px 0;
+  background-color: #e7f4f8;
+  padding: 48px 0 70px 0;
   line-height: 2;
   font-size: .8rem;
 }
 .menu-footer1-container ul li a{
   text-decoration: none;
-  color: #de115f;
-
-
+  color: #000000;
 }
 .menu-footer1-container ul{
 list-style: none;
+}
 
 
+/* @media  (max-width: 575px) { 
+  .d-section-second .griddt{
+display: grid;
+grid-template-rows:repeat(6,1fr) ;
+  }
+}
+@media  (max-width: 768px) { 
+  .d-section-second .griddt{
+display: grid;
+grid-template-columns:repeat(2,1fr);
+grid-template-rows: repeat(3,1fr);
+  }
+}
+@media  (max-width: 992px) { 
+  .d-section-second .griddt{
+display: grid;
+grid-template-columns:repeat(3,1fr);
+grid-template-rows:repeat(2,1fr) ;
+  }
+}
+@media  (max-width: 1200px) { 
+  .d-section-second .griddt{
+display: grid;
+grid-template-columns:repeat(3,1fr);
+grid-template-rows:repeat(2,1fr) ;
+  }
+} */
+.page-micro {
+  padding: 12px;
+}
+.page-micro__copy {
+  font-size: 12px;
+  font-size: .75rem;
+  line-height: 2;
+  display: block;
+  text-align: center;
+}
+.page-micro {
+  background-color: #a2d8e1;
+  font-style: italic;
+  opacity: .7;
 }

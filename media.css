@@ -1,62 +1,721 @@
-@media (max-width: 575.98px) { 
-    .o-wrper{
-        max-width: 100%;
-    }
- }
-@media (min-width: 576px) and (max-width: 767.98px) {  .o-wrper{
-    max-width: 576px;
-} }
-@media (min-width: 768.px) and (max-width: 991.98px) { 
-    .o-wrper{
-        max-width: 992px;
-    }
-    .footer_manu{
-        display: grid;
-        grid-template-columns:repeat(3,2fr) ;
-        grid-auto-rows: 3fr;
-      }
- }
-/* @media (min-width: 9px) and (max-width: 1199.98px) { ... }
-@media (min-width: 1200px) and (max-width: 1399.98px) { ... }
-@media (min-width: 1400px) { ... } */
-@media  (max-width: 991.98px) { 
-    .c-socialbar, .maximizenav{
-        display: none;
-    }
- }
-@media  (min-width: 991.98px) { 
-    .minimiznav {
-        display: none;
-    }
-    .call-to-action {
-        width: 55%;
-
-      }
-      .footer_manu{
-        display: grid;
-        grid-template-columns:repeat(6,2fr) ;
-        flex-basis: ;
-      }
- }
-@media  (min-width: 1260px) { 
-  
-      .flagfive{
-        /* display: flex;
-        flex-direction: column;
-        flex-basis: 0; */
-        padding: 0;
-      }
- }
-@media  (min-width: 1199.98px) { 
-    .hero .o-wrp::after{ 
-        left:-62 !important;  
-    }
-    .flagfivehidden{
-        display: none;
-    }
+@media (max-width: 575.98px) {
+  .o-wrper {
+    max-width: 100%;
+  }
 }
-@media  (max-width: 1199.98px) { 
-    .a-link{
-        display: none;
-    }
- }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .o-wrper {
+    max-width: 576px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .o-wrper {
+    max-width: 768px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .o-wrper {
+    max-width: 992px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .o-wrper {
+    max-width: 1200px !important;
+  }
+}
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.49rem;
+    padding-left: 0.5rem;
+}}
+@media (max-width: 991.98px) {
+  .c-socialbar,
+  .maximizenav {
+    display: none;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .minimiznav {
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  /* .call-to-action {
+    width: 55%;
+  } no1*/
+  .imgbtn {
+    background-color: #2980b9;
+    z-index: 3 !important;
+    position: absolute;
+    border-radius: 100px;
+    bottom: 54px;
+    padding: 11px 24px;
+  }
+}
+@media (max-width: 768.98px) {
+  .imgbtn {
+    background-color: #2980b9;
+    z-index: 3 !important;
+    position: absolute;
+    border-radius: 100px;
+    bottom: 50px;
+    padding: 11px 24px;
+  }
+}
+@media (min-width: 992px) {
+  .imgbtn {
+    background-color: #18a3ba;
+    z-index: 3 !important;
+    position: absolute;
+    border-radius: 100px;
+    bottom: 19%;
+    padding: 11px 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .flagfive {
+    padding: 0;
+  }
+}
+@media (min-width: 1199.98px) {
+  .hero .o-wrp::after {
+    left: -62 !important;
+  }
+  .flagfivehidden {
+    display: none;
+  }
+  .d-section-second {
+    display: none;
+  }
+}
+@media (max-width: 1199.98px) {
+  .wrp .c-bottom-header .a-link {
+    display: none;
+  }
+  .nav5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .d-section {
+    display: none;
+  }
+  .flagfive .c-bottom-header {
+    position: absolute;
+    left: -16px;
+    bottom: 21px;
+    right: 0px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1400.98px) {
+  .navpart1_imgSide_padding {
+    padding: 24px 24px 0px 24px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992.98px) {
+  .navpart1_imgSide_padding {
+    padding: 0px;
+  }
+}
+@media (min-width: 575px) and (max-width: 768px) {
+  .navpart1_imgSide_padding {
+    padding: 0px;
+  }
+  .img1::after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    background-color: #de115f;
+  }
+}
+@media (max-width: 768px) {
+  .img1::after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    background-color: #de115f;
+  }
+  .c-language-menu {
+    margin-left: -62px;
+    /* margin-right: 20px; */
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+}
+/* ========for 575px========== */
+@media (max-width: 575px) and (min-width: 301px) {
+  .o-wrper {
+    max-width: 100%;
+  }
+  .navbar-light .navbar-toggler {
+    color: rgb(255, 255, 255) !important;
+    border-color: transparent;
+  }
+  .hadername h4 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .px-40 {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .px-30 {
+    padding-right: 3rem !important;
+    padding-left: 0.8rem !important;
+  }
+  .sidehader {
+    padding-right: 11px;
+  }
+  .fstnav {
+    height: 64px;
+    background-color: #43b0c3;
+  }
+  .language-coloum {
+    display: none;
+  }
+  .navpart1_imgSide_padding {
+    padding: 0px 0px 0px 0px;
+  }
+  .img1 {
+    background-image: url(https://taleninstituut.nl/wp-content/uploads/2020/05/taleninstituut-nederland-amsterdam.jpg);
+    background-position: center center;
+    position: relative;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    display: block;
+    padding: 24px;
+    padding-right: 100px;
+    height: 250px;
+    max-width: 100%;
+  }
+  .img1 h1 {
+    font-size: 32px;
+    font-weight: 600;
+    padding-right: 5rem;
+    line-height: 1;
+  }
+  .imgbtn {
+    background-color: #18a3ba;
+    z-index: 3 !important;
+    position: absolute;
+    border-radius: 100px;
+    bottom: 34px;
+    padding: 11px 24px;
+  }
+  /* =========3rd======= */
+  .c-callout-block {
+    text-align: center;
+    border-radius: 20px;
+    padding: 55px 0px;
+  }
+  .cardHader .c-usp-icon__text {
+    margin-bottom: 6px;
+  }
+  .c-callout-block .c-usp-icon {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    padding: 24px 12px;
+    height: 100%;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .flagfive {
+    padding: 47px 24px 45px 24px;
+  }
+
+  .hero {
+    display: none;
+  }
+  .call-to-action {
+    width: 96%;
+  }
+  .site-footer {
+    display: none;
+  }
+}
+/* ========for 768px========== */
+@media (max-width: 768px) and (min-width: 576px) {
+  .navbar-light .navbar-toggler {
+    color: rgb(255, 255, 255) !important;
+    border-color: transparent;
+  }
+  .hadername h4 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .px-30 {
+    padding-right: 12rem !important;
+    padding-left: 0.8rem !important;
+  }
+  .sidehader {
+    padding-right: 11px;
+  }
+  .fstnav {
+    height: 64px;
+    background-color: #43b0c3;
+  }
+  .language-coloum {
+    display: none;
+  }
+  .navpart1_imgSide_padding {
+    padding: 0px 0px 0px 0px;
+  }
+  .img1 {
+    background-image: url(https://taleninstituut.nl/wp-content/uploads/2020/05/taleninstituut-nederland-amsterdam.jpg);
+    background-position: center center;
+    position: relative;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    display: block;
+    padding: 24px;
+    padding-right: 100px;
+    height: 250px;
+    max-width: 100%;
+  }
+  .img1 h1 {
+    font-size: 32px;
+    font-weight: 600;
+    padding-right: 27rem;
+    line-height: 1;
+  }
+  .imgbtn {
+    background-color: #18a3ba;
+    z-index: 3 !important;
+    position: absolute;
+    border-radius: 100px;
+    bottom: 34px;
+    padding: 11px 24px;
+  }
+  .language-coloum {
+    display: block;
+  }
+  .language-coloum {
+    padding: 24px 70px 30px 70px;
+  }
+  .c-usp-icon {
+    display: flex;
+    align-items: center;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    padding: 8px;
+    height: 100%;
+    margin-bottom: 15px;
+  }
+  .forsmallsreenGap {
+    padding-top: 2px;
+    padding-bottom: 4px;
+  }
+  .c-callout-block {
+    text-align: center;
+    border-radius: 20px;
+    padding: 54px 0px;
+  }
+  .c-callout-block .c-usp-icon {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    padding: 13px;
+    margin-bottom: 1px;
+    height: 198px;
+    width: 100%;
+  }
+  .d-section-second .container {
+    max-width: 654px;
+  }
+  .flagfive {
+    padding-top: 67px;
+    padding-bottom: 47px;
+  }
+
+  .cardHader .c-usp-icon__text {
+    margin-bottom: -19px;
+  }
+  .hero .o-wrp::after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    top: -9px;
+    bottom: 0;
+    left: 0px !important;
+    width: 100%;
+    height: 49.8%;
+    border-radius: 30px;
+  }
+  .hero_firstpart p {
+    font-weight: 500;
+    font-size: 17px;
+  }
+  /* .heroz-index {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+ .aCartoon_background {
+    position: relative;
+    display: inline-block;
+    border-radius: 20px !important;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    height: 69%;
+    width: 90%;
+     margin: auto !important;
+     
+
+}
+.o-wrp{
+    
+    margin-left: 2% !important;
+}
+
+  .aCartoon_background img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+    display: inline-block;
+}
+  .hero_secondpart {
+    padding-left: 0px;
+  }
+  .hero_firstpart {
+    padding: 0px;
+  }
+  .py-smm-5 {
+    padding-top: 6rem !important;
+    padding-bottom: 1.4rem !important;
+  }
+  .hero .c-bottom-header .a-link a {
+    padding: 8px 20.2px;
+    height: 58px;
+    border: 3px solid #de115f;
+   
+}
+  .call-to-action {
+    width: 100%;
+  }
+  .site-footer {
+    display: none;
+  }
+}
+
+/* ==============992=========== */
+@media (max-width: 992px) and (min-width: 769px) {
+  .fstnav {
+    height: 60px;
+    background-color: #43b0c3;
+  }
+  .hero .o-wrp::after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    top: -9px;
+    bottom: 0;
+    left: 0px !important;
+    width: 81.5%;
+    height: 51%;
+    border-radius: 30px;
+  }
+  .navbar-light .navbar-toggler {
+    color: rgb(255, 255, 255) !important;
+    border-color: transparent;
+  }
+  .hadername h4 {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .px-30 {
+    padding-right: 21rem !important;
+    padding-left: 0.8rem !important;
+  }
+  .sidehader {
+    padding-right: 11px;
+  }
+  .img1 {
+    background-image: url(https://taleninstituut.nl/wp-content/uploads/2020/05/taleninstituut-nederland-amsterdam.jpg);
+    background-position: center center;
+    position: relative;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100% 100%;
+    display: block;
+    overflow: hidden;
+    padding: 80px;
+    padding-right: 100px;
+    height: 375px;
+    max-width: 100%;
+    line-height: 1;
+  }
+  .img1 h1 {
+    font-size: 45px;
+    font-weight: 600;
+    padding-right: 52%;
+    line-height: 1;
+  }
+  .imgbtn {
+    background-color: #5ca5d6;
+    z-index: 3 !important;
+    position: absolute;
+    border-radius: 100px;
+    bottom: 87px;
+    padding: 11px 24px;
+  }
+  .forsmallsreenGap {
+    padding-top: 2px;
+    padding-bottom: 4px;
+  }
+  .c-callout-block .c-usp-icon {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    padding: 14px;
+    height: 100%;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .flagfive {
+    padding-top: 76px;
+    padding-bottom: 47px;
+    padding-right: 11px;
+  }
+
+  .hero-index .aCartoon_background img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 324px;
+    height: 190px;
+  }
+  .aCartoon_background {
+    background-image: url(https://taleninstituut.nl/wp-content/uploads/2020/04/introductie-video-thumbnail-nl.png);
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 190px;
+    width: 324px;
+    max-width: 100%;
+    background-position: contain;
+    background-position: top bottom;
+    display: block;
+  }
+  .hero {
+    padding: 55px 35px;
+}
+  .cardHader .c-usp-icon__text {
+    margin-bottom: 37px;
+  }
+}
+/* =========1200px======== */
+@media (max-width: 1200px) and (min-width: 993px) {
+  .img1 h1 {
+    font-size: 3.75rem;
+    font-weight: 600;
+    padding-right: 60%;
+    line-height: 1;
+  }
+  .hero {
+    padding: 54px 70px;
+  }
+  .hero_secondpart img {
+    max-width: 100%;
+    font-style: italic;
+    vertical-align: middle;
+    height: auto;
+  }
+  .c-callout-block {
+    text-align: center;
+    border-radius: 20px;
+    padding: 28px 0px 54px 0px;
+}
+  .flagfive {
+    padding-top: 74px;
+    padding-bottom: 47px;
+    padding-right: 0px;
+  }
+
+  .imgbtn {
+    background-color: #2980b9;
+    z-index: 3 !important;
+    position: absolute;
+    border-radius: 100px;
+    bottom: 20%;
+    padding: 11px 24px;
+  }
+  .hero .o-wrp::after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    top: -9px;
+    bottom: 0;
+    left: 9px !important;
+    width: 86.5%;
+    height: 52%;
+    border-radius: 30px;
+  }
+  .secondhero .heroz-index {
+    margin-top: 20px;
+  }
+  .cardHader .c-usp-icon__text {
+    margin-bottom: 19px;
+  }
+}
+
+@media (max-width: 300px) and (min-width: 200px) {
+  .c-language-menu {
+    margin-left: -331px;
+    /* margin-right: 20px; */
+  }
+}
+@media (max-width: 840px) and (min-width: 775px) {
+  .img1 h1 {
+    font-size: 45px;
+    font-weight: 600;
+    padding-right: 48%;
+    line-height: 1;
+  }
+}
+@media (max-width: 1400px) and (min-width: 1201px) {
+  .img1 h1 {
+    font-size: 3.75rem;
+    font-weight: 600;
+    padding-right: 61%;
+    line-height: 1;
+  }
+  .imgbtn {
+    background-color: #2980b9;
+    z-index: 3 !important;
+    position: absolute;
+    border-radius: 100px;
+    bottom: 21%;
+    padding: 11px 24px;
+  }
+}
+@media (max-width: 719px) and (min-width: 576px) {
+  .heroz-index {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .o-wrp::after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    top: -46px;
+    bottom: 0;
+    left: -7px !important;
+    width: 99%;
+    height: 50.8%;
+    border-radius: 30px;
+}
+.hero {
+    background-color: #d9eef2;
+    padding-top: 97px;
+}
+.hero_firstpart {
+    padding: 11px;
+} 
+.heroz-index p{
+font-size: 16px;
+}
+}
+
+@media (max-width: 575px) {
+  .hero {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .wrp .c-bottom-header {
+    display: none;
+  }
+  .lastnav_hid img {
+    width: 32px;
+    height: 32px;
+  }
+  .lastnav_hid h4 {
+   letter-spacing: .12px;
+   line-height: 1;
+   font-size:17px;
+   font-weight: 500;
+  }
+  .lastnav_hide {
+    display: none;
+  }
+  .lastnav_hid {
+    position: absolute;
+    z-index: 30;
+    padding-top: 112px;
+    padding-left: 17px;
+  }
+  .fstnav {
+    height: 50px;
+  }
+  .top-header {
+    margin-bottom: 35px;
+  }
+  .hadername h4 {
+    font-size: 14px !important;
+    font-family: 400 !important;
+  }
+  .px-30 {
+    padding-right: 5rem !important;
+    padding-left: 2.8rem !important;
+    padding-top: .6rem;
+  }
+  .cardHader h5{
+    font-style: 16px;
+    font-weight: 600;
+  }
+  .cardHader p{
+    font-style: 16px;
+    font-weight: 400;
+  }
+  .upptoback .a-link{
+    display: flex;
+    flex-direction: column;
+  }
+  .interested .a-link a {
+    background-color: #de115f;
+    padding: 6px 0px;
+    border-radius: 100px;
+    font-weight: 700;
+
+}
+.py-sm-2{
+    margin:0px 55px 10px 55px;
+}
+ 
+}
+@media (min-width: 400px) {
+  .lastnav_hid {
+    display: none;
+  }
+
+}
+@media (min-width: 400px) and (max-width: 992px) {
+  .c-bottom-header {
+    background-color: #d9eef2;
+    padding: 10px 0px 9px;
+  }
+
+}
+@media (min-width: 400px) and (max-width: 543px) {
+  .py-sm-2{
+    margin:0px 55px 20px 55px;
+}
+}
+
