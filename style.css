@@ -22,7 +22,7 @@ body {
 }
 .px-30{
   padding-right: 1rem!important; 
-  padding-left: 1rem!important
+  padding-left: .85rem!important
 }
 .nav5{
   display: flex;
@@ -57,6 +57,7 @@ body {
   border-radius: 40px;
   width: 168px;
   padding-left: 23px;
+  margin-right: 10px;
 }
 .c-socialbar li:first-child {
   margin-left: 2px;
@@ -68,6 +69,7 @@ body {
   text-decoration: none;
   margin-right: 2px;
   color: white;
+  margin-top: 7px;
 }
 .c-socialbar li a:after {
   content: "";
@@ -171,11 +173,11 @@ body {
 
 .c-bottom-header {
   background-color: #fff;
-  padding: 10px 0px 9px;
+  padding: 9.5px 0px 7.8px;
 }
 
 .c-bottom-header .a-link a {
-  padding: 11px 20.2px 8px;
+  padding: 9.5px 20px 9px;
   height: 58px;
   border: 3px solid #de115f;
   color: #de115f;
@@ -236,13 +238,13 @@ body {
     background-image: url(https://taleninstituut.nl/wp-content/uploads/2020/05/taleninstituut-nederland-amsterdam.jpg);
     background-position: center center;
     position:relative;
-    background-position: 50%;
+    background-position: 0%;
     background-repeat: no-repeat;
     background-position: cover;
     background-size: 100% 100%;
-    display: block;
+    display: block; 
     overflow: hidden;
-    padding: 95px 85px;
+    padding: 98px 85px 95px 87px;
     padding-right: 100px;
     height: 503px;
     max-width: 100%;
@@ -295,7 +297,7 @@ body {
 }
 .imgbtn a{
     color: white;
-    font-size:17px ;
+    font-size:16.5px ;
     font-weight: 700;
     text-decoration: none;
 }
@@ -308,14 +310,13 @@ body {
 }
 
 .c-usp-icon {
-  
-    display: flex;
-    align-items: center;
-    border: 3px solid #fff;
-    border-radius: 15px;
-    padding: 15px;
-    height: 91%;
-    margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  padding: 14.5px 0px;
+  height: 91%;
+  margin-bottom: 15px;
 }
 .ico-wrap{
     font-size: 40px;
@@ -325,8 +326,18 @@ body {
 padding: 24px 0px;
 }
 .d-section{
-    padding: 77px 0;
+    padding: 74px 0px 84px 0px;
 }
+.d-section .container{
+  padding-right: 0;
+  padding-left: 26.5px;
+}
+
+
+@media (min-width: 1400px){
+.d-section .container {
+    max-width: 1353px;
+}}
 .c-callout-block {
    
     text-align: center;
@@ -343,6 +354,7 @@ padding: 24px 0px;
 }
 .cardHader .c-usp-icon__text{
   margin-bottom: 40px;
+  
 }
 .c-callout-block .c-usp-icon{
     background-color: #fff;
@@ -353,7 +365,7 @@ padding: 24px 0px;
     padding: 24px;
     height: 100%;
     margin-bottom: 15px;
-    width: 92.5%;
+    width: 90%;
 }
 
 
@@ -369,9 +381,9 @@ padding: 24px 0px;
 }
 .flg_for_thard_section {
   position: absolute;
-  top: -107px;
+  top: -103px;
   left: 0px;
-  right: 0px;
+  right: -2.3px;
   bottom: 0px;
 }
 .flagfive{
@@ -379,7 +391,7 @@ padding: 24px 0px;
 }
 .flagfive .c-bottom-header {
   position: absolute;
-  left: -21px;
+  left: -31px;
   bottom: -23px;
   right: 0px;
 }
@@ -422,13 +434,13 @@ padding: 24px 0px;
   content: "";
   position: absolute;
   background-color: #ffffff;
-  top: 18px;
+  top: 0px;
   bottom: 0;
-  left: -62px !important;
+  left: -69px !important;
   /* max-width: 443rem; */
   width: 95.5%;
-  height: 46%;
-  border-radius: 30px;
+  height: 47.5%;
+  border-radius: 22px;
 }
 
 @media (min-width: 720px) { 
@@ -436,7 +448,7 @@ padding: 24px 0px;
   z-index: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 15px;
+  grid-gap: 21px;
   align-items: center;
   /* justify-content: space-between; */
 }
@@ -449,9 +461,9 @@ padding: 24px 0px;
 }
 
 .hero .c-bottom-header .a-link a {
-  padding: 6px 19.2px;
+  padding: 8px 19.2px;
   height: 58px;
-  border: 2px solid #de115f;
+  border: 3px solid #de115f;
   color: #de115f;
   font-weight: 700;
   border-radius: 100px;
@@ -476,7 +488,7 @@ padding: 24px 0px;
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
+    top: 0px;
     bottom: 0;
     margin: auto;
     width: 45px;
@@ -495,7 +507,7 @@ padding: 24px 0px;
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.3333333333;
-  margin: 10px;
+  margin: 9.5px 0px;
 }
 .call-to-action h2{
   font-weight: 600;
@@ -508,7 +520,7 @@ padding: 24px 0px;
   margin-bottom: 0;
 }
 .hero_firstpart {
-  padding: 70px 0px 54px 10px;
+  padding: 48px 0 48px;
 }
 .heroz-index2{
   padding: 54px 0px;
@@ -520,7 +532,7 @@ padding: 24px 0px;
 .interested {
   position: relative;
   text-align: center;
-  padding: 32px;
+  padding: 33px 32px 30px;
   color: #fff;
   background-color: #18a3ba;
 }
@@ -544,6 +556,7 @@ background-color: #de115f;
 padding: 6px 19.2px;
 border-radius: 100px;
 font-weight: 700;
+margin: 6px;
 }
 .interested .a-link a:hover{
 background-color: #a80d48;
@@ -562,6 +575,35 @@ background-color: #a80d48;
 .menu-footer1-container ul{
 list-style: none;
 }
+.pxx-3 {
+  padding-right: 0rem!important;
+  padding-left: .65rem!important;
+}
+.pxx-2{
+  padding-right: 0;
+  padding-left: .9rem;
+}
+.pxx-4
+{
+  padding-right: 0;
+  padding-left: .4rem;
+}
+.pxx-5
+  {
+    padding-right: 0;
+    padding-left: .1rem;
+  }
+.pxx-6
+  {
+    padding-right: 0;
+    padding-left: .02rem;
+  }
+.pxx-7
+  {
+    padding-right: 0;
+    padding-left: 0rem;
+  }
+
 
 
 /* @media  (max-width: 575px) { 

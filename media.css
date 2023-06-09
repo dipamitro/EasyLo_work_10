@@ -22,17 +22,52 @@
   .o-wrper {
     max-width: 1200px !important;
   }
+  .secondhero, .hero_firstpart.mrg h2{
+    margin-top: 21px;
+  }
 }
 @media (min-width: 992px){
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.49rem;
+    padding-right: 0.42rem;
     padding-left: 0.5rem;
-}}
+}
+.bigsreenpaddingForView1{
+  padding-left: 25px;
+  padding-right: 6px;
+}
+.bigsreenpaddingForView2{
+  padding-left: 18px;
+  padding-right: 11.5px;
+}
+.bigsreenpaddingForView3{
+  padding-left: 12px;
+  padding-right: 17px;
+
+}
+.bigsreenpaddingForView4{
+  padding-right: 22px;
+  padding-left: 8px;
+}
+}
 @media (max-width: 991.98px) {
   .c-socialbar,
   .maximizenav {
     display: none;
   }
+  .aCartoon_background::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    margin: auto;
+    width: 45px;
+    height: 45px;
+    background-image: url(https://taleninstituut.nl/wp-content/themes/ysd-wandconsulting/assets/dist/images/play-btn.svg);
+    background-size: contain;
+    background-position: 50%;
+}
 }
 
 @media (min-width: 991.98px) {
@@ -50,7 +85,7 @@
     position: absolute;
     border-radius: 100px;
     bottom: 54px;
-    padding: 11px 24px;
+    padding: 11px 20px;
   }
 }
 @media (max-width: 768.98px) {
@@ -69,14 +104,17 @@
     z-index: 3 !important;
     position: absolute;
     border-radius: 100px;
-    bottom: 19%;
-    padding: 11px 24px;
+    bottom: 18.5%;
+    padding: 10.7px 22.2px;
   }
 }
 @media (min-width: 1200px) {
   .flagfive {
     padding: 0;
   }
+  .navpart1_imgSide_padding {
+    padding: 24px 12.3px 0px 12.3px;
+}
 }
 @media (min-width: 1199.98px) {
   .hero .o-wrp::after {
@@ -343,12 +381,12 @@
     content: "";
     position: absolute;
     background-color: #ffffff;
-    top: -9px;
+    top: 0px;
     bottom: 0;
     left: 0px !important;
     width: 100%;
     height: 49.8%;
-    border-radius: 30px;
+    
   }
   .hero_firstpart p {
     font-weight: 500;
@@ -374,7 +412,7 @@
 }
 .o-wrp{
     
-    margin-left: 2% !important;
+    margin-left: 10% !important;
 }
 
   .aCartoon_background img {
@@ -386,9 +424,12 @@
   .hero_secondpart {
     padding-left: 0px;
   }
-  .hero_firstpart {
+  /* old.hero_firstpart {
     padding: 0px;
-  }
+  } */
+  .hero_firstpart {
+    padding: 48px 0px 10px 48px;
+}
   .py-smm-5 {
     padding-top: 6rem !important;
     padding-bottom: 1.4rem !important;
@@ -406,6 +447,25 @@
     display: none;
   }
 }
+@media (max-width: 767px) and (min-width: 720px){
+ .hero_firstpart {
+    padding: 48px 0px 0px 10px;
+}
+.hero .o-wrp::after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    top: 0px;
+    bottom: 0;
+    left: 0px !important;
+    width: 80%;
+    height: 49.8%;
+}}
+@media (max-width: 640px) and (min-width: 574px) {
+  .o-wrp {
+    margin-left: 0% !important;
+}
+}
 
 /* ==============992=========== */
 @media (max-width: 992px) and (min-width: 769px) {
@@ -417,12 +477,11 @@
     content: "";
     position: absolute;
     background-color: #ffffff;
-    top: -9px;
+    top: 0px;
     bottom: 0;
     left: 0px !important;
     width: 81.5%;
     height: 51%;
-    border-radius: 30px;
   }
   .navbar-light .navbar-toggler {
     color: rgb(255, 255, 255) !important;
@@ -512,7 +571,7 @@
     display: block;
   }
   .hero {
-    padding: 55px 35px;
+    padding: 54px 35px;
 }
   .cardHader .c-usp-icon__text {
     margin-bottom: 37px;
@@ -558,12 +617,12 @@
     content: "";
     position: absolute;
     background-color: #ffffff;
-    top: -9px;
+    top: 0px;
     bottom: 0;
     left: 9px !important;
     width: 86.5%;
     height: 52%;
-    border-radius: 30px;
+    
   }
   .secondhero .heroz-index {
     margin-top: 20px;
@@ -571,6 +630,9 @@
   .cardHader .c-usp-icon__text {
     margin-bottom: 19px;
   }
+  .hero_firstpart {
+    padding: 48px 0px 14px 20px;
+}
 }
 
 @media (max-width: 300px) and (min-width: 200px) {
@@ -614,19 +676,19 @@
     content: "";
     position: absolute;
     background-color: #ffffff;
-    top: -46px;
+    top: 0px;
     bottom: 0;
     left: -7px !important;
     width: 99%;
     height: 50.8%;
-    border-radius: 30px;
+   
 }
 .hero {
     background-color: #d9eef2;
-    padding-top: 97px;
+    padding-top: 54px;
 }
 .hero_firstpart {
-    padding: 11px;
+    padding: 48px 0;
 } 
 .heroz-index p{
 font-size: 16px;
@@ -718,4 +780,11 @@ font-size: 16px;
     margin:0px 55px 20px 55px;
 }
 }
-
+/* =======lastdoing======== */
+.nav-link {
+  display: block;
+  padding: 0.6rem 1rem .4rem 1rem;
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
