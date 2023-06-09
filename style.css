@@ -234,14 +234,14 @@ body {
   padding-top: 0rem;
   padding-bottom: 0rem;
 }
-.img1{
+/* .img1{
     background-image: url(https://taleninstituut.nl/wp-content/uploads/2020/05/taleninstituut-nederland-amsterdam.jpg);
-    background-position: center center;
+    background-position: center bottom;
     position:relative;
-    background-position: 0%;
+    background-position: 100%;
     background-repeat: no-repeat;
     background-position: cover;
-    background-size: 100% 100%;
+    background-size: 105% 10%;
     display: block; 
     overflow: hidden;
     padding: 98px 85px 95px 87px;
@@ -249,6 +249,22 @@ body {
     height: 503px;
     max-width: 100%;
     line-height: 1;    
+} */
+.img1 {
+  background-image: url(https://taleninstituut.nl/wp-content/uploads/2020/05/taleninstituut-nederland-amsterdam.jpg);
+  background-position: center bottom;
+  position: relative;
+  background-position: 49%;
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 113.3% 100%;
+  display: block;
+  overflow: hidden;
+  padding: 98px 85px 95px 87px;
+  padding-right: 100px;
+  height: 503px;
+  max-width: 100%;
+  line-height: 1;
 }
 .we{
   max-width: 1350px}
@@ -263,7 +279,7 @@ body {
     max-width: 500px;
     width: 100%;
     height: 100%;
-    transform: skew(209deg); 
+    transform: skew(207deg); 
 }
 .img1 h1{
   font-size: 3.75rem;
@@ -352,9 +368,12 @@ padding: 24px 0px;
     margin-top: 1.1rem;
     
 }
-.cardHader .c-usp-icon__text{
+/* .cardHader .c-usp-icon__text{
   margin-bottom: 40px;
   
+} */
+.cardHader .c-usp-icon__text {
+  margin-bottom: 45px;
 }
 .c-callout-block .c-usp-icon{
     background-color: #fff;
@@ -575,64 +594,41 @@ background-color: #a80d48;
 .menu-footer1-container ul{
 list-style: none;
 }
-.pxx-3 {
-  padding-right: 0rem!important;
-  padding-left: .65rem!important;
-}
-.pxx-2{
-  padding-right: 0;
-  padding-left: .9rem;
-}
-.pxx-4
-{
-  padding-right: 0;
-  padding-left: .4rem;
-}
-.pxx-5
-  {
-    padding-right: 0;
-    padding-left: .1rem;
-  }
-.pxx-6
-  {
-    padding-right: 0;
-    padding-left: .02rem;
-  }
-.pxx-7
-  {
-    padding-right: 0;
-    padding-left: 0rem;
-  }
 
 
+/* ======for down footer right position=== */
 
-/* @media  (max-width: 575px) { 
-  .d-section-second .griddt{
-display: grid;
-grid-template-rows:repeat(6,1fr) ;
+ @media  (min-width: 992px) { 
+  .pxx-3 {
+    padding-right: 0rem!important;
+    padding-left: .65rem!important;
   }
-}
-@media  (max-width: 768px) { 
-  .d-section-second .griddt{
-display: grid;
-grid-template-columns:repeat(2,1fr);
-grid-template-rows: repeat(3,1fr);
+  .pxx-2{
+    padding-right: 0;
+    padding-left: .9rem;
   }
-}
-@media  (max-width: 992px) { 
-  .d-section-second .griddt{
-display: grid;
-grid-template-columns:repeat(3,1fr);
-grid-template-rows:repeat(2,1fr) ;
+  .pxx-4
+  {
+    padding-right: 0;
+    padding-left: .4rem;
   }
-}
-@media  (max-width: 1200px) { 
-  .d-section-second .griddt{
-display: grid;
-grid-template-columns:repeat(3,1fr);
-grid-template-rows:repeat(2,1fr) ;
-  }
-} */
+  .pxx-5
+    {
+      padding-right: 0;
+      padding-left: .1rem;
+    }
+  .pxx-6
+    {
+      padding-right: 0;
+      padding-left: .02rem;
+    }
+  .pxx-7
+    {
+      padding-right: 0;
+      padding-left: 0rem;
+    }
+ 
+} 
 .page-micro {
   padding: 12px;
 }

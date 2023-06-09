@@ -746,17 +746,13 @@ font-size: 16px;
     font-style: 16px;
     font-weight: 400;
   }
-  .upptoback .a-link{
-    display: flex;
-    flex-direction: column;
-  }
   .interested .a-link a {
     background-color: #de115f;
-    padding: 6px 0px;
-    border-radius: 100px;
+    padding: 7px 19px;
+    border-radius: 49px;
     font-weight: 700;
-
 }
+
 .py-sm-2{
     margin:0px 55px 10px 55px;
 }

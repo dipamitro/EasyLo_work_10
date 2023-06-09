@@ -854,7 +854,7 @@
   <script>
     $(window).scroll(function () {
       var top = $(window).scrollTop();
-      if (top >= 1) {
+      if (top >= 0.1) {
         $(".header-sticky").addClass("sticky-bar");
       } else if ($(".header-sticky").hasClass("sticky-bar")) {
         $(".header-sticky").removeClass("sticky-bar");
