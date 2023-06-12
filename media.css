@@ -22,32 +22,32 @@
   .o-wrper {
     max-width: 1200px !important;
   }
-  .secondhero, .hero_firstpart.mrg h2{
+  .secondhero,
+  .hero_firstpart.mrg h2 {
     margin-top: 21px;
   }
 }
-@media (min-width: 992px){
-.navbar-expand-lg .navbar-nav .nav-link {
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.42rem;
     padding-left: 0.5rem;
-}
-.bigsreenpaddingForView1{
-  padding-left: 25px;
-  padding-right: 6px;
-}
-.bigsreenpaddingForView2{
-  padding-left: 18px;
-  padding-right: 11.5px;
-}
-.bigsreenpaddingForView3{
-  padding-left: 12px;
-  padding-right: 17px;
-
-}
-.bigsreenpaddingForView4{
-  padding-right: 22px;
-  padding-left: 8px;
-}
+  }
+  .bigsreenpaddingForView1 {
+    padding-left: 25px;
+    padding-right: 6px;
+  }
+  .bigsreenpaddingForView2 {
+    padding-left: 18px;
+    padding-right: 11.5px;
+  }
+  .bigsreenpaddingForView3 {
+    padding-left: 12px;
+    padding-right: 17px;
+  }
+  .bigsreenpaddingForView4 {
+    padding-right: 22px;
+    padding-left: 8px;
+  }
 }
 @media (max-width: 991.98px) {
   .c-socialbar,
@@ -67,7 +67,7 @@
     background-image: url(https://taleninstituut.nl/wp-content/themes/ysd-wandconsulting/assets/dist/images/play-btn.svg);
     background-size: contain;
     background-position: 50%;
-}
+  }
 }
 
 @media (min-width: 991.98px) {
@@ -114,7 +114,7 @@
   }
   .navpart1_imgSide_padding {
     padding: 24px 12.3px 0px 12.3px;
-}
+  }
 }
 @media (min-width: 1199.98px) {
   .hero .o-wrp::after {
@@ -131,7 +131,7 @@
   .wrp .c-bottom-header .a-link {
     display: none;
   }
-  .nav5{
+  .nav5 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,7 +209,7 @@
     height: 64px;
     background-color: #43b0c3;
   }
-  .language-coloum {
+  .mainPage-Language-col .language-coloum {
     display: none;
   }
   .navpart1_imgSide_padding {
@@ -386,7 +386,6 @@
     left: 0px !important;
     width: 100%;
     height: 49.8%;
-    
   }
   .hero_firstpart p {
     font-weight: 500;
@@ -398,7 +397,7 @@
     flex-direction: column;
     align-items: center;
   } */
- .aCartoon_background {
+  .aCartoon_background {
     position: relative;
     display: inline-block;
     border-radius: 20px !important;
@@ -406,21 +405,18 @@
     background-repeat: no-repeat;
     height: 69%;
     width: 90%;
-     margin: auto !important;
-     
-
-}
-.o-wrp{
-    
+    margin: auto !important;
+  }
+  .o-wrp {
     margin-left: 10% !important;
-}
+  }
 
   .aCartoon_background img {
     max-width: 100%;
     vertical-align: middle;
     height: auto;
     display: inline-block;
-}
+  }
   .hero_secondpart {
     padding-left: 0px;
   }
@@ -429,7 +425,7 @@
   } */
   .hero_firstpart {
     padding: 48px 0px 10px 48px;
-}
+  }
   .py-smm-5 {
     padding-top: 6rem !important;
     padding-bottom: 1.4rem !important;
@@ -438,8 +434,7 @@
     padding: 8px 20.2px;
     height: 58px;
     border: 3px solid #de115f;
-   
-}
+  }
   .call-to-action {
     width: 100%;
   }
@@ -447,11 +442,11 @@
     display: none;
   }
 }
-@media (max-width: 767px) and (min-width: 720px){
- .hero_firstpart {
+@media (max-width: 767px) and (min-width: 720px) {
+  .hero_firstpart {
     padding: 48px 0px 0px 10px;
-}
-.hero .o-wrp::after {
+  }
+  .hero .o-wrp::after {
     content: "";
     position: absolute;
     background-color: #ffffff;
@@ -460,11 +455,12 @@
     left: 0px !important;
     width: 80%;
     height: 49.8%;
-}}
+  }
+}
 @media (max-width: 640px) and (min-width: 574px) {
   .o-wrp {
     margin-left: 0% !important;
-}
+  }
 }
 
 /* ==============992=========== */
@@ -572,7 +568,7 @@
   }
   .hero {
     padding: 54px 35px;
-}
+  }
   .cardHader .c-usp-icon__text {
     margin-bottom: 37px;
   }
@@ -598,7 +594,7 @@
     text-align: center;
     border-radius: 20px;
     padding: 28px 0px 54px 0px;
-}
+  }
   .flagfive {
     padding-top: 74px;
     padding-bottom: 47px;
@@ -622,7 +618,6 @@
     left: 9px !important;
     width: 86.5%;
     height: 52%;
-    
   }
   .secondhero .heroz-index {
     margin-top: 20px;
@@ -632,7 +627,7 @@
   }
   .hero_firstpart {
     padding: 48px 0px 14px 20px;
-}
+  }
 }
 
 @media (max-width: 300px) and (min-width: 200px) {
@@ -681,18 +676,17 @@
     left: -7px !important;
     width: 99%;
     height: 50.8%;
-   
-}
-.hero {
+  }
+  .hero {
     background-color: #d9eef2;
     padding-top: 54px;
-}
-.hero_firstpart {
+  }
+  .hero_firstpart {
     padding: 48px 0;
-} 
-.heroz-index p{
-font-size: 16px;
-}
+  }
+  .heroz-index p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -709,10 +703,10 @@ font-size: 16px;
     height: 32px;
   }
   .lastnav_hid h4 {
-   letter-spacing: .12px;
-   line-height: 1;
-   font-size:17px;
-   font-weight: 500;
+    letter-spacing: 0.12px;
+    line-height: 1;
+    font-size: 17px;
+    font-weight: 500;
   }
   .lastnav_hide {
     display: none;
@@ -736,13 +730,13 @@ font-size: 16px;
   .px-30 {
     padding-right: 5rem !important;
     padding-left: 2.8rem !important;
-    padding-top: .6rem;
+    padding-top: 0.6rem;
   }
-  .cardHader h5{
+  .cardHader h5 {
     font-style: 16px;
     font-weight: 600;
   }
-  .cardHader p{
+  .cardHader p {
     font-style: 16px;
     font-weight: 400;
   }
@@ -751,36 +745,40 @@ font-size: 16px;
     padding: 7px 19px;
     border-radius: 49px;
     font-weight: 700;
-}
+  }
 
-.py-sm-2{
-    margin:0px 55px 10px 55px;
-}
- 
+  .py-sm-2 {
+    margin: 0px 55px 10px 55px;
+  }
 }
 @media (min-width: 400px) {
   .lastnav_hid {
     display: none;
   }
-
 }
 @media (min-width: 400px) and (max-width: 992px) {
   .c-bottom-header {
     background-color: #d9eef2;
     padding: 10px 0px 9px;
   }
-
+}
+@media (max-width: 992px) {
+  .lastnav_hide .site-logo {
+    width: 32px;
+    height: 32px;
+  }
 }
 @media (min-width: 400px) and (max-width: 543px) {
-  .py-sm-2{
-    margin:0px 55px 20px 55px;
-}
+  .py-sm-2 {
+    margin: 0px 55px 20px 55px;
+  }
 }
 /* =======lastdoing======== */
 .nav-link {
   display: block;
-  padding: 0.6rem 1rem .4rem 1rem;
+  padding: 0.6rem 1rem 0.4rem 1rem;
   color: #0d6efd;
   text-decoration: none;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
 }

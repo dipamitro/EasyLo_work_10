@@ -39,12 +39,13 @@
                                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                                         data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
                                         aria-expanded="false" aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon"></span>
+                                        <span class="navbar-toggler-ico"> <i class='bx bx-menu'
+                                                style='color:#ffffff;font-size: 35px; '></i></span>
                                     </button>
                                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                                         <ul class="navbar-nav mr-auto uppernav mt-2 mt-lg-0">
                                             <li class="nav-item active">
-                                                <a class="nav-link" href="#">Home <span
+                                                <a class="nav-link" href="home.html">Home <span
                                                         class="sr-only">(current)</span></a>
                                             </li>
                                             <li class="nav-item">
@@ -66,7 +67,7 @@
                                     </div>
                                 </nav>
                                 <div class="lastnav_hide">
-                                    <div class="site-logo" style="width: 47px;height: 48px;">
+                                    <div class="site-logo">
                                         <svg id="logo-tin" xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 492.18 494.9">
                                             <defs>
@@ -89,9 +90,11 @@
                             <div class="sidehader d-flex align-items-center">
                                 <div class="c-socialbar ">
                                     <ul>
-                                        <li><a href=""><i style="font-size: 18px;" class='bx bxl-linkedin'></i></a></i> </li>
+                                        <li><a href=""><i style="font-size: 18px;" class='bx bxl-linkedin'></i></a></i>
+                                        </li>
                                         <li><a href=""><i style="font-size: 20px;" class='bx bxl-facebook'></i></a></li>
-                                        <li><a href=""><i style="font-size: 18px;" class='bx bxl-instagram'></i></a></li>
+                                        <li><a href=""><i style="font-size: 18px;" class='bx bxl-instagram'></i></a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="c-language-menu d-flex align-items-center justify-content-between">
@@ -99,7 +102,7 @@
                                         <ul>
                                             <li id="language-dropdown" class="">
                                                 <a href="https://taleninstituut.nl/#">
-                                                    <div class="c-flag c-flag--li c-flag--round">
+                                                    <div class="c-flag c-flag--nl c-flag--round">
                                                     </div>
                                                 </a>
                                             </li>
@@ -107,15 +110,15 @@
                                     </div>
                                     <div>
                                         <div class="c-language-manu flagdiv ">
-                                            <a href="home.html" class="show_hide text-white"><i class='bx bxs-chevron-down'
-                                                    style='color:#ffffff'></i></a>
+                                            <a href="home.html" class="show_hide text-white"><i
+                                                    class='bx bxs-chevron-down' style='color:#ffffff'></i></a>
                                             <div class="slidingDiv threeflag" style="position: absolute; z-index: 1;">
                                                 <ul id="language-sub" class="bg-blue">
-                                                    <li><a href="home1.html">
-                                                            <div class="c-flag c-flag--li c-flag--round"></div>
-                                                        </a></li>
                                                     <li><a href="home.html">
                                                             <div class="c-flag c-flag--nl c-flag--round"></div>
+                                                        </a></li>
+                                                    <li><a href="home1.html">
+                                                            <div class="c-flag c-flag--li c-flag--round"></div>
                                                         </a></li>
                                                     <li><a href="home2.html">
                                                             <div class="c-flag c-flag--de c-flag--round"></div>
@@ -863,16 +866,16 @@
         });
     </script>
 
-    
-  <script>
-    $(window).scroll(function () {
-      var top = $(window).scrollTop();
-      if (top >= 1) {
-        $(".header-sticky").addClass("sticky-bar");
-      } else if ($(".header-sticky").hasClass("sticky-bar")) {
-        $(".header-sticky").removeClass("sticky-bar");
-      }
-    });</script>
+
+    <script>
+        $(window).scroll(function () {
+            var top = $(window).scrollTop();
+            if (top >= 1) {
+                $(".header-sticky").addClass("sticky-bar");
+            } else if ($(".header-sticky").hasClass("sticky-bar")) {
+                $(".header-sticky").removeClass("sticky-bar");
+            }
+        });</script>
 
 
 
