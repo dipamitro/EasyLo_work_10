@@ -1,2 +1,2 @@
 # Language Institute Netherlands
-https://6486fd74c9aafc1c8cd3152c--candid-panda-e7f455.netlify.app/
+https://648992e91810110789cf54d9--earnest-salamander-7d48a0.netlify.app/
