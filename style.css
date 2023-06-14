@@ -9,6 +9,11 @@ body {
 .o-wrper {
   max-width: 1200px !important;
 }
+.offcanvas-body {
+  flex-grow: 1;
+  padding: 1rem 0rem 0rem 1rem;
+  overflow-y: auto;
+}
 .hadername img {
   width: 45px;
   height: 45px;
@@ -38,20 +43,6 @@ body {
   padding-right: 1.2rem !important;
   padding-left: 1.5rem !important;
 }
-.uppernav {
-  margin-top: 1.4rem !important;
-  position: absolute;
-  z-index: 6;
-  background-color: #f9f7f7;
-  /* max-width: 100%; */
-  width: 400px;
-  /* float: left; */
-  height: 850px;
-  display: inline-block;
-  transition: 0s;
-  left: -111px;
-  text-align: center;
-}
 .c-socialbar ul {
   display: flex;
   align-items: center;
@@ -60,9 +51,10 @@ body {
   height: 40px;
   background-color: hsla(0, 0%, 100%, 0.2);
   border-radius: 40px;
-  width: 168px;
-  padding-left: 23px;
-  margin-right: 10px;
+  width: 166px;
+  padding-left: 19px;
+  padding-bottom: 2px;
+  margin-right: 9.5px;
 }
 .c-socialbar li:first-child {
   margin-left: 2px;
@@ -76,14 +68,18 @@ body {
   color: white;
   margin-top: 7px;
 }
-.c-socialbar li a:after {
+.c-socialbar li.giveposition a:after {
   content: "";
   position: absolute;
-  width: 2px;
+  width: 2.5px;
   height: 15px;
   background-color: #18a3ba;
-  top: 5px;
-  right: 10px;
+  top: 3px;
+  right: 12px;
+}
+.px-31 {
+  padding-right: 0.8rem!important;
+  padding-left: 1rem!important;
 }
 .c-language-menu ul {
   padding: 5px 0;
@@ -180,7 +176,7 @@ body {
 }
 
 .c-bottom-header .a-link a {
-  padding: 9.5px 20px 9px;
+  padding: 9.7px 19px 9.2px;
   height: 58px;
   border: 3px solid #de115f;
   color: #de115f;
@@ -216,6 +212,11 @@ body {
 .active {
   color: #de115f;
 }
+.uppernav li a{
+  font-size: 16px;
+  font-weight: 400;
+  color: #002A32;
+}
 
 .sticky-bar {
   left: 0;
@@ -225,18 +226,26 @@ body {
   width: 100%;
   z-index: 10000;
 }
-.minimiznav .button:focus {
-  outline: none !important;
-  display: block;
-}
-.minimiznav .button:active {
-  outline: none;
-  border: none !important;
-}
-.minimiznav .button:focus {
-  outline: 0 !important ;
-}
+/* = =====for Toggle button outlinrn focuse none=====  */
 
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 0 0 0rem;
+}
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+.offcanvas-start {
+  top: 61px;
+  left: 0;
+  width: 400px;
+  border-right: 1px solid rgba(0,0,0,.2);
+  transform: translateX(-100%);
+}
+.modal-backdrop.show {
+  opacity: 0;
+}
 /* =============Hero image first section================ */
 .navpart1_imgSide_padding {
   padding: 24px 0px 0px 21px;
@@ -271,7 +280,7 @@ body {
   background-size: 113.3% 100%;
   display: block;
   overflow: hidden;
-  padding: 98px 85px 95px 87px;
+  padding: 96px 85px 95px 87px;
   padding-right: 100px;
   height: 503px;
   max-width: 100%;
@@ -441,7 +450,7 @@ body {
   font-weight: 700;
 }
 .hero h3 {
-  margin-bottom: 17px;
+  margin-bottom: 22px;
 }
 
 .hero .c-bottom-header {
@@ -457,12 +466,13 @@ body {
   background-color: #ffffff;
   top: 0px;
   bottom: 0;
-  left: -69px !important;
+  left: -59px !important;
   /* max-width: 443rem; */
-  width: 95.5%;
-  height: 47.5%;
+  width: 95.6%;
+  height: 49.01%;
   border-radius: 22px;
 }
+
 
 @media (min-width: 720px) {
   .heroz-index {
@@ -534,25 +544,31 @@ body {
   font-size: 28px;
 }
 .call-to-action .pmargin {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 .call-to-action p {
   margin-bottom: 0;
 }
+.hero_firstpart.forFirstone {
+  padding: 48.5px 0 32.5px 10px;
+}
 .hero_firstpart {
-  padding: 48px 0 48px;
+  padding: 40px 0 39px 10px;
 }
 .heroz-index2 {
   padding: 54px 0px;
 }
+.hero_secondpart.forFirstone {
+  padding: 24px 9px 0px 4px;
+}
 .hero_secondpart {
-  padding-left: 4px;
+  padding-left: 12px;
 }
 /* =========Forth_Interested_section===== */
 .interested {
   position: relative;
   text-align: center;
-  padding: 33px 32px 30px;
+  padding: 30px 32px 28px;
   color: #fff;
   background-color: #18a3ba;
 }
@@ -584,7 +600,7 @@ body {
 /* ========footer========= */
 .site-footer {
   background-color: #e7f4f8;
-  padding: 48px 0 70px 0;
+  padding: 50px 0 70px 0;
   line-height: 2;
   font-size: 0.8rem;
 }
@@ -617,7 +633,7 @@ body {
   }
   .pxx-6 {
     padding-right: 0;
-    padding-left: 0.02rem;
+    padding-left: 0.0rem;
   }
   .pxx-7 {
     padding-right: 0;
@@ -625,7 +641,7 @@ body {
   }
 }
 .page-micro {
-  padding: 12px;
+  padding: 13px;
 }
 .page-micro__copy {
   font-size: 12px;
@@ -639,3 +655,9 @@ body {
   font-style: italic;
   opacity: 0.7;
 }
+/* @media (min-width: 768px){
+.mainPage-Language-col .col-md-6 {
+    flex: 0 0 auto;
+    width: 48.5%;
+}
+} */

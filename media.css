@@ -48,6 +48,7 @@
     padding-right: 22px;
     padding-left: 8px;
   }
+  
 }
 @media (max-width: 991.98px) {
   .c-socialbar,
@@ -104,8 +105,8 @@
     z-index: 3 !important;
     position: absolute;
     border-radius: 100px;
-    bottom: 18.5%;
-    padding: 10.7px 22.2px;
+    bottom: 19%;
+    padding: 10.9px 22.2px;
   }
 }
 @media (min-width: 1200px) {
@@ -114,6 +115,12 @@
   }
   .navpart1_imgSide_padding {
     padding: 24px 12.3px 0px 12.3px;
+  }
+}
+@media (max-width: 1200px) {
+  .vedioYutub{
+    width:100% ;
+    height: 290px;
   }
 }
 @media (min-width: 1199.98px) {
@@ -219,7 +226,8 @@
     background-image: url(https://taleninstituut.nl/wp-content/uploads/2020/05/taleninstituut-nederland-amsterdam.jpg);
     background-position: center center;
     position: relative;
-    background-position: 50%;
+    background-position: 51%;
+    background-size: 158% 100%;
     background-repeat: no-repeat;
     background-position: cover;
     display: block;
@@ -502,7 +510,7 @@
     background-position: 50%;
     background-repeat: no-repeat;
     background-position: cover;
-    background-size: 100% 100%;
+    background-size: 117% 100%;
     display: block;
     overflow: hidden;
     padding: 80px;
@@ -526,8 +534,9 @@
     padding: 11px 24px;
   }
   .forsmallsreenGap {
-    padding-top: 2px;
-    padding-bottom: 4px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
   }
   .c-callout-block .c-usp-icon {
     background-color: #fff;
@@ -767,6 +776,20 @@
     width: 32px;
     height: 32px;
   }
+
+  .img1::after {
+    content: "";
+    position: absolute;
+    opacity: 0.83;
+    background-color: #de115f;
+    top: 0;
+    bottom: 0;
+    left: 0 !important;
+    max-width: 437px;
+    width: 100%;
+    height: 100%;
+    transform: skew(207deg);
+  }
 }
 @media (min-width: 400px) and (max-width: 543px) {
   .py-sm-2 {
@@ -776,7 +799,7 @@
 /* =======lastdoing======== */
 .nav-link {
   display: block;
-  padding: 0.6rem 1rem 0.4rem 1rem;
+  /* padding: 0.6rem 1rem 0.4rem 1rem; */
   color: #0d6efd;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
