@@ -30,6 +30,10 @@ body {
   width: 47px;
   height: 48px;
 }
+.lastnav_hide h4 {
+    margin-bottom: 0.4rem;  
+}
+
 .px-30 {
   padding-right: 1rem !important;
   padding-left: 0.85rem !important;
@@ -348,16 +352,24 @@ button:focus:not(:focus-visible) {
   align-items: center;
   border: 3px solid #fff;
   border-radius: 15px;
-  padding: 14.5px 0px;
+  padding: 12.5px 15px 12.5px 13px;
   height: 91%;
   margin-bottom: 15px;
+}
+.c-usp-icon__icon span svg{
+  height: 30px;
+  width: 30px;
+  fill: #18a3ba;
+}
+.c-usp-icon__icon {
+ padding-right: 14px;
 }
 .ico-wrap {
   font-size: 40px;
   padding: 0 9px;
 }
 .language-coloum {
-  padding: 24px 0px;
+  padding: 24px 0px 20px;
 }
 .d-section {
   padding: 74px 0px 84px 0px;
@@ -391,6 +403,10 @@ button:focus:not(:focus-visible) {
 .cardHader .c-usp-icon__text {
   margin-bottom: 45px;
 }
+.c-usp-icon__text {
+  font-size: 16.09px;
+  font-weight: 400;
+}
 .c-callout-block .c-usp-icon {
   background-color: #fff;
   display: flex;
@@ -415,7 +431,7 @@ button:focus:not(:focus-visible) {
 }
 .flg_for_thard_section {
   position: absolute;
-  top: -103px;
+  top: -100px;
   left: 0px;
   right: -2.3px;
   bottom: 0px;
@@ -661,3 +677,5 @@ button:focus:not(:focus-visible) {
     width: 48.5%;
 }
 } */
+
+
