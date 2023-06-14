@@ -290,6 +290,7 @@ span {
   grid-template-rows: repeat(3,1fr);
   padding-left: 14.5px;
   padding-right: 14.5px;
+  padding-bottom: 38px;
   
 } 
 @media screen and (max-width: 992px) {
@@ -355,4 +356,9 @@ span {
   background-size: contain;
   background-position: 50%;
 }
-  
+@media (max-width: 450px){
+.coll .img-fluid {
+    max-width: 100% !important;
+    height: 141px !important;
+}
+}
