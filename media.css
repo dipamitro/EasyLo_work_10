@@ -12,6 +12,19 @@
   .o-wrper {
     max-width: 768px !important;
   }
+  .img1::after {
+    content: "";
+    position: absolute;
+    opacity: 0.83;
+    background-color: #de115f;
+    top: 0;
+    bottom: 0;
+    left: 0 !important;
+    max-width: 437px;
+    width: 100%;
+    height: 100%;
+    transform: skew(207deg);
+  }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .o-wrper {
@@ -108,6 +121,14 @@
     bottom: 19%;
     padding: 10.9px 22.2px;
   }
+  .imgHome1 .imgbtn {
+    background-color: #18a3ba;
+    z-index: 3 !important;
+    position: absolute;
+    border-radius: 100px;
+    bottom: 21.5%;
+    padding: 10.9px 22.2px;
+}
 }
 @media (min-width: 1200px) {
   .flagfive {
@@ -387,8 +408,12 @@
   }
 
   .cardHader .c-usp-icon__text {
-    margin-bottom: -19px;
+    margin-bottom: 6px;
   }
+  .c-usp-icon__text {
+    font-size: 16px;
+    font-weight: 400;
+}
   .hero .o-wrp::after {
     content: "";
     position: absolute;
@@ -456,8 +481,8 @@
 }
 @media (max-width: 767px) and (min-width: 720px) {
   .hero_firstpart {
-    padding: 48px 0px 0px 10px;
-  }
+    padding: 0px 0px 13px 10px;
+}
   .hero .o-wrp::after {
     content: "";
     position: absolute;
@@ -468,6 +493,30 @@
     width: 80%;
     height: 49.8%;
   }
+  .interested {
+    position: relative;
+    text-align: center;
+    padding: 35px 32px 33px;
+    color: #fff;
+    background-color: #18a3ba;
+}
+.call-to-action {
+  width: 66% !important;
+}
+.call-to-action {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  margin: auto;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.3333333333;
+  margin: 0px 95px 9.5px;
+}
+.call-to-action p {
+  font-weight: 400;
+  font-size: 19px;
+}
 }
 @media (max-width: 640px) and (min-width: 574px) {
   .o-wrp {
@@ -540,7 +589,8 @@
   .forsmallsreenGap {
     padding-top: 0px;
     padding-bottom: 0px;
-    padding-right: 0px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
   .c-callout-block .c-usp-icon {
     background-color: #fff;
@@ -579,12 +629,40 @@
     background-position: top bottom;
     display: block;
   }
+  .c-usp-icon {
+    display: flex;
+    align-items: center;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    padding: 21px 15px 21px 13px;
+    height: 91%;
+    margin-bottom: 15px;
+}
   .hero {
     padding: 54px 35px;
   }
   .cardHader .c-usp-icon__text {
     margin-bottom: 37px;
   }
+  .call-to-action {
+    position: relative;
+    z-index: 10;
+    width: 68%;
+    margin: auto;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.33333;
+    margin: 8.5px 116px;
+}
+.interested {
+  position: relative;
+  text-align: center;
+  padding: 32px 32px 29px;
+ 
+}
+.call-to-action .pmargin {
+  margin-bottom: 1.7rem;
+}
 }
 /* =========1200px======== */
 @media (max-width: 1200px) and (min-width: 993px) {
@@ -781,19 +859,7 @@
     height: 32px;
   }
 
-  .img1::after {
-    content: "";
-    position: absolute;
-    opacity: 0.83;
-    background-color: #de115f;
-    top: 0;
-    bottom: 0;
-    left: 0 !important;
-    max-width: 437px;
-    width: 100%;
-    height: 100%;
-    transform: skew(207deg);
-  }
+ 
 }
 @media (min-width: 400px) and (max-width: 543px) {
   .py-sm-2 {

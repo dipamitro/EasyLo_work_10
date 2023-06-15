@@ -250,6 +250,9 @@ button:focus:not(:focus-visible) {
 .modal-backdrop.show {
   opacity: 0;
 }
+
+
+
 /* =============Hero image first section================ */
 .navpart1_imgSide_padding {
   padding: 24px 0px 0px 21px;
@@ -284,9 +287,25 @@ button:focus:not(:focus-visible) {
   background-size: 113.3% 100%;
   display: block;
   overflow: hidden;
-  padding: 96px 85px 95px 87px;
+  padding: 97px 85px 95px 87px;
   padding-right: 100px;
   height: 503px;
+  max-width: 100%;
+  line-height: 1;
+}
+.imgHome1 .img1 {
+  background-image: url(https://taleninstituut.nl/wp-content/uploads/2020/05/taleninstituut-nederland-amsterdam.jpg);
+  background-position: center bottom;
+  position: relative;
+  background-position: 49%;
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 100% 100%;
+  display: block;
+  overflow: hidden;
+  padding: 97px 85px 95px 87px;
+  padding-right: 100px;
+  height: 445px;
   max-width: 100%;
   line-height: 1;
 }
@@ -307,7 +326,7 @@ button:focus:not(:focus-visible) {
   transform: skew(207deg);
 }
 .img1 h1 {
-  font-size: 3.75rem;
+  font-size: 3.73rem;
   font-weight: 600;
   padding-right: 61%;
   line-height: 1;
