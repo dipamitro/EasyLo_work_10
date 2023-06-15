@@ -172,6 +172,7 @@ body {
 }
 .bg-blue li:hover {
   background-color: #0f7183;
+  transition: .9s;
 }
 
 .c-bottom-header {
@@ -189,9 +190,10 @@ body {
   text-decoration: none;
 }
 .c-bottom-header .a-link a:hover {
-  border: 2px solid #de115f;
+
   background-color: #de115f;
   color: #ffffff;
+  transition: .9s;
 }
 .c-bottom-header .a-link {
   padding: 0px 0px;
@@ -215,6 +217,7 @@ body {
 .navbar-light .navbar-nav .nav-link:hover,
 .active {
   color: #de115f;
+  transition: .9s;
 }
 .uppernav li a{
   font-size: 16px;
@@ -351,6 +354,7 @@ button:focus:not(:focus-visible) {
 }
 .imgbtn:hover {
   background-color: #148da2;
+  transition: .9s;
 }
 .imgbtn a {
   color: white;
@@ -474,6 +478,7 @@ button:focus:not(:focus-visible) {
 .c-usp-icon .c-bottom-header .a-link a:hover {
   background-color: #de115f;
   color: #ffffff;
+  transition: .9s;
 }
 /* ==========third Tailor_section========== */
 .hero {
@@ -536,9 +541,9 @@ button:focus:not(:focus-visible) {
   text-decoration: none;
 }
 .hero .c-bottom-header .a-link a:hover {
-  border: 2px solid #de115f;
   background-color: #de115f;
   color: #ffffff;
+  transition: .9s;
 }
 
 .aCartoon_background {
@@ -631,6 +636,7 @@ button:focus:not(:focus-visible) {
 }
 .interested .a-link a:hover {
   background-color: #a80d48;
+  transition: .9s;
 }
 /* ========footer========= */
 .site-footer {
@@ -646,7 +652,14 @@ button:focus:not(:focus-visible) {
 .menu-footer1-container ul {
   list-style: none;
 }
+.site-footer ul li a:hover{
+  color: #4eadca;
+  transition: .1s;
+  text-decoration: underline;
+  text-decoration-color: #4eadca;
 
+
+}
 /* ======for down footer right position=== */
 
 @media (min-width: 992px) {
@@ -686,15 +699,10 @@ button:focus:not(:focus-visible) {
   text-align: center;
 }
 .page-micro {
-  background-color: #a2d8e1;
+  background-color:#D9EEF2;
   font-style: italic;
-  opacity: 0.7;
+  opacity: 1;
 }
-/* @media (min-width: 768px){
-.mainPage-Language-col .col-md-6 {
-    flex: 0 0 auto;
-    width: 48.5%;
+.site-disclaimer{
+  color: #84a5ab;
 }
-} */
-
-
