@@ -1,0 +1,308 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <section>
+        <div id="week-countdown">
+          <p></p>
+        </div>
+      </section>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script>
+         setInterval(function time(){
+    var d = new Date();
+    var days = 7 - d.getDay();
+    var hours = 24 - d.getHours();
+    var min = 60 - d.getMinutes();
+    if((min + '').length == 1){
+      min = '0' + min;
+    }
+    var sec = 60 - d.getSeconds();
+    if((sec + '').length == 1){
+          sec = '0' + sec;
+    }
+    jQuery('#week-countdown p').html(days+'d : '+hours+'h : '+min+'m : '+sec+'s ')
+  }, 1000);
+      </script>
+
+
+<section>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+      
+</body>
+</html> -->
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<link rel="stylesheet" href="styl1.css">
+<link rel="stylesheet" href="style.css">
+ 
+  <style>
+    
+
+    .swiperForslider .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiperForslider .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiperForslider .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiperForslider .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .swiperForslider .swiper-button-next::after, .swiperForslider .swiper-button-prev::after {
+    content: "";
+
+}
+
+  </style>
+</head>
+
+<body>
+  
+ <div class="swiperForslider">
+  <div class="swiper my01Swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="d-block w-100 carouselimg1">
+        <div class="img fstpara " id="section-counter">
+          <div class="container pl-2 pr-4 px-xxl-0 px-xl-0">
+
+            <div class="navpart1 forline row" style="padding-bottom: 1.1%;">
+
+              <div class="col-12  " style="border: 2px solid blac;overflow: visible;">
+                <div class="hero-caption">
+                  <h1 class="text-white text-right align-items-end float-left" data-aos="fade-right"
+                    data-aos-duration="1000" data-aos-delay="100">SCIENCE <br> CONFERENCE</h1>
+                  <p data-aos="fade-right" data-aos-duration="900" data-aos-delay="80" class="text-right">SHANGRI-LA
+                    HOTEL,BANGKOK,THAILAND</p>
+                  <form class="form-inline yo my-lg-0 text-right" data-aos="fade-right" data-aos-duration="700"
+                    data-aos-delay="70">
+                    <button class="btn btn-outline-success  lii my-2 px-0 my-sm-0" type="submit">MORE INFORMATION
+                      &#8594;</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></div>
+      <div class="swiper-slide"><div class="d-block w-100 carouselimg2">
+        <div class="img " id="section-counter">
+          <div class="container">
+            <div class="navpart1 row ">
+              <div class="text-center">
+                <div class="hero-caption">
+                  <h2 class="text-white text-center">THE EVENT CONSISTENTLY </h2>
+                </div>
+                <div class="hero-caption">
+                  <h1 class="text-white text-center">OSHA COMPLIANCE</h1>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                  <p class="m-2"><span><i class='bx bxs-user' style='color:#ffffff'></i></span>January 14,2023</p>
+                  <p class="m-3"><span><i class='bx bx-stopwatch' style='color:#ffffff'></i></span>January 14,2023
+                  </p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                  <form class="form-inline my-4 px-4 my-lg-0">
+                    <button class="btn btn-outline-success lii my-2 px-0 my-sm-0" type="submit">GET TICKETS
+                      &#8594;</button>
+                  </form>
+                  <form class="form-inline my-4 px-4 my-lg-0">
+                    <button class="btn btn-outline-success lii my-2 px-0 my-sm-0" type="submit">GET TICKETS
+                      &#8594;</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></div>
+     
+    </div>
+    <div class="swiper-button-next"><span style="font-size: 55px; color: #d0d2f6e2; font-weight: 100; margin:0 20px;  padding: 30px;"><i class='fa-2x bx bx-circle' ></i></span></div>
+    <div class="swiper-button-prev"><span style="font-size: 55px; color: #d0d2f6e2; font-weight: 100; margin:0 20px; padding: 30px; "><i class='bx bx-circle' ></i></span></div>
+    <div class="swiper-pagination"></div>
+  </div>
+ </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+<script>
+  var swiper = new Swiper(".my01Swipe", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    speed: 2500,
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+ 
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+</body>
+
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Price Toggler</title>
+</head>
+<body>
+  <h2>Price Toggler</h2>
+
+  <label for="price">Enter price in BDT:</label>
+  <input type="number" id="price" placeholder="Enter amount" step="any">
+  <button onclick="togglePrice()">Toggle</button>
+
+  <h3 id="convertedPrice"></h3>
+
+  <script>
+    function togglePrice() {
+      var bdtPrice = document.getElementById("price").value;
+      var usdPrice = bdtPrice * 0.012; // Conversion rate: 1 BDT = 0.012 USD
+      
+      var convertedPriceElement = document.getElementById("convertedPrice");
+      convertedPriceElement.textContent = "Price in USD: $" + usdPrice.toFixed(2);
+    }
+  </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Price Toggler</title>
+</head>
+<body>
+  <h2>Price Toggler</h2>
+
+  <label for="price">Enter price in BDT:</label>
+  <input type="number" id="price" placeholder="Enter amount" step="any">
+  <button onclick="togglePrice()">Toggle</button>
+
+  <h3 id="convertedPrice"></h3>
+
+  <script>
+    function togglePrice() {
+      var bdtPrice = document.getElementById("price").value;
+      var usdPrice = bdtPrice * 0.012; // Conversion rate: 1 BDT = 0.012 USD
+      
+      var convertedPriceElement = document.getElementById("convertedPrice");
+      convertedPriceElement.textContent = "Price in USD: $" + usdPrice.toFixed(2);
+    }
+  </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Price Toggler</title>
+</head>
+<body>
+  <h2>Price Toggler</h2>
+
+  <label for="price">Enter price in BDT:</label>
+  <input type="number" id="price" placeholder="Enter amount" step="any">
+  <button onclick="togglePrice()">Toggle</button>
+
+  <h3 id="convertedPrice"></h3>
+
+  <script>
+    function togglePrice() {
+      var bdtPrice = document.getElementById("price").value;
+      var usdPrice = bdtPrice * 0.012; // Conversion rate: 1 BDT = 0.012 USD
+      
+      var convertedPriceElement = document.getElementById("convertedPrice");
+      convertedPriceElement.textContent = "Price in USD: $" + usdPrice.toFixed(2);
+    }
+  </script>
+</body>
+</html>

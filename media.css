@@ -1,0 +1,271 @@
+
+@media (min-width: 1200px){
+
+    .container {
+        max-width: 1140px !important;
+    }
+}
+@media (min-width: 992px){
+
+    .container {
+        max-width: 960px;
+    }
+  
+}
+@media (max-width: 992px){
+
+    .slidingDiv.filr .hide{
+        display: none;
+    }
+  
+}
+@media (min-width: 768px){
+
+    .container {
+        max-width: 720px;
+    }
+}
+@media (max-width: 768px){
+
+    .navpart1 h1 {
+        position: relative;
+        z-index: 1;
+        font-weight: 700;
+        font-size: 74px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+    }
+}
+@media (min-width: 576px){
+
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 579px){
+.wdsm{
+    width: 70% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-ticket-pricing-table-area{
+    display: none;
+}
+.swipt1 .swiperabsu {
+    position: absolute;
+    left: 7px;
+    bottom: 216px;
+    padding: 1px 5px;
+    background: linear-gradient(180deg,#1782fa,#253eb8);
+    border-radius: 4px;
+    color: #fff;
+    height: 30px;
+    border-radius: 3px;
+}
+.swipt1 .swiperrelativ {
+    position: relative;
+    width: 288px;
+}
+.swipt1 .swiperabsu1 {
+    position: absolute;
+    right: 31px;
+    bottom: 216px;
+    padding: 1px 6px;
+    background: linear-gradient(180deg,#1782fa,#253eb8);
+    border-radius: 4px;
+    color: #fff;
+    height: 30px;
+    border-radius: 3px;
+}
+    .header-area {
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .crlcmrgin{ 
+        font-size: 55px;
+       color: #d0d2f6e2;
+       font-weight: 100;
+       margin:0px; 
+      padding: 0px;
+      }
+      .navpart1 h1 {
+        position: relative;
+        z-index: 1;
+        font-weight: 500;
+        font-size: 44px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+    }
+    .our-ticket-pricing-table-area .row .col-12 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .fordivwidth {
+        width: 460px !important;
+    }
+    .about-us-countdown-area .countdown-up-area .countdown-timer #clock .javascriptLetterWillbebigFont {
+        font-size: 62px;
+        font-weight: 600;
+        padding: 20px 5px;
+        width: 20%;
+        margin: 0 6px;
+        border: 2px solid rgba(255, 255, 255, 0.15);
+        text-align: center;
+        line-height: 1;
+    }
+    .navpart1 .lii {
+        background: #df42b1;
+        background-image: linear-gradient(120deg, #505add 0%, #df42b1 100%);
+        background-image: -ms-linear-gradient(120deg, #505add 0%, #df42b1 100%);
+        color: white;
+        border: none;
+        height: 4rem;
+        width: 10rem;
+        border-radius: 100px;
+    }
+    .carouselimg2 {
+        background: linear-gradient(53deg, #13131366 0%, #17181766 100%),url(img/45.jpg.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        width: 100% !important;
+        height: 70vh;
+        z-index: 2;
+        padding: 100ppx 0px 2px 0px";
+    }
+    .carouselimg1 {
+        background: linear-gradient(53deg, #13131366 0%, #17181766 100%),url(img/1.jpg.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 28% 30%;
+        position: relative;
+        width: 100% !important;
+        height: 70vh;
+        z-index: 2;
+        padding: 0px 0px 2px 0px;
+    }
+ 
+}
+
+@media (max-width: 478px){
+    .about-us-countdown-area .countdown-up-area .countdown-timer #clock .javascriptLetterWillbebigFont {
+        font-size: 62px;
+        font-weight: 600;
+        padding: 20px 5px;
+        width: 20%;
+        margin: 0 1px;
+        border: 2px solid rgba(255, 255, 255, 0.15);
+        text-align: center;
+        line-height: 1;
+    }
+    .header-area {
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .navpart1 .lii {
+        background: #df42b1;
+        background-image: linear-gradient(120deg, #505add 0%, #df42b1 100%);
+        background-image: -ms-linear-gradient(120deg, #505add 0%, #df42b1 100%);
+        color: white;
+        border: none;
+        height: 3rem;
+        width: 8rem;
+        border-radius: 100px;
+    }
+    .single-schedule-area {
+        border: 1px solid #444675;
+        border-radius: 10px;
+        padding: 9px;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        margin-bottom: 20px;
+    }
+    .navpart1.forline h1::after {
+        visibility: hidden;
+        position: absolute;
+        content: "";
+        height: 23px;
+        width: 258px;
+        top: 67px;
+        right: 337px;
+        z-index: -1;
+        background-image: -webkit-linear-gradient(120deg, #505add 0%, #df42b1 100%);
+        background-image: -ms-linear-gradient(120deg, #505add 0%, #df42b1 100%);
+    }
+}
+@media (max-width: 450px){
+
+    .header-area {
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .about-us-countdown-area .countdown-up-area .countdown-timer #clock .javascriptLetterWillbebigFont {
+        font-size: 62px;
+        font-weight: 600;
+        padding: 20px 5px;
+        width: 15%;
+        margin: 0;
+        border: 2px solid rgba(255, 255, 255, 0.15);
+        text-align: center;
+        line-height: 1;
+    }
+}
+@media (max-width: 350px){
+
+    .header-area {
+        position: fixed;
+        z-index: 999;
+        width: 96%;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .about-us-countdown-area .countdown-up-area .countdown-timer #clock .javascriptLetterWillbebigFont {
+        font-size: 26px;
+        font-weight: 500;
+        padding: 20px 5px;
+        width: 15%;
+        margin: 0;
+        border: 2px solid rgba(255, 255, 255, 0.15);
+        text-align: center;
+        line-height: 1;
+    }
+    .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span {
+        margin-top: 5px;
+        font-size: 10px;
+        color: #5d5e8d;
+        font-weight: 500;
+        display: block;
+    }
+
+}
+
+
+/* .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */

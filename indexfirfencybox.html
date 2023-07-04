@@ -1,0 +1,124 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <p id='num'></p>
+<div id='countDiv'>
+    <div class="countdown-up-area">
+        <div class="container">
+          <div class="row align-items-center d-flex">
+            <div class="col-12 col-md-3">
+              <div class="countdown-content-text mb-100" data-aos="fade-up" data-aos-delay="300ms"
+                data-aos-duration="1500" data-aos="fade-up" data-aos-delay="300ms" data-aos-duration="1500">
+                <h6>Conference Date</h6>
+                <h4>Count Every Second Until the Event</h4>
+              </div>
+            </div>
+            <div class="col-12 col-md-9">
+              <div class="countdown-timer mb-100 " data-aos="fade-up" data-aos-delay="300ms" data-aos-duration="1500"
+                data-aos="fade-up" data-aos-delay="300ms" data-aos-duration="1500">
+                <div id="clock">
+                  <div class="javascriptLetterWillbebigFont">00 <span>Months</span>
+                  </div>
+                  <div class="javascriptLetterWillbebigFont">
+                    <div id="days1" class="days"></div>
+                    <span>Days</span>
+                  </div>
+                  <div class="javascriptLetterWillbebigFont">
+                    <div id="hours1" class="hours"></div><span>Hours</span>
+                  </div>
+                  <div class="javascriptLetterWillbebigFont">
+                    <div id="minutes1" class="minutes"></div> <span>Minutes</span>
+                  </div>
+                  <div class="javascriptLetterWillbebigFont">
+                    <div id="second1" class="seconds"></div> <span>Seconds</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <script>function timingCalc(endtime) {
+        'use strict';
+        
+        var timeTotal = Date.parse(endtime) - Date.parse(new Date()),
+            timeSeconds = Math.floor((timeTotal / 1000) % 60),
+            timeMinutes = Math.floor((timeTotal / 1000 / 60) % 60),
+            timeHours = Math.floor((timeTotal / (1000 * 60 * 60)) % 24),
+            timeDays = Math.floor(timeTotal / (1000 * 60 * 60 * 24));
+        
+        return {
+            'total': timeTotal,
+            'seconds': timeSeconds,
+            'minutes': timeMinutes,
+            'hours': timeHours,
+            'days': timeDays
+        };
+        
+    }
+    
+    
+    function installCalc(id, endtime) {
+        'use strict';
+        
+        var calc = document.getElementById(id),
+            daySpan = calc.querySelector(".days"),
+            hourSpan = calc.querySelector(".hours"),
+            minSpan = calc.querySelector(".minutes"),
+            secSpan = calc.querySelector(".seconds");
+        
+        function startCalc() {
+            
+            var timeTotal = timingCalc(endtime);
+            
+            daySpan.innerHTML = timeTotal.days;
+            hourSpan.innerHTML = ("0" + timeTotal.hours).slice(-2);
+            minSpan.innerHTML = ("0" + timeTotal.minutes).slice(-2);
+            secSpan.innerHTML = ("0" + timeTotal.seconds).slice(-2);
+            
+            if (timeTotal.total <= 0) {
+                
+                clearInterval(timingNow);
+                
+            }
+            
+        }
+        startCalc();
+        var timingNow = setInterval(startCalc, 1000);
+    }
+    
+    var DeadLine = new Date(Date.parse(new Date()) + 60 * 24 * 60 * 60 * 1000);
+    installCalc("countDiv", DeadLine);</script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Count-Up</title>
+</head>
+<body>
+  <h2>Count-Up</h2>
+  <h3 id="counter">0</h3>
+
+  <script>
+    var counterElement = document.getElementById("counter");
+    var targetCount = 700;
+    var duration = 2000; // 2 seconds
+    var interval = duration / targetCount;
+    var currentCount = 0;
+
+    var countUpInterval = setInterval(function() {
+      if (currentCount >= targetCount) {
+        clearInterval(countUpInterval);
+      } else {
+        currentCount++;
+        counterElement.textContent = currentCount;
+      }
+    }, interval);
+  </script>
+</body>
+</html>

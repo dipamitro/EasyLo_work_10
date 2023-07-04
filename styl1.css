@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+}
+.carouselimg1{
+    background:linear-gradient(53deg, #13131366 0%, #17181766 100%),url(img/1.jpg.webp); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    position:relative;
+    width: 100% !important;
+    height:100vh;
+    z-index: 2;
+    padding: 0px 0px 2px 0px;
+  
+  }
+  .carouselimg2{
+    background:linear-gradient(53deg, #13131366 0%, #17181766 100%),url(img/45.jpg.webp); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position:relative;
+    width: 100% !important;
+    height:100vh;
+    z-index: 2;
+    padding: 100ppx 0px 2px 0px"
+  }
