@@ -15,7 +15,7 @@ Click the horse for slow-mo :)
   --color-horse-back: rgba(30, 30, 30, 1);
   --color-hair: rgba(70, 70, 70, 1);
   --color-hoof: rgba(0, 0, 0, 1);
-  --color-dust: #AF540B;
+  --color-strew: #AF540B;
   --color-floor: #F1D1AF;
   --color-sky: #C4C4FF; }
 
@@ -48,7 +48,7 @@ body {
 label {
   cursor: pointer; }
 
-.dust {
+.strew {
   position: fixed;
   top: 0;
   left: 0;
@@ -66,8 +66,8 @@ label {
   bottom: 0;
   overflow: hidden; }
 
-.dust .particle {
-  background-color: var(--color-dust);
+.strew .molecule {
+  background-color: var(--color-strew);
   width: 0.05rem;
   height: 0.05rem;
   border-radius: 50%;
@@ -76,397 +76,397 @@ label {
   top: calc(50vh + (var(--horse-height) / 2) - 0.05rem);
   left: calc(50vw - (var(--horse-width) / 2) + (var(--horse-width) * 0.15)); }
 
-.dust.back .particle {
+.strew.back .molecule {
   left: calc(50vw - (var(--horse-width) / 2) + (var(--horse-width) * 0.5)); }
 
-@keyframes particle-animation-1 {
+@keyframes molecule-animation-1 {
   100% {
     transform: translateX(calc(0.44734 * var(--horse-width))) translateY(calc(-0.00345 * (var(--horse-height) / 5))) scale(5) rotate(-143deg);
     opacity: 0; } }
 
-.particle:nth-child(1) {
+.molecule:nth-child(1) {
   transform-origin: -20% -20%;
-  animation: particle-animation-1 var(--speed) ease-out infinite;
+  animation: molecule-animation-1 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.01s); }
 
-.dust.back .particle:nth-child(1) {
+.strew.back .molecule:nth-child(1) {
   animation-delay: calc((var(--speed) * 0.68) + 0.01s); }
 
-@keyframes particle-animation-2 {
+@keyframes molecule-animation-2 {
   100% {
     transform: translateX(calc(0.09589 * var(--horse-width))) translateY(calc(-0.00337 * (var(--horse-height) / 5))) scale(4) rotate(-45deg);
     opacity: 0; } }
 
-.particle:nth-child(2) {
+.molecule:nth-child(2) {
   transform-origin: -20% -20%;
-  animation: particle-animation-2 var(--speed) ease-out infinite;
+  animation: molecule-animation-2 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.02s); }
 
-.dust.back .particle:nth-child(2) {
+.strew.back .molecule:nth-child(2) {
   animation-delay: calc((var(--speed) * 0.68) + 0.02s); }
 
-@keyframes particle-animation-3 {
+@keyframes molecule-animation-3 {
   100% {
     transform: translateX(calc(0.38356 * var(--horse-width))) translateY(calc(-0.00948 * (var(--horse-height) / 5))) scale(4) rotate(-86.5deg);
     opacity: 0; } }
 
-.particle:nth-child(3) {
+.molecule:nth-child(3) {
   transform-origin: -20% -20%;
-  animation: particle-animation-3 var(--speed) ease-out infinite;
+  animation: molecule-animation-3 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.03s); }
 
-.dust.back .particle:nth-child(3) {
+.strew.back .molecule:nth-child(3) {
   animation-delay: calc((var(--speed) * 0.68) + 0.03s); }
 
-@keyframes particle-animation-4 {
+@keyframes molecule-animation-4 {
   100% {
     transform: translateX(calc(0.58173 * var(--horse-width))) translateY(calc(-0.00491 * (var(--horse-height) / 5))) scale(4) rotate(-154deg);
     opacity: 0; } }
 
-.particle:nth-child(4) {
+.molecule:nth-child(4) {
   transform-origin: -20% -20%;
-  animation: particle-animation-4 var(--speed) ease-out infinite;
+  animation: molecule-animation-4 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.04s); }
 
-.dust.back .particle:nth-child(4) {
+.strew.back .molecule:nth-child(4) {
   animation-delay: calc((var(--speed) * 0.68) + 0.04s); }
 
-@keyframes particle-animation-5 {
+@keyframes molecule-animation-5 {
   100% {
     transform: translateX(calc(0.73745 * var(--horse-width))) translateY(calc(-0.0033 * (var(--horse-height) / 5))) scale(3) rotate(-53deg);
     opacity: 0; } }
 
-.particle:nth-child(5) {
+.molecule:nth-child(5) {
   transform-origin: -20% -20%;
-  animation: particle-animation-5 var(--speed) ease-out infinite;
+  animation: molecule-animation-5 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.05s); }
 
-.dust.back .particle:nth-child(5) {
+.strew.back .molecule:nth-child(5) {
   animation-delay: calc((var(--speed) * 0.68) + 0.05s); }
 
-@keyframes particle-animation-6 {
+@keyframes molecule-animation-6 {
   100% {
     transform: translateX(calc(0.123 * var(--horse-width))) translateY(calc(-0.00067 * (var(--horse-height) / 5))) scale(3) rotate(-170deg);
     opacity: 0; } }
 
-.particle:nth-child(6) {
+.molecule:nth-child(6) {
   transform-origin: -20% -20%;
-  animation: particle-animation-6 var(--speed) ease-out infinite;
+  animation: molecule-animation-6 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.06s); }
 
-.dust.back .particle:nth-child(6) {
+.strew.back .molecule:nth-child(6) {
   animation-delay: calc((var(--speed) * 0.68) + 0.06s); }
 
-@keyframes particle-animation-7 {
+@keyframes molecule-animation-7 {
   100% {
     transform: translateX(calc(0.18846 * var(--horse-width))) translateY(calc(-0.00218 * (var(--horse-height) / 5))) scale(5) rotate(-133deg);
     opacity: 0; } }
 
-.particle:nth-child(7) {
+.molecule:nth-child(7) {
   transform-origin: -20% -20%;
-  animation: particle-animation-7 var(--speed) ease-out infinite;
+  animation: molecule-animation-7 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.07s); }
 
-.dust.back .particle:nth-child(7) {
+.strew.back .molecule:nth-child(7) {
   animation-delay: calc((var(--speed) * 0.68) + 0.07s); }
 
-@keyframes particle-animation-8 {
+@keyframes molecule-animation-8 {
   100% {
     transform: translateX(calc(0.25095 * var(--horse-width))) translateY(calc(-0.00108 * (var(--horse-height) / 5))) scale(6) rotate(-12deg);
     opacity: 0; } }
 
-.particle:nth-child(8) {
+.molecule:nth-child(8) {
   transform-origin: -20% -20%;
-  animation: particle-animation-8 var(--speed) ease-out infinite;
+  animation: molecule-animation-8 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.08s); }
 
-.dust.back .particle:nth-child(8) {
+.strew.back .molecule:nth-child(8) {
   animation-delay: calc((var(--speed) * 0.68) + 0.08s); }
 
-@keyframes particle-animation-9 {
+@keyframes molecule-animation-9 {
   100% {
     transform: translateX(calc(0.53014 * var(--horse-width))) translateY(calc(-0.00146 * (var(--horse-height) / 5))) scale(3) rotate(-88deg);
     opacity: 0; } }
 
-.particle:nth-child(9) {
+.molecule:nth-child(9) {
   transform-origin: -20% -20%;
-  animation: particle-animation-9 var(--speed) ease-out infinite;
+  animation: molecule-animation-9 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.09s); }
 
-.dust.back .particle:nth-child(9) {
+.strew.back .molecule:nth-child(9) {
   animation-delay: calc((var(--speed) * 0.68) + 0.09s); }
 
-@keyframes particle-animation-10 {
+@keyframes molecule-animation-10 {
   100% {
     transform: translateX(calc(0.60528 * var(--horse-width))) translateY(calc(-0.00893 * (var(--horse-height) / 5))) scale(6) rotate(-92deg);
     opacity: 0; } }
 
-.particle:nth-child(10) {
+.molecule:nth-child(10) {
   transform-origin: -20% -20%;
-  animation: particle-animation-10 var(--speed) ease-out infinite;
+  animation: molecule-animation-10 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.1s); }
 
-.dust.back .particle:nth-child(10) {
+.strew.back .molecule:nth-child(10) {
   animation-delay: calc((var(--speed) * 0.68) + 0.1s); }
 
-@keyframes particle-animation-11 {
+@keyframes molecule-animation-11 {
   100% {
     transform: translateX(calc(0.07314 * var(--horse-width))) translateY(calc(-0.00975 * (var(--horse-height) / 5))) scale(3) rotate(-118.5deg);
     opacity: 0; } }
 
-.particle:nth-child(11) {
+.molecule:nth-child(11) {
   transform-origin: -20% -20%;
-  animation: particle-animation-11 var(--speed) ease-out infinite;
+  animation: molecule-animation-11 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.11s); }
 
-.dust.back .particle:nth-child(11) {
+.strew.back .molecule:nth-child(11) {
   animation-delay: calc((var(--speed) * 0.68) + 0.11s); }
 
-@keyframes particle-animation-12 {
+@keyframes molecule-animation-12 {
   100% {
     transform: translateX(calc(0.34389 * var(--horse-width))) translateY(calc(-0.00891 * (var(--horse-height) / 5))) scale(3) rotate(-109.5deg);
     opacity: 0; } }
 
-.particle:nth-child(12) {
+.molecule:nth-child(12) {
   transform-origin: -20% -20%;
-  animation: particle-animation-12 var(--speed) ease-out infinite;
+  animation: molecule-animation-12 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.12s); }
 
-.dust.back .particle:nth-child(12) {
+.strew.back .molecule:nth-child(12) {
   animation-delay: calc((var(--speed) * 0.68) + 0.12s); }
 
-@keyframes particle-animation-13 {
+@keyframes molecule-animation-13 {
   100% {
     transform: translateX(calc(0.56015 * var(--horse-width))) translateY(calc(-0.00887 * (var(--horse-height) / 5))) scale(4) rotate(-115.5deg);
     opacity: 0; } }
 
-.particle:nth-child(13) {
+.molecule:nth-child(13) {
   transform-origin: -20% -20%;
-  animation: particle-animation-13 var(--speed) ease-out infinite;
+  animation: molecule-animation-13 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.13s); }
 
-.dust.back .particle:nth-child(13) {
+.strew.back .molecule:nth-child(13) {
   animation-delay: calc((var(--speed) * 0.68) + 0.13s); }
 
-@keyframes particle-animation-14 {
+@keyframes molecule-animation-14 {
   100% {
     transform: translateX(calc(0.20986 * var(--horse-width))) translateY(calc(-0.00155 * (var(--horse-height) / 5))) scale(3) rotate(-14deg);
     opacity: 0; } }
 
-.particle:nth-child(14) {
+.molecule:nth-child(14) {
   transform-origin: -20% -20%;
-  animation: particle-animation-14 var(--speed) ease-out infinite;
+  animation: molecule-animation-14 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.14s); }
 
-.dust.back .particle:nth-child(14) {
+.strew.back .molecule:nth-child(14) {
   animation-delay: calc((var(--speed) * 0.68) + 0.14s); }
 
-@keyframes particle-animation-15 {
+@keyframes molecule-animation-15 {
   100% {
     transform: translateX(calc(0.38598 * var(--horse-width))) translateY(calc(-0.00657 * (var(--horse-height) / 5))) scale(3) rotate(-38deg);
     opacity: 0; } }
 
-.particle:nth-child(15) {
+.molecule:nth-child(15) {
   transform-origin: -20% -20%;
-  animation: particle-animation-15 var(--speed) ease-out infinite;
+  animation: molecule-animation-15 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.15s); }
 
-.dust.back .particle:nth-child(15) {
+.strew.back .molecule:nth-child(15) {
   animation-delay: calc((var(--speed) * 0.68) + 0.15s); }
 
-@keyframes particle-animation-16 {
+@keyframes molecule-animation-16 {
   100% {
     transform: translateX(calc(0.04668 * var(--horse-width))) translateY(calc(-0.00783 * (var(--horse-height) / 5))) scale(4) rotate(-67deg);
     opacity: 0; } }
 
-.particle:nth-child(16) {
+.molecule:nth-child(16) {
   transform-origin: -20% -20%;
-  animation: particle-animation-16 var(--speed) ease-out infinite;
+  animation: molecule-animation-16 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.16s); }
 
-.dust.back .particle:nth-child(16) {
+.strew.back .molecule:nth-child(16) {
   animation-delay: calc((var(--speed) * 0.68) + 0.16s); }
 
-@keyframes particle-animation-17 {
+@keyframes molecule-animation-17 {
   100% {
     transform: translateX(calc(0.57388 * var(--horse-width))) translateY(calc(-0.00016 * (var(--horse-height) / 5))) scale(3) rotate(-139deg);
     opacity: 0; } }
 
-.particle:nth-child(17) {
+.molecule:nth-child(17) {
   transform-origin: -20% -20%;
-  animation: particle-animation-17 var(--speed) ease-out infinite;
+  animation: molecule-animation-17 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.17s); }
 
-.dust.back .particle:nth-child(17) {
+.strew.back .molecule:nth-child(17) {
   animation-delay: calc((var(--speed) * 0.68) + 0.17s); }
 
-@keyframes particle-animation-18 {
+@keyframes molecule-animation-18 {
   100% {
     transform: translateX(calc(0.7655 * var(--horse-width))) translateY(calc(-0.00132 * (var(--horse-height) / 5))) scale(3) rotate(-20.5deg);
     opacity: 0; } }
 
-.particle:nth-child(18) {
+.molecule:nth-child(18) {
   transform-origin: -20% -20%;
-  animation: particle-animation-18 var(--speed) ease-out infinite;
+  animation: molecule-animation-18 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.18s); }
 
-.dust.back .particle:nth-child(18) {
+.strew.back .molecule:nth-child(18) {
   animation-delay: calc((var(--speed) * 0.68) + 0.18s); }
 
-@keyframes particle-animation-19 {
+@keyframes molecule-animation-19 {
   100% {
     transform: translateX(calc(0.76386 * var(--horse-width))) translateY(calc(-0.00804 * (var(--horse-height) / 5))) scale(3) rotate(-166deg);
     opacity: 0; } }
 
-.particle:nth-child(19) {
+.molecule:nth-child(19) {
   transform-origin: -20% -20%;
-  animation: particle-animation-19 var(--speed) ease-out infinite;
+  animation: molecule-animation-19 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.19s); }
 
-.dust.back .particle:nth-child(19) {
+.strew.back .molecule:nth-child(19) {
   animation-delay: calc((var(--speed) * 0.68) + 0.19s); }
 
-@keyframes particle-animation-20 {
+@keyframes molecule-animation-20 {
   100% {
     transform: translateX(calc(0.14754 * var(--horse-width))) translateY(calc(-0.00884 * (var(--horse-height) / 5))) scale(5) rotate(-76.5deg);
     opacity: 0; } }
 
-.particle:nth-child(20) {
+.molecule:nth-child(20) {
   transform-origin: -20% -20%;
-  animation: particle-animation-20 var(--speed) ease-out infinite;
+  animation: molecule-animation-20 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.2s); }
 
-.dust.back .particle:nth-child(20) {
+.strew.back .molecule:nth-child(20) {
   animation-delay: calc((var(--speed) * 0.68) + 0.2s); }
 
-@keyframes particle-animation-21 {
+@keyframes molecule-animation-21 {
   100% {
     transform: translateX(calc(0.393 * var(--horse-width))) translateY(calc(-0.00164 * (var(--horse-height) / 5))) scale(3) rotate(-81.5deg);
     opacity: 0; } }
 
-.particle:nth-child(21) {
+.molecule:nth-child(21) {
   transform-origin: -20% -20%;
-  animation: particle-animation-21 var(--speed) ease-out infinite;
+  animation: molecule-animation-21 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.21s); }
 
-.dust.back .particle:nth-child(21) {
+.strew.back .molecule:nth-child(21) {
   animation-delay: calc((var(--speed) * 0.68) + 0.21s); }
 
-@keyframes particle-animation-22 {
+@keyframes molecule-animation-22 {
   100% {
     transform: translateX(calc(0.22196 * var(--horse-width))) translateY(calc(-0.00005 * (var(--horse-height) / 5))) scale(3) rotate(-143deg);
     opacity: 0; } }
 
-.particle:nth-child(22) {
+.molecule:nth-child(22) {
   transform-origin: -20% -20%;
-  animation: particle-animation-22 var(--speed) ease-out infinite;
+  animation: molecule-animation-22 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.22s); }
 
-.dust.back .particle:nth-child(22) {
+.strew.back .molecule:nth-child(22) {
   animation-delay: calc((var(--speed) * 0.68) + 0.22s); }
 
-@keyframes particle-animation-23 {
+@keyframes molecule-animation-23 {
   100% {
     transform: translateX(calc(0.2786 * var(--horse-width))) translateY(calc(-0.00707 * (var(--horse-height) / 5))) scale(5) rotate(-149.5deg);
     opacity: 0; } }
 
-.particle:nth-child(23) {
+.molecule:nth-child(23) {
   transform-origin: -20% -20%;
-  animation: particle-animation-23 var(--speed) ease-out infinite;
+  animation: molecule-animation-23 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.23s); }
 
-.dust.back .particle:nth-child(23) {
+.strew.back .molecule:nth-child(23) {
   animation-delay: calc((var(--speed) * 0.68) + 0.23s); }
 
-@keyframes particle-animation-24 {
+@keyframes molecule-animation-24 {
   100% {
     transform: translateX(calc(0.33973 * var(--horse-width))) translateY(calc(-0.00838 * (var(--horse-height) / 5))) scale(3) rotate(-82deg);
     opacity: 0; } }
 
-.particle:nth-child(24) {
+.molecule:nth-child(24) {
   transform-origin: -20% -20%;
-  animation: particle-animation-24 var(--speed) ease-out infinite;
+  animation: molecule-animation-24 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.24s); }
 
-.dust.back .particle:nth-child(24) {
+.strew.back .molecule:nth-child(24) {
   animation-delay: calc((var(--speed) * 0.68) + 0.24s); }
 
-@keyframes particle-animation-25 {
+@keyframes molecule-animation-25 {
   100% {
     transform: translateX(calc(0.68368 * var(--horse-width))) translateY(calc(-0.00109 * (var(--horse-height) / 5))) scale(3) rotate(-170.5deg);
     opacity: 0; } }
 
-.particle:nth-child(25) {
+.molecule:nth-child(25) {
   transform-origin: -20% -20%;
-  animation: particle-animation-25 var(--speed) ease-out infinite;
+  animation: molecule-animation-25 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.25s); }
 
-.dust.back .particle:nth-child(25) {
+.strew.back .molecule:nth-child(25) {
   animation-delay: calc((var(--speed) * 0.68) + 0.25s); }
 
-@keyframes particle-animation-26 {
+@keyframes molecule-animation-26 {
   100% {
     transform: translateX(calc(0.68156 * var(--horse-width))) translateY(calc(-0.00295 * (var(--horse-height) / 5))) scale(3) rotate(-45.5deg);
     opacity: 0; } }
 
-.particle:nth-child(26) {
+.molecule:nth-child(26) {
   transform-origin: -20% -20%;
-  animation: particle-animation-26 var(--speed) ease-out infinite;
+  animation: molecule-animation-26 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.26s); }
 
-.dust.back .particle:nth-child(26) {
+.strew.back .molecule:nth-child(26) {
   animation-delay: calc((var(--speed) * 0.68) + 0.26s); }
 
-@keyframes particle-animation-27 {
+@keyframes molecule-animation-27 {
   100% {
     transform: translateX(calc(0.25941 * var(--horse-width))) translateY(calc(-0.00681 * (var(--horse-height) / 5))) scale(4) rotate(-114.5deg);
     opacity: 0; } }
 
-.particle:nth-child(27) {
+.molecule:nth-child(27) {
   transform-origin: -20% -20%;
-  animation: particle-animation-27 var(--speed) ease-out infinite;
+  animation: molecule-animation-27 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.27s); }
 
-.dust.back .particle:nth-child(27) {
+.strew.back .molecule:nth-child(27) {
   animation-delay: calc((var(--speed) * 0.68) + 0.27s); }
 
-@keyframes particle-animation-28 {
+@keyframes molecule-animation-28 {
   100% {
     transform: translateX(calc(0.7 * var(--horse-width))) translateY(calc(-0.00646 * (var(--horse-height) / 5))) scale(6) rotate(-10deg);
     opacity: 0; } }
 
-.particle:nth-child(28) {
+.molecule:nth-child(28) {
   transform-origin: -20% -20%;
-  animation: particle-animation-28 var(--speed) ease-out infinite;
+  animation: molecule-animation-28 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.28s); }
 
-.dust.back .particle:nth-child(28) {
+.strew.back .molecule:nth-child(28) {
   animation-delay: calc((var(--speed) * 0.68) + 0.28s); }
 
-@keyframes particle-animation-29 {
+@keyframes molecule-animation-29 {
   100% {
     transform: translateX(calc(0.08019 * var(--horse-width))) translateY(calc(-0.00772 * (var(--horse-height) / 5))) scale(3) rotate(-166deg);
     opacity: 0; } }
 
-.particle:nth-child(29) {
+.molecule:nth-child(29) {
   transform-origin: -20% -20%;
-  animation: particle-animation-29 var(--speed) ease-out infinite;
+  animation: molecule-animation-29 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.29s); }
 
-.dust.back .particle:nth-child(29) {
+.strew.back .molecule:nth-child(29) {
   animation-delay: calc((var(--speed) * 0.68) + 0.29s); }
 
-@keyframes particle-animation-30 {
+@keyframes molecule-animation-30 {
   100% {
     transform: translateX(calc(0.30042 * var(--horse-width))) translateY(calc(-0.00532 * (var(--horse-height) / 5))) scale(6) rotate(-127.5deg);
     opacity: 0; } }
 
-.particle:nth-child(30) {
+.molecule:nth-child(30) {
   transform-origin: -20% -20%;
-  animation: particle-animation-30 var(--speed) ease-out infinite;
+  animation: molecule-animation-30 var(--speed) ease-out infinite;
   animation-delay: calc((var(--speed) * 0.1) + 0.3s); }
 
-.dust.back .particle:nth-child(30) {
+.strew.back .molecule:nth-child(30) {
   animation-delay: calc((var(--speed) * 0.68) + 0.3s); }
 
 .🐴 {
@@ -630,7 +630,7 @@ label {
   background-color: transparent;
   border-top: 0.07rem outset var(--color-horse); }
 
-.neck .front {
+.neck .ventral {
   --shape-width: 75%;
   --shape-height: 55%;
   --shape-radius: 50%;
@@ -797,10 +797,10 @@ label {
 
 /* ================
 
-   FRONT LEG
+   ventral LEG
 
    ================ */
-.front-leg {
+.ventral-leg {
   --part-width: 15%;
   --part-height: 60%;
   --part-x: 20%;
@@ -808,11 +808,11 @@ label {
   --part-origin: 100% 50%;
   border: none; }
 
-.front-leg.right {
+.ventral-leg.right {
   --color-horse: var(--color-horse-back);
   --delay: calc( 0s - var(--speed) / var(--delay-gap)); }
 
-.front-leg .shoulder {
+.ventral-leg .shoulder {
   --shape-x: 20%;
   --shape-width: 80%;
   --shape-height: 35%;
@@ -820,7 +820,7 @@ label {
   --shape-radius: 30% 30% 30% 50%;
   --shape-rotate: -0deg; }
 
-.front-leg .upper {
+.ventral-leg .upper {
   --shape-x: 40%;
   --shape-y: 60%;
   --shape-width: 40%;
@@ -829,13 +829,13 @@ label {
   --shape-radius: 30% 30% 50% 50%;
   --shape-rotate: 0deg; }
 
-.front-leg .upper:before {
+.ventral-leg .upper:before {
   content: '';
   --shape-x: 5%;
   --shape-radius: 20%;
   --shape-rotate: 0deg; }
 
-.front-leg .upper:after {
+.ventral-leg .upper:after {
   content: '';
   --shape-x: 40%;
   --shape-y: 60%;
@@ -843,7 +843,7 @@ label {
   --shape-radius: 40%;
   --shape-rotate: 5deg; }
 
-.front-leg .knee {
+.ventral-leg .knee {
   --shape-x: 0%;
   --shape-y: 120%;
   --shape-width: 57%;
@@ -852,7 +852,7 @@ label {
   --shape-origin: 40% 20%;
   --shape-rotate: -0deg; }
 
-.front-leg .knee:before {
+.ventral-leg .knee:before {
   content: '';
   --shape-x: 0%;
   --shape-y: 60%;
@@ -861,7 +861,7 @@ label {
   --shape-radius: 30%;
   --shape-rotate: 0deg; }
 
-.front-leg .lower {
+.ventral-leg .lower {
   --shape-x: 0%;
   --shape-y: 80%;
   --shape-width: 54%;
@@ -869,7 +869,7 @@ label {
   --shape-radius: 5%;
   --shape-rotate: 12deg; }
 
-.front-leg .ankle {
+.ventral-leg .ankle {
   --shape-x: -20%;
   --shape-y: 80%;
   --shape-width: 170%;
@@ -877,7 +877,7 @@ label {
   --shape-radius: 50%;
   --shape-rotate: 20deg; }
 
-.front-leg .foot {
+.ventral-leg .foot {
   --shape-x: -35%;
   --shape-y: 65%;
   --shape-width: 120%;
@@ -886,7 +886,7 @@ label {
   --shape-rotate: 30deg;
   clip-path: polygon(0% 0%, 80% 0%, 65% 20%, 63% 30%, 70% 45%, 75% 55%, 46% 90%, 35% 95%, 10% 70%, 5% 50%, 10% 25%); }
 
-.front-leg .hoof {
+.ventral-leg .hoof {
   --shape-x: 40%;
   --shape-y: 52%;
   --shape-width: 100%;
@@ -1040,7 +1040,7 @@ label {
 .animate .body {
   animation: body var(--speed) linear infinite; }
 
-@keyframes front-shoulder {
+@keyframes ventral-shoulder {
   0%, 100% {
     transform: rotate(20deg) translatex(0%) translatey(6%); }
   8.3% {
@@ -1066,10 +1066,10 @@ label {
   91.6% {
     transform: rotate(20deg) translatex(0%) translatey(0%); } }
 
-.animate .front-leg .shoulder {
-  animation: front-shoulder var(--speed) linear infinite; }
+.animate .ventral-leg .shoulder {
+  animation: ventral-shoulder var(--speed) linear infinite; }
 
-@keyframes front-upper {
+@keyframes ventral-upper {
   0%, 100% {
     transform: rotate(50deg) translatex(30%) translatey(8%); }
   8.3% {
@@ -1095,10 +1095,10 @@ label {
   91.6% {
     transform: rotate(55deg) translatex(25%) translatey(-5%); } }
 
-.animate .front-leg .upper {
-  animation: front-upper var(--speed) linear infinite; }
+.animate .ventral-leg .upper {
+  animation: ventral-upper var(--speed) linear infinite; }
 
-@keyframes front-knee {
+@keyframes ventral-knee {
   0%, 100% {
     transform: rotate(-15deg) translatex(0%) translatey(0%); }
   8.3% {
@@ -1124,10 +1124,10 @@ label {
   91.6% {
     transform: rotate(-50deg) translatex(-30%) translatey(10%); } }
 
-.animate .front-leg .knee {
-  animation: front-knee var(--speed) linear infinite; }
+.animate .ventral-leg .knee {
+  animation: ventral-knee var(--speed) linear infinite; }
 
-@keyframes front-lower {
+@keyframes ventral-lower {
   0%, 100% {
     transform: rotate(-25deg) translatex(20%) translatey(0%); }
   8.3% {
@@ -1153,10 +1153,10 @@ label {
   91.6% {
     transform: rotate(-10deg) translatex(20%) translatey(-30%); } }
 
-.animate .front-leg .lower {
-  animation: front-lower var(--speed) linear infinite; }
+.animate .ventral-leg .lower {
+  animation: ventral-lower var(--speed) linear infinite; }
 
-@keyframes front-ankle {
+@keyframes ventral-ankle {
   0%, 100% {
     transform: rotate(20deg) translatex(0%) translatey(0%); }
   8.3% {
@@ -1182,10 +1182,10 @@ label {
   91.6% {
     transform: rotate(20deg) translatex(0%) translatey(0%); } }
 
-.animate .front-leg .ankle {
-  animation: front-ankle var(--speed) linear infinite; }
+.animate .ventral-leg .ankle {
+  animation: ventral-ankle var(--speed) linear infinite; }
 
-@keyframes front-foot {
+@keyframes ventral-foot {
   0%, 100% {
     transform: rotate(-28deg) translatex(40%) translatey(0%); }
   8.3% {
@@ -1211,8 +1211,8 @@ label {
   91.6% {
     transform: rotate(-50deg) translatex(50%) translatey(10%); } }
 
-.animate .front-leg .foot {
-  animation: front-foot var(--speed) linear infinite; }
+.animate .ventral-leg .foot {
+  animation: ventral-foot var(--speed) linear infinite; }
 
 @keyframes back-top {
   0%, 100% {
