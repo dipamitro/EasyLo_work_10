@@ -47,14 +47,13 @@
 </head>
 <body onload="startTime()">
   <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"
-    nonce="FhqZe3d1"></script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="KY2XcPAG"></script>
   <header class="header-background">
     <div class="header-area">
       <div class="classy-nav-container ">
         <div class="container">
           <nav class="navbar navbar-expand-lg classy-navbar  justify-content-between navbar-light d-flex ">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
               <img src="https://preview.colorlib.com/theme/confer/img/core-img/logo.png" alt="Logo">
             </a>
             <button class="btn bdhide" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
@@ -646,7 +645,7 @@
             <div class="social-info" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1500"
               id="social-icon">
               <div class="speaker-info">
-                <h5>Susan Hopkins</h5>
+                <h5>Susan Hopkin</h5>
                 <p>UX Manager</p>
               </div>
               <a href="#"><i class='bx bxl-facebook'></i></a>
@@ -744,19 +743,17 @@
                 <div class="row">
                   <div class="col-12">
 
+                  
                     <div class="single-schedule-area d-flex flex-wrap justify-content-between align-items-center aos"
                       data-aos="fade-up" data-aos-delay="300ms" data-aos-duration="1500" data-aos="fade-up"
                       data-aos-delay="300ms" data-aos-duration="1500">
-
                       <div class="single-schedule-tumb-info d-flex align-items-center">
-
                         <div class="single-schedule-tumb">
                           <img src="img/10.jpg.webp" alt="">
                         </div>
-
                         <div class="single-schedule-info">
-                          <h6>Dealing with Difficult People</h6>
-                          <p>by <span>Gary Armstrong</span> / Ceo of Confer</p>
+                          <h6>Crop Insurance Conference</h6>
+                          <p>by <span>Amanda Hudson</span> / Ceo of Confer</p>
                         </div>
                       </div>
                       <div class="schedule-time-place">
@@ -765,7 +762,7 @@
                         <p><i class='bx bxs-flag-alt'></i> Mountain Resort, Phoenix, USA</p>
                       </div>
                       <a href="#"
-                        class="btn confer-btn   m-auto text-center d-flex align-items-center justify-content-center"
+                        class="btn confer-btn    m-auto text-center d-flex align-items-center justify-content-center"
                         style="border-radius: 50px;">View More <i class='bx bx-right-arrow-alt'
                           style='color:#ffffff'></i></a>
                     </div>
@@ -2016,19 +2013,7 @@
           <div class="p-3 border bg-trans" style="border-radius: 10px;">
             <h1 class="m-4">Facebook Page</h1>
             <div class="m-auto">
-              <div class="fb-post" 
-                data-href="https://www.facebook.com/sparklebyarpita/posts/pfbid02dWKrSkHSvuyDxo11Qp4MPZi2a5PoPtu6aHxLjdHzgjwNdigCuLdamKkk511CC4fUl"
-                data-width="500" data-show-text="true">
-                <blockquote cite="https://www.facebook.com/sparklebyarpita/posts/570179111930097"
-                  class="fb-xfbml-parse-ignore">
-                  <p>One Day bridal master workshop
-                    &amp;
-                    Best Rising Makeup Artist Award 2023
-                    With Dhallywood...</p>Posted by <a href="https://www.facebook.com/sparklebyarpita">Sparkle by
-                    Arpita</a> on&nbsp;<a href="https://www.facebook.com/sparklebyarpita/posts/570179111930097">Monday,
-                    June 12, 2023</a>
-                </blockquote>
-              </div>
+              <div class="fb-page" data-href="https://www.facebook.com/bssoln" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/bssoln" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/bssoln">Bangladesh Software Solution</a></blockquote></div>
             </div>
           </div>
         </div>
@@ -2462,6 +2447,14 @@
     </div>
   </footer>
 
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <div id="myBtn" class="cercl align-items-center justify-content-center d-flex"
+    style="border:2px solid #bd10c9; height: 50px; width: 50px;font-size: 9px; border-radius: 50%;background-color: #640e99; color: #fff;">
+    <div class="text-center">
+      <span><i class="fas fa-long-arrow-alt-up " style="font-size: 17px;"></i></span>
+    </div>
+  </div></button>
+
 
   <!-- =============================== -->
   <!-- ==========Script======== -->
@@ -2541,6 +2534,30 @@
     $('.button').html((i, html) => {
       return '<span><i>' + $.trim(html).split('').join('</i><i>') + '</i></span>';
     });
+  </script>
+
+
+ <!-- Back to top button -->
+ <script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
   </script>
 
   <!-- for email send -->

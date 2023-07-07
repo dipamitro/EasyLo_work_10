@@ -296,10 +296,22 @@
         margin: 5px;
         width: 96%;
     }
+    .slid1section .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: var(--swiper-pagination-bottom,8px);
+        top: 180px;
+        left: 76px;
+        width: 100%;
+    }
 }
 @media  (max-width:329px){
     .bothsidepadding {
         padding: 0 0px 0 6px;
+    }
+}
+@media  (max-width:381px){
+    .slid1section .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        left: 111px;
+        width: 100%;
     }
 }
 @media (max-width: 479px){
@@ -455,7 +467,11 @@
         transition-duration: 500ms;
         background-color: rgba(0, 0, 0, 0.8);
     }
+  .our-sponsor-area .single-sponsor {
+   
+    height: 120px;
   
+}
     .confer-countdown-area .countdown-up-area .countdown-timer #clock .javascriptLetterWillbebigFont {
         font-size: 26px;
         font-weight: 500;

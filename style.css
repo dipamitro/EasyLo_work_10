@@ -4,7 +4,9 @@
   margin: 0;
   padding: 0;
 }
-
+html{
+  scroll-behavior: smooth !important;
+}
 body {
   width: 100% !important;
   font-family: "Poppins", sans-serif;
@@ -2049,4 +2051,24 @@ padding: 30px;
 }
 
 
+/* back to top button css */
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: transparent;
+}
