@@ -15,7 +15,7 @@
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="media.css">
-
+<link rel="stylesheet" href="animated-circle.css">
   <script src="https://kit.fontawesome.com/4cf05cf765.js" crossorigin="anonymous"></script>
   <!-- Boxicons CSS -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -244,6 +244,8 @@
         </div>
       </div>
     </div>
+
+   
     <!-- Swiper -->
     <div class="swiperForslider">
       <div class="swiper my01Swiper">
@@ -257,6 +259,9 @@
                       <div class="hero-caption">
                         <h1 class="text-white text-right align-items-end float-left" data-aos="fade-right"
                           data-aos-duration="1000" data-aos-delay="100">SCIENCE <br> CONFERENCE</h1>
+                          <div class='wave'>
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                          </div>
                         <p data-aos="fade-right" data-aos-duration="900" data-aos-delay="80" class="text-right" style="color: #e4d3f9;">
                           SHANGRI-LA
                           HOTEL,BANGKOK,THAILAND</p>
@@ -1131,7 +1136,7 @@
 
   <!-- Swiper -->
   <section class="swipt1" id="st" style="margin: 20px 0px 0px 0px;">
-    <div class="container">
+    <div class="container p-sm-0">
       <div class="row" style="margin-top: 60px;">
         <div class="text-center  fordivwidth ">
           <div class="section-heading text-center aos" data-aos="fade-up" data-aos-delay="300ms"
@@ -1630,97 +1635,243 @@
     </div>
   </section>
 
-  <section class="for_email activity container2   our-speaker-area bg-img bg-gradient-overlay section-padding-100-60"
+  <section class="for_email skill-section activity container2   our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" id="skill"
     style="background-image: url(./img/1200px-Taj_Mahal\,_Agra\,_India_edit3.jpg); background-position: top top !important;background-size: cover;background-position: 50% 45% !important;width: 100%; background-attachment: fixed; ">
-    <div>
-      <div class="container forturnmiddle">
-        <div class="row " style="margin-top: 30px;">
-          <div class="text-center fordivwidth ">
-            <div class="section-heading text-center aos" data-aos="fade-up" data-aos-delay="300ms"
-              data-aos-duration="1500">
-              <p class="text-center" style="color: #bf9ee5;">Activity</p>
-              <h4 class="text-center" style="color: #ebdae6;">Our Member Activity</h4>
+    
+      <div class="container" data-aos="fade-up" data-aos-delay="300ms"
+      data-aos-duration="1500">
+        <div class="container">
+          <div class="row text-center">
+            <p class="text-center" style="color: #bf9ee5;">Activity</p>
+            <div class="col-sm-12  mx-auto text-center">
+              <h2 class="text-uppercase text-center">WE GOT SKILLS!</h2>
+              <p class="text-center mt-3 mb-5" style="margin-bottom: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo.</p>
             </div>
-          </div>         
+          </div>
         </div>
-        <div class=" d-lg-flex d-md-flex d-inline mb-sm-5 justify-content-evenly  justify-content-center align-items-center m-lg-5 m-auto">
-          <div data-aos="fade-up" data-aos-delay="200ms" data-aos-duration="1200">
-            <h2 class="text-sm-center m-auto d-sm-flex justify-content-sm-center align-items-sm-center">At Present
-              Student</h2>
-            <h3 id="counter" class="text-center">0</h3>
-
-            <script>
-              var counterElement = document.getElementById("counter");
-              var targetCount = 700;
-              var durationn = 2000; // 2 seconds
-              var interval = durationn / targetCount;
-              var currentCount = 0;
-
-              var countUpInterval = setInterval(function () {
-                if (currentCount >= targetCount) {
-                  clearInterval(countUpInterval);
-                } else {
-                  currentCount++;
-                  counterElement.textContent = currentCount;
-                }
-              }, interval);
-            </script>
+        <div class="row">
+          <div class="col-lg-3 col-sm-12 col-md-6 box d-flex flex-column align-items-center">
+            <div><svg class="radial-progress graphic-design" data-percentage="90" viewBox="0 0 80 80">
+              <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+              <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+              <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+            </svg></div>
+            <div>
+              <h3>Artificial intelligence</h3>
+            </div>
           </div>
-
-          <div data-aos="fade-up" data-aos-delay="300ms" data-aos-duration="1400">
-            <h2 class="text-sm-center m-auto d-sm-flex justify-content-sm-center align-items-sm-center">At present
-              Teacher </h2>
-            <h3 id="count700" class="text-center">0</h3>
-            <script>
-              var countElement = document.getElementById("count700");
-              var count = 0;
-              var interval;
-
-              function startCountUp() {
-                interval = setInterval(function () {
-                  if (count <= 100) {
-                    countElement.textContent = count;
-                    count++;
-                  } else {
-                    clearInterval(interval);
-                  }
-                }, 20); // Adjust the interval to control the speed of count-up
-              }
-              countElement.addEventListener("click", startCountUp);
-            </script>
+  
+         
+  
+          <div class="col-lg-3 col-sm-12 col-md-6 box d-flex flex-column align-items-center">
+            <div><svg class="radial-progress graphic-design" data-percentage="70" viewBox="0 0 80 80">
+              <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+              <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+              <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">75%</text>
+            </svg></div>
+            <div>
+              <h3> AI and Big Data</h3>
+            </div>
           </div>
-          <div data-aos="fade-up" data-aos-delay="400ms" data-aos-duration="1700">
-            <h2 class="text-sm-center m-auto d-sm-flex justify-content-sm-center align-items-sm-center">At present
-              Branches</h2>
-            <h3 id="counter2" class="text-center">0</h3>
-            <script>
-              function countUp() {
-                var counterElement = document.getElementById("counter2");
-                var targetValue = 50;
-                var duration = 2000;
-                var interval = 10; // Update interval in milliseconds
-                var steps = targetValue / (duration / interval);
-                var currentValue = 0;
-
-                var countInterval = setInterval(function () {
-                  if (currentValue >= targetValue) {
-                    clearInterval(countInterval);
-                    currentValue = targetValue;
-                  } else {
-                    currentValue += steps;
-                    counterElement.textContent = Math.round(currentValue);
-                  }
-                }, interval);
-              }
-              // Start the count-up animation when the page loads
-              window.addEventListener("load", function () {
-                countUp();
-              });
-            </script>
+          <div class="col-lg-3 col-sm-12 col-md-6 box d-flex flex-column align-items-center">
+            <div><svg class="radial-progress graphic-design" data-percentage="70" viewBox="0 0 80 80">
+              <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+              <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+              <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">70%</text>
+            </svg></div>
+            <div>
+              <h3>AI and Cyber Security</h3>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-sm-12 col-md-6 box d-flex flex-column align-items-center">
+            <div>
+              <svg class="radial-progress ui-ux" data-percentage="85" viewBox="0 0 80 80">
+                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">85%</text>
+              </svg>
+            </div>
+            <div>
+              <h3>Machine learning</h3>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <div>
+
+
+
+
+
+
+
+        <div class="container mt-3">
+          <div class="row justify-content-center mb-5 pb-2 d-flex ">
+            <!-- <div class="col-md-6 col-lg-6 align-items-stretch ">
+              <img class="img-fluid" src="https://weare.guru/wp-content/uploads/2016/07/1MIT.jpg" alt="">
+                
+              
+            </div>
+            <div class="col-md-6 col-lg-6 heading-section heading-section-white  text-white pl-lg-5 pt-md-0 pt-5">
+              <h2 class="mb-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">SCIENCE CONFERANCE</h2>
+              <p style="font-size: 16px;" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">Separated they
+                live in. A small river named Duden flows by their place and
+                supplies it with the
+                necessary regelialia. It is a paradisematic country. A small river named Duden flows by their place and
+                supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of
+                sentences fly into your mouth.</p>
+              <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">A small river named Duden flows by their
+                place and supplies it with the necessary regelialia. It is a
+                paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            </div> -->
+          </div>
+          <div class="row d-md-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="300ms"
+          data-aos-duration="1500">
+            <div class="col-lg-12">
+              <div class="row d-md-flex align-items-center">
+                <div class="col-md d-flex justify-content-center ">
+                  <div class="block-18">
+                    <div class="icon"><span class="flaticon-doctor"></span></div>
+                    <div class="text-white">
+                      <strong class="number" data-number="18" id="count700">100</strong>
+                      <span>Certified Teachers</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md d-flex justify-content-center  ">
+                  <div class="block-18">
+                    <div class="icon"><span class="flaticon-doctor"></span></div>
+                    <div class="text-white">
+                      <strong class="number" data-number="401"   id="counter">0</strong>
+                      <span>Students</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md d-flex justify-content-center  ">
+                  <div class="block-18">
+                    <div class="icon"><span class="flaticon-doctor"></span></div>
+                    <div class="text-white">
+                      <strong class="number" data-number="30" id="counter2">0</strong>
+                      <span>Courses</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md d-flex justify-content-center ">
+                  <div class="block-18">
+                    <div class="icon"><span class="flaticon-doctor"></span></div>
+                    <div class="text-white">
+                      <strong class="number" data-number="50" id="count">0</strong>
+                      <span>Awards Won</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+              <script>
+                var counterElement = document.getElementById("counter");
+                var targetCount = 700;
+                var durationn = 2000; // 2 seconds
+                var interval = durationn / targetCount;
+                var currentCount = 0;
+  
+                var countUpInterval = setInterval(function () {
+                  if (currentCount >= targetCount) {
+                    clearInterval(countUpInterval);
+                  } else {
+                    currentCount++;
+                    counterElement.textContent = currentCount;
+                  }
+                }, interval);
+              </script>
+           
+  
+            
+              <script>
+                var countElement = document.getElementById("count700");
+                var count = 0;
+                var interval;
+  
+                function startCountUp() {
+                  interval = setInterval(function () {
+                    if (count <= 100) {
+                      countElement.textContent = count;
+                      count++;
+                    } else {
+                      clearInterval(interval);
+                    }
+                  }, 20); // Adjust the interval to control the speed of count-up
+                }
+                countElement.addEventListener("click", startCountUp);
+              </script>
+          
+          
+              <script>
+                function countUp() {
+                  var counterElement = document.getElementById("counter2");
+                  var targetValue = 50;
+                  var duration = 2000;
+                  var interval = 10; // Update interval in milliseconds
+                  var steps = targetValue / (duration / interval);
+                  var currentValue = 0;
+  
+                  var countInterval = setInterval(function () {
+                    if (currentValue >= targetValue) {
+                      clearInterval(countInterval);
+                      currentValue = targetValue;
+                    } else {
+                      currentValue += steps;
+                      counterElement.textContent = Math.round(currentValue);
+                    }
+                  }, interval);
+                }
+                // Start the count-up animation when the page loads
+                window.addEventListener("load", function () {
+                  countUp();
+                });
+              </script>
+      
+      <script>
+        function startCountUp() {
+          var countElement = document.getElementById("count");
+          var count = 0;
+  
+          function updateCount() {
+            countElement.textContent = count;
+            count++;
+  
+            if (count <= 700) {
+              if (isElementInViewport(countElement)) {
+                setTimeout(updateCount, 10); // Update count every 10 milliseconds
+              } else {
+                // Wait for the element to become visible again
+                setTimeout(updateCount, 200);
+              }
+            }
+          }
+  
+          function isElementInViewport(element) {
+            var rect = element.getBoundingClientRect();
+            return (
+              rect.top >= 0 &&
+              rect.left >= 0 &&
+              rect.bottom <=
+                (window.innerHeight || document.documentElement.clientHeight) &&
+              rect.right <=
+                (window.innerWidth || document.documentElement.clientWidth)
+            );
+          }
+  
+          updateCount();
+        }
+  
+        window.addEventListener("DOMContentLoaded", startCountUp);
+        window.addEventListener("scroll", startCountUp);
+      </script>
+    
   </section>
 
   <section>
@@ -2456,6 +2607,10 @@
   </div></button>
 
 
+  <div class='wave'>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
   <!-- =============================== -->
   <!-- ==========Script======== -->
   <!-- ===================================== -->
@@ -2667,7 +2822,7 @@
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
+<script src="animated-circle.js"></script>
   <!-- Initialize Swiper -->
 
 

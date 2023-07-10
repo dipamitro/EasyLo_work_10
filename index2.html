@@ -1,7 +1,81 @@
-<!-- 
+
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+    /** Pure CSS wave effect **/
+div.wave > span:nth-child(odd) {
+ 
+}
+div.wave > span:nth-child(even) {
+  
+}
+div.wave{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+div.wave > span{
+	display: inline-block;
+	width: 10%;
+	height: 150px;
+ 	animation: animate 1.5s ease-in-out alternate infinite; 
+}
+div.wave > span:nth-child(1){
+  background-color: #0E7DA8;
+  filter: blur(8px);
+  
+}
+div.wave > span:nth-child(2){
+	background-color: #0E7DA8;
+  filter: blur(8px);
+	animation-delay: .2s;
+}
+div.wave > span:nth-child(3){
+	background-color: #0E7DA8;
+  filter: blur(8px);
+	animation-delay: .4s;
+}
+div.wave > span:nth-child(4){
+  background-color: #0E7DA8;
+  filter: blur(8px);
+	animation-delay: .6s;
+}
+div.wave > span:nth-child(5){
+  background-color: #0E7DA8;
+  filter: blur(8px);
+	animation-delay: .8s;
+}
+div.wave > span:nth-child(6){
+  background-color: #0E7DA8;
+  filter: blur(8px);
+	animation-delay: 1s;
+}
+div.wave > span:nth-child(7){
+	background-color: #268BD2;
+  filter: blur(8px);
+	animation-delay: 1.2s;
+}
+div.wave > span:nth-child(8){
+  background-color: #0E7DA8;
+  filter: blur(8px);
+	animation-delay: 1.4s;
+}
+div.wave > span:nth-child(9){
+  background-color: #0E7DA8;
+  filter: blur(8px);
+	animation-delay: 1.6s;
+}
+div.wave > span:nth-child(10){
+  background-color: #0E7DA8;
+  filter: blur(8px);
+	animation-delay: 1.8s;
+}
+@keyframes animate{
+	to { height: 80px; }
+}
+  </style>
   <script>
     function resizeIframe() {
       var iframe = document.getElementById("myIframe");
@@ -12,8 +86,10 @@
   </script>
 </head>
 <body onload="resizeIframe()">
-
-  
   <iframe id="myIframe" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsparklebyarpita&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+  <div class='wave'>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
 </body>
-</html> -->
+</html>
