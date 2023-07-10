@@ -5,6 +5,34 @@
         max-width: 1140px !important;
     }
 }
+@media (max-width: 1200px){
+
+    .content12 h1 {
+        font-weight: 700;
+        font-size: 82px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        color: #ffffff;
+        text-align: right;
+        top: -8rem;
+        position: absolute;
+        right: 84px;
+    }
+    .content0 h2 {
+        font-weight: 900;
+        font-size: 68px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+        top: -18rem;
+        position: absolute;
+        right: 141px;
+    }
+}
 @media (min-width: 992px){
 
     .container {
@@ -20,7 +48,31 @@
   
 }
 @media (max-width: 992px){
-
+    .content0 h2 {
+        font-weight: 800;
+        font-size: 76px !important;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+        top: -18rem;
+        position: absolute;
+        right: -44px !important;
+    }
+    .content12 h1 {
+        font-weight: 700;
+        font-size: 62px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        color: #ffffff;
+        text-align: right;
+        top: -7rem;
+        position: absolute;
+        right: 42px;
+    }
     .slidingDiv.filr .hide{
         display: none;
     }
@@ -44,11 +96,25 @@
     .container {
         max-width: 720px;
     }
+   
 }
 @media (max-width: 768px){
     .our-ticket-pricing-table-area .row .col-12 {
         padding-left: 100px;
         padding-right: 100px;
+    }
+
+    .content0 h2 {
+        font-weight: 800;
+        font-size: 54px !important;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+        top: -18rem;
+        position: absolute;
+        right: -14px !important;
     }
     .navpart1 h1 {
         position: relative;
@@ -61,6 +127,30 @@
         color: #ffffff;
         text-align: right;
     }
+    .content1 h2 {
+        font-weight: 900;
+        font-size: 74px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+        position: absolute;
+        top: -26rem;
+        right: -12px;
+    }
+    .content h2 { 
+     font-weight: 900; 
+     font-size: 79px; 
+    text-transform: uppercase;
+     display: block;
+      margin-bottom: 10px;
+    color: #ffffff; 
+     text-align: right;
+    top: -33rem;
+    position: absolute; 
+    right: -11px;
+            }
     .single-speaker-area .social-info {
         position: absolute;
         top: 0px;
@@ -89,11 +179,68 @@
         max-width: 540px;
     }
 }
+@media (max-width: 660px){
+
+    .content0 h2 {
+        font-weight: 800;
+        font-size: 52px !important;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+        top: -18rem;
+        position: absolute;
+        right: 4px !important;
+    }
+}
+@media (max-width: 580px){
+
+    .content0 h2 {
+        font-weight: 800;
+        font-size: 44px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+        top: -9rem !important;
+        position: absolute;
+        right: -15px;
+    }
+}
 
 @media (max-width: 579px){
     .our-speaker-area .forturnmiddle .row {
         margin: auto;
         margin-left: 40px;
+    }
+    .wave{
+        display: none !important;
+    }
+    .content1 h2 {
+        font-weight: 900;
+        font-size: 65px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+        position: absolute;
+        top: -14rem;
+        right: 8px;
+    }
+    .content h2 {
+        font-weight: 900;
+        font-size: 65px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+        position: absolute;
+        top: -18rem;
+        right: 8px;
     }
     .carouselimg1 .hero-caption h1, .hero-caption h2 {
     margin-top: 147px;
@@ -263,11 +410,63 @@
         margin: 5px;
         width: 100%;
     }
+    .content1 h2 {
+        font-weight: 700;
+        font-size: 47px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+        position: absolute;
+        top: -14rem;
+        right: 8px;
+    }
+    .content h2 {
+        font-weight: 700;
+        font-size: 38px !important;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+        position: absolute;
+        top: -18rem;
+        right: 4px;
+    }
+    .content0 h2 {
+        font-weight: 800;
+        font-size: 38px !important;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+        top: -18rem;
+        position: absolute;
+        right: 4px !important;
+    }
 
 }
 @media (min-width: 468px) {
     #hide2{
         display: none;
+    }
+
+}
+
+@media (max-width: 888px) {
+    .content0 h2 {
+        font-weight: 800;
+        font-size: 65px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+        top: -18rem;
+        position: absolute;
+        right: 43px;
     }
 
 }
@@ -306,6 +505,18 @@
 @media  (max-width:329px){
     .bothsidepadding {
         padding: 0 0px 0 6px;
+    }
+    .content0 h2 {
+        font-weight: 800;
+        font-size: 27px !important;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+        top: -18rem;
+        position: absolute;
+        right: 4px !important;
     }
 }
 @media  (max-width:381px){
@@ -385,11 +596,28 @@
      }
 }
 @media (max-width: 450px){
+    .formargintop {
+        margin-top: 76px;
+    }
   .single-tab-content .confer-btn
    {
     
     margin-top: 27px!important;
   }
+@media (max-width: 290px){
+    .content0 h2 {
+        font-weight: 800;
+        font-size: 25px !important;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+        top: -18rem;
+        position: absolute;
+        right: 4px !important;
+    }
+}
 @media (max-width: 400px) and (min-width:301px){
     .single-client-content {
         position: relative;
@@ -405,6 +633,33 @@
     .swipt1 .swiperrelativ {
         position: relative;
         width: 260px;
+    }
+    .content1 h2 {
+        font-weight: 700;
+        font-size: 37px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+        position: absolute;
+        top: -14rem;
+        right: 8px;
+    }
+  }
+@media (max-width: 320px){
+   
+    .content1 h2 {
+        font-weight: 700;
+        font-size: 37px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: right;
+        position: absolute;
+        top: -14rem;
+        right: 8px;
     }
   }
   .single-client-content .single-client-text p {
@@ -458,7 +713,9 @@
      }
 }
 @media (max-width: 350px){
-
+.wave{
+    display: none !important;
+}
     .header-area {
         position: fixed;
         z-index: 999;
@@ -512,6 +769,16 @@
 
 }
 @media (max-width: 300px){
+    .navpart1 .lii.sec1 {
+        background: #df42b1;
+        background-image: linear-gradient(120deg, #505add 0%, #df42b1 100%);
+        background-image: -ms-linear-gradient(120deg, #505add 0%, #df42b1 100%);
+        color: white;
+        border: none;
+        height: 3rem;
+        width: 7rem;
+        border-radius: 100px;
+    }
     .our-speaker-area .forturnmiddle .row {
        margin: auto;
     }
