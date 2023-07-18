@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.leftside{
+    
+    height: 100vh !important;
+    width: 79vw;
+    overflow-y: scroll;
+    box-sizing: content-box; 
+    
+}
+.afterpicture p, .afterpicture h3{
+    margin: 5px 4px 3px 50px;
+}
+.img1 {
+    
+    background:linear-gradient(53deg, #ffb617ec 0%, #fbb017ee 100%),url(https://img.freepik.com/free-vector/black-zigzag-background-simple-pattern-design-vector_53876-151273.jpg?w=1060&t=st=1689610665~exp=1689611265~hmac=32527d136642d16f4e4aff429830e004917c01a521e4d13a94ac71d10f3a2587);
+    background-position: center bottom;
+    position: relative;
+    background-position: 99% 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100.3% 100%;
+    display: block;
+    overflow: hidden;
+    padding: 97px 85px 95px 87px;
+    padding-right: 100px;
+    height: 200px;
+    max-width: 100%;
+    line-height: 1;
+  }
+  .rightsidedown{
+    background-color: #DBEACC;
+    height: 70vh;
+    max-width: 100%;
+  }
+  .positiv1{
+  width: 60%;
+    padding: 15px;
+  }
+  .positiv1 .midle{
+ 
+ justify-content: center;
+
+ 
+  }
+  .whitediv {
+    position: absolute;
+    background-color: #f2eaea;
+    top: 95px;
+    left: 44px;
+    width: 84%;
+    height: 570px;
+}
+.whitediv{
+    margin: 20px;
+}
+.picture1 img {
+    max-width: 337px;
+    height: 293px;
+    margin: 56px 0px 10px 66px;
+}
+
+.whitediv{
+    display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 0px;
+}
+.detlspart1 h2{
+    color: #fff;
+    background-color: #FCB318;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Pacifico', cursive;
+    width: 141px;
+    padding-left: 10px;
+}
+#Namechange{
+    font-size: bold;
+    font-weight: 700;
+    font-size: 30px;
+}
+#occupasioon1{
+    font-family: 'Pacifico', cursive;
+
+}
+.fiveObject h6{
+    margin-bottom: 1.2rem;
+}
+.afterpicture p{
+    font-size: 14px;
+    color: #4c4545;
+    font-size: 300;
+}
+.detlspart1 h5{
+    color: #fff;
+    background-color: #FCB318;
+    width: 171px;
+    padding: 7px;
+    border-radius: 7px;
+}
