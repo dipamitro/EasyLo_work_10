@@ -1,0 +1,163 @@
+.ct-companion-dashboard .dashboard-container {
+  display: inline-block;
+  width: 100%;
+}
+.ct-companion-dashboard {
+  padding: 0;
+  text-align: center;
+  margin-left: -20px;
+}
+.ct-companion-dashboard .dashboard-header {
+  font-size: 44px;
+  margin: 0;
+  color: #fff;
+  background: #5566ca;
+  display: inline-block;
+  width: 100%;
+  padding: 70px 50px 170px;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 600;
+  background: linear-gradient(158deg, #5566ca 3%, #0ad2ba 82%);
+}
+.ct-companion-dashboard .dashboard-content {
+  display: inline-block;
+  width: 92%;
+  padding: 50px;
+  box-sizing: border-box;
+  background: #fff;
+  margin-top: -100px;
+}
+/* #adminmenu .toplevel_page__cozy_companions .wp-menu-image.dashicons-before.dashicons-groups:before,
+.toplevel_page__cozy_companions a.toplevel_page__cozy_companions,
+ul#adminmenu .toplevel_page__cozy_companions a.toplevel_page__cozy_companions.wp-has-current-submenu:before {
+  color: #6881d9 !important;
+}
+#adminmenu .toplevel_page__cozy_companions:hover .wp-menu-image.dashicons-before.dashicons-groups:before,
+.toplevel_page__cozy_companions a.toplevel_page__cozy_companions:hover,
+.wp-menu-open .toplevel_page__cozy_companions a.toplevel_page__cozy_companions {
+  color: #72aee6 !important;
+} */
+.ct-companion-dashboard .ct-short-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 31px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.ct-dashboard-row {
+  width: 100%;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+.ct-dashboard-column-one-third,
+.ct-dashboard-column-half,
+.ct-dashboard-column-two-third,
+.ct-dashboard-column-one-fourth {
+  width: 33.33%;
+  display: inline-block;
+  position: relative;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.ct-dashboard-column-half {
+  width: 50%;
+}
+.ct-dashboard-column-two-third {
+  width: 66.66%;
+}
+.ct-dashboard-column-one-fourth {
+  width: 25%;
+}
+.ct-dashboard-column-two-third.product-fota img {
+  width: 100%;
+  transition: all ease 0.23s;
+}
+
+.ct-dashboard-column-two-third.product-fota img:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+}
+.ct-dashboard-column-one-third .product-holder img {
+  transition: all ease 0.23s;
+  margin-bottom: 20px;
+}
+.ct-dashboard-column-one-third .product-holder:hover img {
+  transform: scale(1.1);
+}
+.ct-dashboard-column-one-third .product-holder {
+  background: #edf1ff;
+  border-radius: 6px;
+  padding: 40px;
+  min-height: 401px;
+}
+.ct-companion-dashboard a.ct-dashboard-button {
+  background: #5566ca;
+  padding: 14px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 15px;
+}
+.ct-companion-dashboard a.ct-dashboard-button:hover {
+  background: #586db6;
+}
+.ct-companion-dashboard .ct-upsell-text a.ct-dashboard-button {
+  background: #0ad2ba;
+}
+.ct-companion-dashboard .ct-upsell-text a.ct-dashboard-button:hover {
+  background: #09baa5;
+}
+.ct-dashboard-row.second-row .ct-dashboard-column-one-third .product-holder {
+  padding: 0;
+  background: transparent;
+}
+.ct-dashboard-column-one-third .product-holder.patternberg img {
+  background: #28302b;
+}
+.ct-dashboard-row.second-row .ct-dashboard-column-one-third .product-holder img {
+  border-radius: 6px;
+  max-width: 100%;
+}
+.ct-dashboard-row .ct-upsell-text {
+  width: 100%;
+  padding: 50px 0;
+}
+.ct-dashboard-row .ct-upsell-text {
+  max-width: 650px;
+  padding: 30px 0 0;
+  margin: 0 auto;
+}
+.ct-dashboard-row .ct-upsell-text h1 {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #0ad2ba;
+}
+.ct-companion-dashboard .ct-upsell-text a.ct-dashboard-button {
+  font-size: 20px;
+  padding: 20px 40px;
+  border-radius: 13px;
+}
+@media (max-width: 800px) {
+  .ct-dashboard-column-one-third,
+  .ct-dashboard-column-half,
+  .ct-dashboard-column-two-third,
+  .ct-dashboard-column-one-fourth {
+    width: 100%;
+  }
+}
+#adminmenu li#toplevel_page__cozy_companions .wp-menu-image img {
+  padding: 9px 0 0;
+  opacity: 1;
+  width: 20px;
+}
+#adminmenu li.wp-has-current-submenu#toplevel_page__cozy_companions a.wp-has-current-submenu {
+  background-color: #dbeeec;
+  color: #5566ca;
+}

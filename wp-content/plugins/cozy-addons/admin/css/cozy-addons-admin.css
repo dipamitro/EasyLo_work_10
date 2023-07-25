@@ -1,0 +1,331 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.cozy-addons-dashboard {
+  margin: 0 15px;
+}
+.cozy-addons-dashboard .dashboard-holder {
+  padding: 0px;
+  background: #fff;
+  margin-top: 20px;
+  box-shadow: 0 0 4px rgb(0 0 0 / 9%);
+  border: 1px solid #ddd;
+}
+.ca-dashboard-header h1 {
+  margin: 0 0 16px;
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 1.1em;
+  text-transform: uppercase;
+}
+.widgets-holder {
+  grid-template-columns: repeat(6, 1fr);
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-column-gap: 0px;
+  text-align: left;
+}
+.widgets-holder li {
+  margin: 10px 0;
+}
+.widgets-holder li a:hover {
+  color: #f50548;
+}
+.widgets-holder .widget-box h4 {
+  color: #5e36ad;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 700;
+}
+.widgets-holder .widget-box {
+  margin-bottom: 0px;
+  padding: 15px 0 15px 20px;
+  text-align: left;
+  position: relative;
+}
+.widgets-holder .widget-box:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  background: #ddd;
+}
+.cozy-pro-widgets.grid-layout h4 {
+  color: #f50548;
+}
+h3.widget-box-header {
+  color: #343434;
+  padding-bottom: 7px;
+  display: inline-block;
+  padding-right: 15px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h3.widget-box-header span {
+  color: #fff;
+  background: #5e36ad;
+  margin-left: 15px;
+  padding: 4px 10px 5px;
+  font-size: 13px;
+  border-radius: 20px;
+}
+.cozy-pro-widgets h3.widget-box-header span {
+  background: #f5054e;
+}
+.widgets-holder.other-features {
+  grid-template-columns: repeat(1, 1fr);
+  text-align: center;
+}
+.cozy-pro-widgets.grid-layout {
+  padding: 30px;
+  text-align: center;
+}
+a.unlock-pro {
+  background: #5e36ad;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all ease 0.23s;
+  margin-top: 50px;
+  font-size: 16px;
+}
+a.unlock-pro span.dashicons.dashicons-unlock {
+  display: none;
+}
+a.unlock-pro:hover span.dashicons.dashicons-unlock {
+  display: inline-block;
+}
+a.unlock-pro:hover span.dashicons.dashicons-lock {
+  display: none;
+}
+a.unlock-pro:hover {
+  background: #f5054e;
+}
+.cozy-free-widgets.grid-layout {
+  padding: 30px;
+  text-align: center;
+}
+.ca-dashboard-header {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  background: #f9f9f9;
+}
+.ca-dashboard-header .header-left {
+  padding: 50px;
+  width: 50%;
+}
+
+.ca-dashboard-header .header-right img {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: -4px;
+}
+.ca-dashboard-header .header-right {
+  width: 50%;
+}
+.cozy-faq-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px 30px;
+  text-align: center;
+}
+.cozy-faq-section h3,
+.footer-buttons h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.faq-box h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer-buttons {
+  padding: 0 20px 40px;
+  text-align: center;
+}
+.buttons-group a {
+  text-decoration: none;
+  background: #5e36ad;
+  color: #fff;
+  margin: 15px 5px 0;
+  padding: 10px 25px;
+  display: inline-block;
+  border-radius: 30px;
+  font-size: 16px;
+}
+.buttons-group a.support-btn {
+  background: #f5054e;
+}
+.buttons-group a:hover,
+.buttons-group a.support-btn:hover {
+  background: #787878;
+}
+ul.plugins-list li {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+ul.plugins-list li span.info {
+  font-size: 14px;
+  font-weight: 200;
+  color: #959090;
+}
+ul.plugins-list li.active span.dashicons {
+  color: #35c733;
+}
+ul.plugins-list li span.plugin-status {
+  background: #f36c96;
+  display: inline-block;
+  padding: 1px 9px 2px;
+  font-size: 12px;
+  border-radius: 30px;
+  margin-left: 10px;
+  color: #fff;
+}
+ul.plugins-list li.active span.plugin-status {
+  background: #35c733;
+  color: #fff;
+}
+ul.plugins-list li span.plugin-status a {
+  color: #fff;
+  text-decoration: none;
+}
+h4.addons-info {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: -2px;
+}
+.ca-dashboard-header .header-right img {
+  /* height: 594px;*/
+  width: 100%;
+  object-fit: cover;
+}
+.cozy-recommended-plugins h3 {
+  margin: 10px 0 10px;
+  display: inline-block;
+  width: 100%;
+}
+.cozy-addons-admin-notice {
+  display: flex;
+  padding: 0 20px 0 0;
+  border-left-color: #ef0a71;
+  margin-left: 0;
+}
+.cozy-addons-admin-notice .notice-content {
+  padding: 20px;
+}
+.cozy-addons-admin-notice .notice-content h2 {
+  margin: 0 0 15px;
+  font-size: 18px;
+}
+.cozy-addons-icons {
+  background: rgba(84, 82, 235, 0.05);
+  align-items: baseline;
+  padding: 20px 10px;
+}
+.cozy-addons-icons img {
+  max-width: 24px;
+}
+.cozy-addons-admin-notice .notice-content h5 {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+
+.cozy-addons-admin-notice .notice-content .cozy-btns {
+  text-decoration: none;
+  background: #5566ca;
+  color: #fff;
+  transition: all ease 0.23s;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.cozy-addons-admin-notice .notice-content .cozy-btns.dismiss-notice {
+  background: transparent;
+  color: #5566ca;
+}
+.cozy-addons-admin-notice .notice-content .cozy-btns.getting-started {
+  background: #0ad2b9;
+}
+.cozy-addons-admin-notice .notice-content .cozy-btns.getting-started:hover,
+.cozy-addons-admin-notice .notice-content .cozy-btns.btns-more:hover {
+  background: #232323;
+}
+.cozy-addons-admin-notice .notice-content .cozy-btns.dismiss-notice:hover {
+  color: #0ad2b9;
+}
+.cthf-buidler-dashboard select {
+  padding: 6px 15px;
+  margin: 8px 0 22px;
+}
+
+.cthf-buidler-dashboard .cthf-field-label,
+.cthf-buidler-dashboard .cthf-field {
+  width: 40%;
+  display: inline-block;
+}
+.cthf-buidler-dashboard .cthf-field-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+.cthf-buidler-dashboard .cthf-field {
+  width: 60%;
+}
+.cthf-buidler-dashboard .ctfh-field-holder {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.cthf-buidler-dashboard {
+  padding: 20px 10px;
+}
+#ct_template_location_meta .postbox-header {
+  padding: 5px 10px;
+}
+
+#ct_template_location_meta.postbox {
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.045);
+  border-radius: 4px;
+}
+.wrap.ct-custom-scripts .submit {
+  margin-left: 14.7%;
+}
+.wrap.ct-custom-scripts .submit #submit {
+  padding: 6px 20px;
+}
+.ct_header_footer_buidler_notice {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
+}
+.ct_header_footer_buidler_notice h2 {
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 500;
+}
+.ct_header_footer_buidler_notice .upsell-button {
+  padding: 20px 31px;
+  background: #5566ca;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 0px;
+  display: inline-block;
+  text-decoration: none;
+  transition: all ease 0.23s;
+}
+.ct_header_footer_buidler_notice .upsell-button:hover {
+  background: #0ad2bb;
+}

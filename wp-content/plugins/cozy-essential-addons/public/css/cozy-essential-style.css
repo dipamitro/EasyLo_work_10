@@ -1,0 +1,35 @@
+.cea-grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.cea-post-lists ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  transition: all ease 0.23s;
+}
+ul.cea-team-social-media li label {
+  cursor: pointer;
+}
+.wp-block-contact-form-7-contact-form-selector.ct-newsletter-blockwithform input,
+.wp-block-contact-form-7-contact-form-selector.ct-banner-contactform input {
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+.wp-block-contact-form-7-contact-form-selector.ct-newsletter-blockwithform input.wpcf7-form-control.wpcf7-submit,
+.wp-block-contact-form-7-contact-form-selector.ct-banner-contactform input.wpcf7-form-control.wpcf7-submit {
+  border-radius: 0;
+  border: 0;
+}
+.wc-block-grid.wp-block-product-on-sale.wc-block-product-on-sale.has-4-columns.ct-patterns-onsaleproducts .attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+  height: 360px;
+}
+.wc-block-grid.wp-block-product-on-sale.wc-block-product-on-sale.has-4-columns.ct-patterns-onsaleproducts .wc-block-grid__product-title {
+  font-size: 18px;
+  margin-top: 25px;
+}
