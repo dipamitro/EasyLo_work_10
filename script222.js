@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    btnAdd.  addEventListener("click", function () {
+    btnAdd.addEventListener("click", function () {
       const id = txtId.value;
       const name = txtName.value;
       const country = txtCountry.value;
@@ -164,6 +164,8 @@ document.addEventListener("DOMContentLoaded", function () {
       txtCountry.value = "";
       txtPhone.value = "";
       txtEmail.value = "";
+      console.log(customers)
+
     });
   
     btnUpdate.addEventListener("click", function () {
@@ -187,8 +189,6 @@ document.addEventListener("DOMContentLoaded", function () {
       //Clear();
       console.log(customers)
     });
-  
-
     tblCustomers.addEventListener("click", function (e) {
       const target = e.target;
       if (target.classList.contains("delete")) {
@@ -196,7 +196,6 @@ document.addEventListener("DOMContentLoaded", function () {
           target.closest("tr").remove();
         }
       } 
-      
       else if (target.classList.contains("edit")) {
         const row = target.closest("tr");
         hfRowIndex.value = row.rowIndex;
@@ -212,14 +211,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const row = target.closest("tr");
         hfRowIndex.value = row.rowIndex;
         txteyage1.innerHTML = row.cells[1].innerHTML;
-        // txtNamechange.innerText = txtName.value;
-
         txtNamechange.innerText = row.cells[0].innerHTML;
         txtadd1.innerHTML = row.cells[2].innerHTML;
          txtphn1.innerHTML = row.cells[3].innerHTML;
          txtemail1.innerHTML = row.cells[4].innerHTML;
-        // btnAdd.style.display = "none";
-        // btnUpdate.style.display = "block";
       }
     });
     function Tabl() {
@@ -234,10 +229,6 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log(customers)
   }
   Tabl();
-
-
-
-
     document.getElementById("btnClear").addEventListener("click", function () {
       Clear();
     });

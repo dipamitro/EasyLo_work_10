@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Add your CSS and other meta tags here -->
+</head>
+<body>
+    <table id="tblCustomers">
+        <tbody>
+            <!-- Table rows will be dynamically inserted here -->
+        </tbody>
+    </table>
+
+    <!-- Add your form elements here (txtId, txtName, txtCountry, txtPhone, txtEmail, hfRowIndex, btnAdd, btnUpdate, etc.) -->
+    <!-- Add your modal here (with ID "exampleModal") for viewing customer details -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Your existing code
+
+            function isEmailValid(email) {
+                // Regular expression for validating email
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+
+            btnAdd.addEventListener("click", function () {
+                const id = txtId.value;
+                const name = txtName.value;
+                const country = txtCountry.value;
+                const phone = txtPhone.value;
+                const email = txtEmail.value;
+
+                if (name === "" || country === "" || phone === "" || email === "") {
+                    alert("Fill Up the form!");
+                    return;
+                }
+
+                // Validate email before adding customer
+                if (!isEmailValid(email)) {
+                    alert("Invalid email format! Please enter a valid email address.");
+                    return;
+                }
+
+                customers.push({ id, name, country, phone, email });
+                renderTable();
+                Clear();
+            });
+
+            btnUpdate.addEventListener("click", function () {
+                const name = txtName.value;
+                const id = txtId.value;
+                const country = txtCountry.value;
+                const phone = txtPhone.value;
+                const email = txtEmail.value;
+                const rowIndex = hfRowIndex.value;
+
+                // Validate email before updating customer
+                if (!isEmailValid(email)) {
+                    alert("Invalid email format! Please enter a valid email address.");
+                    return;
+                }
+
+                customers[rowIndex] = { id, name, country, phone, email };
+                renderTable();
+                btnAdd.style.display = "block";
+                btnUpdate.style.display = "none";
+                Clear();
+                console.log(customers);
+            });
+
+            // Your existing code
+        });
+    </script>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Add your CSS and other meta tags here -->
+</head>
+<body>
+    <table id="tblCustomers">
+        <tbody>
+            <!-- Table rows will be dynamically inserted here -->
+        </tbody>
+    </table>
+
+    <!-- Add your form elements here (txtId, txtName, txtCountry, txtPhone, txtEmail, hfRowIndex, btnAdd, btnUpdate, etc.) -->
+    <!-- Add your modal here (with ID "exampleModal") for viewing customer details -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Your existing code
+
+            function isEmailValid(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            }
+
+            btnAdd.addEventListener("click", function () {
+                const id = txtId.value;
+                const name = txtName.value;
+                const country = txtCountry.value;
+                const phone = txtPhone.value;
+                const email = txtEmail.value;
+
+                if (!name || !country || !phone || !email) {
+                    alert("Fill Up the form!");
+                    return;
+                }
+
+                if (!isEmailValid(email)) {
+                    alert("Invalid email format! Please enter a valid email address.");
+                    return;
+                }
+
+                customers.push({ id, name, country, phone, email });
+                renderTable();
+                Clear();
+            });
+
+            btnUpdate.addEventListener("click", function () {
+                const name = txtName.value;
+                const id = txtId.value;
+                const country = txtCountry.value;
+                const phone = txtPhone.value;
+                const email = txtEmail.value;
+                const rowIndex = hfRowIndex.value;
+
+                if (!isEmailValid(email)) {
+                    alert("Invalid email format! Please enter a valid email address.");
+                    return;
+                }
+
+                customers[rowIndex] = { id, name, country, phone, email };
+                renderTable();
+                btnAdd.style.display = "block";
+                btnUpdate.style.display = "none";
+                Clear();
+                console.log(customers);
+            });
+
+            // Your existing code
+        });
+    </script>
+</body>
+</html>
+
+</body>
+</html>
