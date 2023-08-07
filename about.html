@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ChickenKO</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="./All-file/css" rel="stylesheet">
+    <link href="./All-file/css(1)" rel="stylesheet">
+    <link rel="stylesheet" href="./All-file/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="./All-file/animate.css">
+    <link rel="stylesheet" href="./All-file/owl.carousel.min.css">
+    <link rel="stylesheet" href="./All-file/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./All-file/magnific-popup.css">
+    <link rel="stylesheet" href="./All-file/aos.css">
+    <link rel="stylesheet" href="./All-file/ionicons.min.css">
+    <link rel="stylesheet" href="./All-file/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="./All-file/jquery.timepicker.css">
+    <link rel="stylesheet" href="./All-file/flaticon.css">
+    <link rel="stylesheet" href="./All-file/icomoon.css">
+     <link rel="stylesheet" href="./All-file/style.css"> 
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+<!-- Global Font Links -->
+
+<!-- font awasome css cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script type="text/javascript" async="" src="./All-file/analytics.js"
+        nonce="c5e479f8-1e21-4d0e-81b1-20bd57943d06"></script>
+    <script defer="" referrerpolicy="origin" src="./All-file/s.js"></script>
+    <script
+        nonce="c5e479f8-1e21-4d0e-81b1-20bd57943d06">(function (w, d) { !function (j, k, l, m) { j[l] = j[l] || {}; j[l].executed = []; j.zaraz = { deferred: [], listeners: [] }; j.zaraz.q = []; j.zaraz._f = function (n) { return async function () { var o = Array.prototype.slice.call(arguments); j.zaraz.q.push({ m: n, a: o }) } }; for (const p of ["track", "set", "debug"]) j.zaraz[p] = j.zaraz._f(p); j.zaraz.init = () => { var q = k.getElementsByTagName(m)[0], r = k.createElement(m), s = k.getElementsByTagName("title")[0]; s && (j[l].t = k.getElementsByTagName("title")[0].text); j[l].x = Math.random(); j[l].w = j.screen.width; j[l].h = j.screen.height; j[l].j = j.innerHeight; j[l].e = j.innerWidth; j[l].l = j.location.href; j[l].r = k.referrer; j[l].k = j.screen.colorDepth; j[l].n = k.characterSet; j[l].o = (new Date).getTimezoneOffset(); if (j.dataLayer) for (const w of Object.entries(Object.entries(dataLayer).reduce(((x, y) => ({ ...x[1], ...y[1] })), {}))) zaraz.set(w[0], w[1], { scope: "page" }); j[l].q = []; for (; j.zaraz.q.length;) { const z = j.zaraz.q.shift(); j[l].q.push(z) } r.defer = !0; for (const A of [localStorage, sessionStorage]) Object.keys(A || {}).filter((C => C.startsWith("_zaraz_"))).forEach((B => { try { j[l]["z_" + B.slice(7)] = JSON.parse(A.getItem(B)) } catch { j[l]["z_" + B.slice(7)] = A.getItem(B) } })); r.referrerPolicy = "origin"; r.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(j[l]))); q.parentNode.insertBefore(r, q) };["complete", "interactive"].includes(k.readyState) ? zaraz.init() : j.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
+    <style type="text/css">
+        .scrollax-performance,
+        .scrollax-performance *,
+        .scrollax-performance *:before,
+        .scrollax-performance *:after {
+            pointer-events: none !important;
+            -webkit-animation-play-state: paused !important;
+            animation-play-state: paused !important;
+        }
+
+        ;
+    </style>
+    <script type="text/javascript" charset="UTF-8" src="./All-file/common.js"
+        nonce="c5e479f8-1e21-4d0e-81b1-20bd57943d06"></script>
+    <script type="text/javascript" charset="UTF-8" src="./All-file/util.js"
+        nonce="c5e479f8-1e21-4d0e-81b1-20bd57943d06"></script>
+</head>
+
+<body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
+    <div class="py-1 bg-black top">
+        <div class="container">
+            <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+                <div class="col-lg-12 d-block">
+                    <div class="row d-flex">
+                        <div class="col-md pr-4 d-flex topper align-items-center">
+                            <div class="icon mr-2 d-flex justify-content-center align-items-center"><span
+                                    class="icon-phone2"></span></div>
+                            <span class="text">+ 1235 2355 98</span>
+                        </div>
+                        <div class="col-md pr-4 d-flex topper align-items-center">
+                            <div class="icon mr-2 d-flex justify-content-center align-items-center"><span
+                                    class="icon-paper-plane"></span></div>
+                            <span class="text">youremail@email.com</span>
+                        </div>
+                        <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">
+                            <p class="mb-0 register-link"><span>Open hours:</span> <span>Monday - Sunday</span>
+                                <span>8:00AM - 9:00PM</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">ChickenKO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item active"><a href="about.html" class="nav-link" style="color: #c8a97e;">About</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li class="nav-item "><a href="stories.html" class="nav-link">Stories</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item cta"><a href="book.html" class="nav-link">Book a table</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-wrap hero-wrap-2"
+        style="background-image: url(&quot;images/bg_3.jpg&quot;); background-position: 50% 0%;"
+        data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-end justify-content-center">
+                <div class="col-md-9 ftco-animate text-center mb-4 fadeInUp ftco-animated">
+                    <h1 class="mb-2 bread">About</h1>
+                    <p class="breadcrumbs">
+                        <span class="mr-2"><a
+                                href="index.html">Home <i class="fa-solid fa-angle-right"></i></a></span> <span>About <i class="fa-solid fa-angle-right"></i></span></p>
+                        <span class="mr-2"><a
+                                href="index.html">Home <i class="fa-solid fa-angle-right"></i></a></span> <span>About <i class="fa-solid fa-angle-right"></i></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section ftco-wrap-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 d-flex">
+                    <div class="img img-1 mr-md-2" style="background-image: url(images/about.jpg);"></div>
+                    <div class="img img-2 ml-md-2" style="background-image: url(images/about-1.jpg);"></div>
+                </div>
+                <div class="col-md-5 wrap-about pt-5 pt-md-5 pb-md-3 ftco-animate fadeInUp ftco-animated">
+                    <div class="heading-section mb-4 my-5 my-md-0">
+                        <span class="subheading">About</span>
+                        <h2 class="mb-4">ChickenKO Restaurant</h2>
+                    </div>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It
+                        is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <pc class="time">
+                        <span>Mon - Fri <strong>8 AM - 11 PM</strong></span>
+                        <span><a href="about.html">+
+                                1-978-123-4567</a></span>
+                        <p></p>
+                    </pc>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section ftco-counter img ftco-no-pt" id="section-counter">
+        <div class="container">
+            <div class="row d-md-flex">
+                <div class="col-md-9">
+                    <div class="row d-md-flex align-items-center">
+                        <div
+                            class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="18">0</strong>
+                                    <span>Years of Experienced</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="100">0</strong>
+                                    <span>Menus/Dish</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="50">0</strong>
+                                    <span>Staffs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="15000">0</strong>
+                                    <span>Happy Customers</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center text-md-left">
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section bg-light">
+        <div class="container">
+          <div class="row justify-content-center mb-5 pb-2">
+            <div class="col-md-12 text-center heading-section ftco-animate fadeInUp ftco-animated">
+              <span class="subheading">Services</span>
+              <h2 class="mb-4">Catering Services</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate text-center fadeInUp ftco-animated">
+              <div class="media block-6 services d-block">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <span ><i class='bx bx-cake' style='color:#ebb892'  ></i> </span>
+                </div>
+                <div class="media-body p-2 mt-3">
+                  <h3 class="heading">Birthday Party</h3>
+                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate text-center fadeInUp ftco-animated">
+              <div class="media block-6 services d-block">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <span class="flaticon-meetin"><i class='bx bx-briefcase-alt-2' style='color:#dfa378' ></i></span>
+                </div>
+                <div class="media-body p-2 mt-3">
+                  <h3 class="heading">Business Meetings</h3>
+                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate text-center fadeInUp ftco-animated">
+              <div class="media block-6 services d-block">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <span class=""><i class='bx bxs-party' style='color:#dfa378'  ></i></span>
+                </div>
+                <div class="media-body p-2 mt-3">
+                  <h3 class="heading">Wedding Party</h3>
+                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-2">
+                <div class="col-md-12 text-center heading-section ftco-animate">
+                    <span class="subheading">Chef</span>
+                    <h2 class="mb-4">Our Master Chef</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="staff">
+                        <div class="img" style="background-image: url(images/chef-4.jpg);"></div>
+                        <div class="text pt-4">
+                            <h3>John Smooth</h3>
+                            <span class="position mb-2">Restaurant Owner</span>
+
+                            <div class="faded">
+
+                                <ul class="ftco-social d-flex">
+                                    <li class="ftco-animate"><a
+                                            href="about.html"><span
+                                                class="icon-twitte"><i class="fa-brands fa-twitter"></i></span></a></li>
+                                    <li class="ftco-animate"><a
+                                            href="about.html">          <span
+                                                class="icon-faceboo"><i class="fa-brands fa-facebook-f"></i> </span></a></li>
+                                    <li class="ftco-animate"><a
+                                            href="about.html">          <span
+                                                class="icon-faceboo"><i class="fa-brands fa-google"></i> </span></a></li>
+                                    <li class="ftco-animate"><a
+                                            href="about.html">          <span
+                                                class="icon-faceboo"><i class="fa-brands fa-instagram"></i> </span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="staff">
+                        <div class="img" style="background-image: url(images/chef-2.jpg);"></div>
+                        <div class="text pt-4">
+                            <h3>Rebeca Welson</h3>
+                            <span class="position mb-2">Head Chef</span>
+
+                            <div class="faded">
+
+                                <ul class="ftco-social d-flex">
+                                    <li class="ftco-animate"><a
+                                            href="about.html#">   <span
+                                                class="icon-twitte"><i class="fa-brands fa-twitter"></i> </span></a></li>
+                                    <li class="ftco-animate"><a
+                                            href="about.html#">          <span
+                                                class="icon-faceboo"><i class="fa-brands fa-facebook-f"></i> </span></a></li>
+                                    <li class="ftco-animate"><a
+                                            href="about.html#">          <span
+                                                class="icon-faceboo"><i class="fa-brands fa-google"></i> </span></a></li>
+                                    <li class="ftco-animate"><a
+                                            href="about.html#">          <span
+                                                class="icon-faceboo"><i class="fa-brands fa-instagram"></i> </span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="staff">
+                        <div class="img" style="background-image: url(images/chef-3.jpg);"></div>
+                        <div class="text pt-4">
+                            <h3>Kharl Branyt</h3>
+                            <span class="position mb-2">Chef</span>
+
+                            <div class="faded">
+
+                                <ul class="ftco-social d-flex">
+                                    <li class="ftco-animate"><a
+                                            href="about.html#">   <span
+                                                class="icon-twitte"><i class="fa-brands fa-twitter"></i> </span></a></li>
+                                    <li class="ftco-animate"><a
+                                            href="about.html#">          <span
+                                                class="icon-faceboo"><i class="fa-brands fa-facebook-f"></i> </span></a></li>
+                                    <li class="ftco-animate"><a
+                                            href="about.html#">          <span
+                                                class="icon-faceboo"><i class="fa-brands fa-google"></i> </span></a></li>
+                                    <li class="ftco-animate"><a
+                                            href="about.html#">          <span
+                                                class="icon-faceboo"><i class="fa-brands fa-instagram"></i> </span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="staff">
+                        <div class="img" style="background-image: url(images/chef-1.jpg);"></div>
+                        <div class="text pt-4">
+                            <h3>Luke Simon</h3>
+                            <span class="position mb-2">Chef</span>
+
+                            <div class="faded">
+
+                                <ul class="ftco-social d-flex">
+                                    <li class="ftco-animate"><a
+                                            href="about.html#">   <span
+                                                class="icon-twitte"><i class="fa-brands fa-twitter"></i> </span></a></li>
+                                    <li class="ftco-animate"><a
+                                            href="about.html#">          <span
+                                                class="icon-faceboo"><i class="fa-brands fa-facebook-f"></i> </span></a></li>
+                                    <li class="ftco-animate"><a
+                                            href="about.html#">          <span
+                                                class="icon-faceboo"><i class="fa-brands fa-google"></i> </span></a></li>
+                                    <li class="ftco-animate"><a
+                                            href="about.html#">          <span
+                                                class="icon-faceboo"><i class="fa-brands fa-instagram"></i> </span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section img"
+        style="background-image: url(&quot;images/bg_3.jpg&quot;); background-position: 50% 50%;"
+        data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-7 ftco-animate makereservation p-4 px-md-5 pb-md-5">
+                    <div class="heading-section ftco-animate mb-5 text-center">
+                        <span class="subheading">Book a table</span>
+                        <h2 class="mb-4">Make Reservation</h2>
+                    </div>
+                    <form action="about.html">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Name</label>
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Email</label>
+                                    <input type="text" class="form-control" placeholder="Your Email">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Phone</label>
+                                    <input type="text" class="form-control" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Phone</label>
+                                    <input type="text" class="form-control" id="book_date" placeholder="Date">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Time</label>
+                                    <input type="text" class="form-control ui-timepicker-input" id="book_time"
+                                        placeholder="Time" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Person</label>
+                                    <div class="select-wrap one-third">
+                                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Person</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <div class="form-group text-center">
+                                    <input type="submit" value="Make a Reservation" class="btn btn-primary py-3 px-5">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section testimony-section img">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-12 text-center heading-section ftco-animate">
+                    <span class="subheading">Testimony</span>
+                    <h2 class="mb-4">Happy Customer</h2>
+                </div>
+            </div>
+            <div class="row ftco-animate justify-content-center">
+                <div class="col-md-12">
+                    <div class="carousel-testimony owl-carousel ftco-owl owl-loaded owl-drag">
+
+
+
+
+
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage"
+                                style="transition: all 0s ease 0s; width: 4180px; transform: translate3d(-760px, 0px, 0px);">
+                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap text-center pb-5">
+                                            <div class="user-img mb-4"
+                                                style="background-image: url(images/person_3.jpg)">
+                                                <span class="quote d-flex align-items-center justify-content-center">
+                                                    <i class="icon-quote-left"></i>
+                                                </span>
+                                            </div>
+                                            <div class="text p-3">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <p class="name">Art Leonard</p>
+                                                <span class="position">Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap text-center pb-5">
+                                            <div class="user-img mb-4"
+                                                style="background-image: url(images/person_4.jpg)">
+                                                <span class="quote d-flex align-items-center justify-content-center">
+                                                    <i class="icon-quote-left"></i>
+                                                </span>
+                                            </div>
+                                            <div class="text p-3">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <p class="name">Rose Henderson</p>
+                                                <span class="position">Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned active" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap text-center pb-5">
+                                            <div class="user-img mb-4"
+                                                style="background-image: url(images/person_3.jpg)">
+                                                <span class="quote d-flex align-items-center justify-content-center">
+                                                    <i class="icon-quote-left"></i>
+                                                </span>
+                                            </div>
+                                            <div class="text p-3">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <p class="name">Ian Boner</p>
+                                                <span class="position">Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active center" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap text-center pb-5">
+                                            <div class="user-img mb-4"
+                                                style="background-image: url(images/person_1.jpg)">
+                                                <span class="quote d-flex align-items-center justify-content-center">
+                                                    <i class="icon-quote-left"></i>
+                                                </span>
+                                            </div>
+                                            <div class="text p-3">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <p class="name">Jason McClean</p>
+                                                <span class="position">Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap text-center pb-5">
+                                            <div class="user-img mb-4"
+                                                style="background-image: url(images/person_2.jpg)">
+                                                <span class="quote d-flex align-items-center justify-content-center">
+                                                    <i class="icon-quote-left"></i>
+                                                </span>
+                                            </div>
+                                            <div class="text p-3">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <p class="name">Mark Stevenson</p>
+                                                <span class="position">Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap text-center pb-5">
+                                            <div class="user-img mb-4"
+                                                style="background-image: url(images/person_3.jpg)">
+                                                <span class="quote d-flex align-items-center justify-content-center">
+                                                    <i class="icon-quote-left"></i>
+                                                </span>
+                                            </div>
+                                            <div class="text p-3">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <p class="name">Art Leonard</p>
+                                                <span class="position">Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap text-center pb-5">
+                                            <div class="user-img mb-4"
+                                                style="background-image: url(images/person_4.jpg)">
+                                                <span class="quote d-flex align-items-center justify-content-center">
+                                                    <i class="icon-quote-left"></i>
+                                                </span>
+                                            </div>
+                                            <div class="text p-3">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <p class="name">Rose Henderson</p>
+                                                <span class="position">Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap text-center pb-5">
+                                            <div class="user-img mb-4"
+                                                style="background-image: url(images/person_3.jpg)">
+                                                <span class="quote d-flex align-items-center justify-content-center">
+                                                    <i class="icon-quote-left"></i>
+                                                </span>
+                                            </div>
+                                            <div class="text p-3">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <p class="name">Ian Boner</p>
+                                                <span class="position">Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap text-center pb-5">
+                                            <div class="user-img mb-4"
+                                                style="background-image: url(images/person_1.jpg)">
+                                                <span class="quote d-flex align-items-center justify-content-center">
+                                                    <i class="icon-quote-left"></i>
+                                                </span>
+                                            </div>
+                                            <div class="text p-3">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <p class="name">Jason McClean</p>
+                                                <span class="position">Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap text-center pb-5">
+                                            <div class="user-img mb-4"
+                                                style="background-image: url(images/person_2.jpg)">
+                                                <span class="quote d-flex align-items-center justify-content-center">
+                                                    <i class="icon-quote-left"></i>
+                                                </span>
+                                            </div>
+                                            <div class="text p-3">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <p class="name">Mark Stevenson</p>
+                                                <span class="position">Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap text-center pb-5">
+                                            <div class="user-img mb-4"
+                                                style="background-image: url(images/person_3.jpg)">
+                                                <span class="quote d-flex align-items-center justify-content-center">
+                                                    <i class="icon-quote-left"></i>
+                                                </span>
+                                            </div>
+                                            <div class="text p-3">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <p class="name">Art Leonard</p>
+                                                <span class="position">Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-nav disabled"><button role="presentation" class="owl-prev"><span
+                                    class="fa-solid fa-angle-left"></span></button><button role="presentation"
+                                class="owl-next"><span class="fa-solid fa-angle-right"></span></button></div>
+                        <div class="owl-dots"><button class="owl-dot active"><span></span></button><button
+                                class="owl-dot"><span></span></button><button
+                                class="owl-dot"><span></span></button><button
+                                class="owl-dot"><span></span></button><button class="owl-dot"><span></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">ChickenKO</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                                <li class="ftco-animate"><a
+                                        href="about.html"><span
+                                            class="icon-twitte"><i class="fa-brands fa-twitter"></i></span></a></li>
+                                <li class="ftco-animate"><a
+                                        href="about.html">          <span
+                                            class="icon-faceboo"><i class="fa-brands fa-facebook-f"></i> </span></a></li>
+                                <li class="ftco-animate"><a
+                                        href="about.html">          <span
+                                            class="icon-faceboo"><i class="fa-brands fa-google"></i> </span></a></li>
+                                <li class="ftco-animate"><a
+                                        href="about.html">          <span
+                                            class="icon-faceboo"><i class="fa-brands fa-instagram"></i> </span></a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Open Hours</h2>
+                        <ul class="list-unstyled open-hours">
+                            <li class="d-flex"><span>Monday</span><span>9:00 - 24:00</span></li>
+                            <li class="d-flex"><span>Tuesday</span><span>9:00 - 24:00</span></li>
+                            <li class="d-flex"><span>Wednesday</span><span>9:00 - 24:00</span></li>
+                            <li class="d-flex"><span>Thursday</span><span>9:00 - 24:00</span></li>
+                            <li class="d-flex"><span>Friday</span><span>9:00 - 02:00</span></li>
+                            <li class="d-flex"><span>Saturday</span><span>9:00 - 02:00</span></li>
+                            <li class="d-flex"><span>Sunday</span><span> 9:00 - 02:00</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Instagram</h2>
+                        <div class="thumb d-sm-flex">
+                            <a href="about.html" class="thumb-menu img"
+                                style="background-image: url(images/insta-1.jpg);">
+                            </a>
+                            <a href="about.html" class="thumb-menu img"
+                                style="background-image: url(images/insta-2.jpg);">
+                            </a>
+                            <a href="about.html" class="thumb-menu img"
+                                style="background-image: url(images/insta-3.jpg);">
+                            </a>
+                        </div>
+                        <div class="thumb d-flex">
+                            <a href="about.html" class="thumb-menu img"
+                                style="background-image: url(images/insta-4.jpg);">
+                            </a>
+                            <a href="about.html" class="thumb-menu img"
+                                style="background-image: url(images/insta-5.jpg);">
+                            </a>
+                            <a href="about.html" class="thumb-menu img"
+                                style="background-image: url(images/insta-6.jpg);">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Newsletter</h2>
+                        <p>Far far away, behind the word mountains, far from the countries.</p>
+                        <form action="about.html" class="subscribe-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control mb-2 text-center"
+                                    placeholder="Enter email address">
+                                <input type="submit" value="Subscribe" class="form-control submit px-3">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        Copyright ©
+                        <script>document.write(new Date().getFullYear());</script>2023 All rights reserved | This
+                        template is made with <i class="icon-heart" aria-hidden="true"></i> by <a
+                            href="https://colorlib.com/" target="_blank">Colorlib</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="ftco-loader" class="fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle>
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00"></circle>
+        </svg></div>
+        <!-- jQuery js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- font awasome js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./All-file/jquery.min.js"></script>
+    <script src="./All-file/jquery-migrate-3.0.1.min.js"></script>
+    <script src="./All-file/popper.min.js"></script>
+    <script src="./All-file/bootstrap.min.js"></script>
+    <script src="./All-file/jquery.easing.1.3.js"></script>
+    <script src="./All-file/jquery.waypoints.min.js"></script>
+    <script src="./All-file/jquery.stellar.min.js"></script>
+    <script src="./All-file/owl.carousel.min.js"></script>
+    <script src="./All-file/jquery.magnific-popup.min.js"></script>
+    <script src="./All-file/aos.js"></script>
+    <script src="./All-file/jquery.animateNumber.min.js"></script>
+    <script src="./All-file/bootstrap-datepicker.js"></script>
+    <script src="./All-file/jquery.timepicker.min.js"></script>
+    <script src="./All-file/scrollax.min.js"></script>
+    <script src="./All-file/js"></script>
+    <script src="./All-file/google-map.js"></script>
+    <script src="./All-file/main.js"></script>
+
+    <script async="" src="./All-file/js(1)"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer="" src="./All-file/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854"
+        integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg=="
+        data-cf-beacon="{&quot;rayId&quot;:&quot;7f2d34647bc778c9&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2023.7.0&quot;,&quot;si&quot;:100}"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
