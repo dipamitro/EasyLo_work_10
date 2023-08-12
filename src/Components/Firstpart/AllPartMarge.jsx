@@ -9,6 +9,7 @@ import Happycustomer from '../Saventhpart/Happycustomer'
 import Blog from '../Eightpart/Blog'
 import Footer from '../Ninethpart/Footer'
 
+
 function AllPartMarge() {
   return (
     <div>
@@ -21,6 +22,7 @@ function AllPartMarge() {
         <Happycustomer />
         <Blog />
         <Footer />
+        
 
 
     </div>

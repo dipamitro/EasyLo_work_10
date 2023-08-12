@@ -3,7 +3,7 @@ import AdminSideBar from './AdminSideBar'
 import './AdminDeshBoard.css'
 function AdminDeshBoard() {
   return (
-    <div  style={{color:"black"}}>Wellcome to my admon desh board
+    <div>
 
 
 <div className='body2'>
@@ -70,34 +70,34 @@ function AdminDeshBoard() {
                       <div className="vsm-header">
                         Main Navigation
                       </div>
-                      <div className="vsm-item first-item open-item parent-active-item"><Link href="https://demo.dashboardpack.com/architectui-vue-free/#" className="vsm-link"><i className="vsm-icon pe-7s-rocket" /> {/**/} <span className="vsm-title">Dashboards</span> <i className="vsm-arrow open-arrow" /></Link>
+                      <div className="vsm-item first-item open-item parent-active-item"><a href="https://demo.dashboardpack.com/architectui-vue-free/#" className="vsm-link"><i className="vsm-icon pe-7s-rocket" /> {/**/} <span className="vsm-title">Dashboards</span> <i className="vsm-arrow open-arrow" /></a>
                         <div className="vsm-dropdown">
                           <div className="vsm-list">
-                            <div className="vsm-item active-item"><Link href="https://demo.dashboardpack.com/architectui-vue-free/#/" className="vsm-link router-link-exact-active router-link-active">{/**/} {/**/} <span className="vsm-title">Analytics</span> {/**/}</Link> {/**/}</div>
+                            <div className="vsm-item active-item"><a href="https://demo.dashboardpack.com/architectui-vue-free/#/" className="vsm-link router-link-exact-active router-link-active">{/**/} {/**/} <span className="vsm-title">Analytics</span> {/**/}</a> {/**/}</div>
                           </div>
                         </div>
                       </div>
-                      <div className="vsm-item first-item"><Link href="https://demo.dashboardpack.com/architectui-vue-free/#" className="vsm-link"><i className="vsm-icon pe-7s-browser" /> {/**/} <span className="vsm-title">Pages</span>
-                          <i className="vsm-arrow" /></Link> {/**/}</div>
+                      <div className="vsm-item first-item"><a href="https://demo.dashboardpack.com/architectui-vue-free/#" className="vsm-link"><i className="vsm-icon pe-7s-browser" /> {/**/} <span className="vsm-title">Pages</span>
+                          <i className="vsm-arrow" /></a> {/**/}</div>
                       <div className="vsm-header">
                         UI Components
                       </div>
-                      <div className="vsm-item first-item"><Link href="https://demo.dashboardpack.com/architectui-vue-free/#" className="vsm-link"><i className="vsm-icon pe-7s-diamond" /> {/**/} <span className="vsm-title">Elements</span> <i className="vsm-arrow" /></Link> {/**/}</div>
-                      <div className="vsm-item first-item"><Link href="https://demo.dashboardpack.com/architectui-vue-free/#" className="vsm-link"><i className="vsm-icon pe-7s-car" /> {/**/} <span className="vsm-title">Components</span> <i className="vsm-arrow" /></Link> {/**/}</div>
-                      <div className="vsm-item first-item"><Link href="https://demo.dashboardpack.com/architectui-vue-free/#" className="vsm-link"><i className="vsm-icon pe-7s-display2" /> {/**/} <span className="vsm-title">Tables</span> <i className="vsm-arrow" /></Link> {/**/}</div>
+                      <div className="vsm-item first-item"><a href="https://demo.dashboardpack.com/architectui-vue-free/#" className="vsm-link"><i className="vsm-icon pe-7s-diamond" /> {/**/} <span className="vsm-title">Elements</span> <i className="vsm-arrow" /></a> {/**/}</div>
+                      <div className="vsm-item first-item"><a href="https://demo.dashboardpack.com/architectui-vue-free/#" className="vsm-link"><i className="vsm-icon pe-7s-car" /> {/**/} <span className="vsm-title">Components</span> <i className="vsm-arrow" /></a> {/**/}</div>
+                      <div className="vsm-item first-item"><a href="https://demo.dashboardpack.com/architectui-vue-free/#" className="vsm-link"><i className="vsm-icon pe-7s-display2" /> {/**/} <span className="vsm-title">Tables</span> <i className="vsm-arrow" /></a> {/**/}</div>
                       <div className="vsm-header">
                         Dashboard Boxes
                       </div>
-                      <div className="vsm-item first-item"><Link href="https://demo.dashboardpack.com/architectui-vue-free/#/widgets/chart-boxes-3" className="vsm-link"><i className="vsm-icon pe-7s-graph2" /> {/**/} <span className="vsm-title">Chart
-                            Boxes</span> {/**/}</Link> {/**/}</div>
+                      <div className="vsm-item first-item"><a href="https://demo.dashboardpack.com/architectui-vue-free/#/widgets/chart-boxes-3" className="vsm-link"><i className="vsm-icon pe-7s-graph2" /> {/**/} <span className="vsm-title">Chart
+                            Boxes</span> {/**/}</a> {/**/}</div>
                       <div className="vsm-header">
                         Forms
                       </div>
-                      <div className="vsm-item first-item"><Link href="https://demo.dashboardpack.com/architectui-vue-free/#" className="vsm-link"><i className="vsm-icon pe-7s-light" /> {/**/} <span className="vsm-title">Elements</span> <i className="vsm-arrow" /></Link> {/**/}</div>
+                      <div className="vsm-item first-item"><a href="https://demo.dashboardpack.com/architectui-vue-free/#" className="vsm-link"><i className="vsm-icon pe-7s-light" /> {/**/} <span className="vsm-title">Elements</span> <i className="vsm-arrow" /></a> {/**/}</div>
                       <div className="vsm-header">
                         Charts
                       </div>
-                      <div className="vsm-item first-item"><Link href="https://demo.dashboardpack.com/architectui-vue-free/#/charts/chartjs" className="vsm-link"><i className="vsm-icon pe-7s-graph2" /> {/**/} <span className="vsm-title">ChartJS</span> {/**/}</Link>
+                      <div className="vsm-item first-item"><a href="https://demo.dashboardpack.com/architectui-vue-free/#/charts/chartjs" className="vsm-link"><i className="vsm-icon pe-7s-graph2" /> {/**/} <span className="vsm-title">ChartJS</span> {/**/}</a>
                         {/**/}</div>
                     </div> {/**/} <button className="collapse-btn" />
                   </div>
@@ -899,7 +899,7 @@ function AdminDeshBoard() {
         </div>
       </div>
 {/*     
-    <LinkdminSideBar /> */}
+    <LadminSideBar /> */}
     </div>
   )
 }

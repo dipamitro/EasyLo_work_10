@@ -146,7 +146,7 @@ const Login = () => {
                 </div>
               </div>
             )}
-        
+        <AdminDeshBoard />
     </div>
   );
 };

@@ -11,6 +11,10 @@ import AllPartMarge from './Components/Firstpart/AllPartMarge';
 import Login from './PageRealatToAdmin/Login/Login';
 import AdminDeshBoard from './PageRealatToAdmin/AdminDeshBoard/AdminDeshBoard';
 import AdminSideBar from './PageRealatToAdmin/AdminDeshBoard/AdminSideBar';
+import OrderFood from './EmplyeeAndFoodInfo/OrderFood';
+import AllTableList from './EmplyeeAndFoodInfo/AllTableList';
+import AllFoodList from './EmplyeeAndFoodInfo/AllFoodList';
+import AllEmployeeList from './EmplyeeAndFoodInfo/AllEmployeeList';
 
 
 function App() {
@@ -23,6 +27,11 @@ function App() {
    <Route path='/logIn' element={<Login />}></Route>
    <Route path='/adminDeshBoard' element={<AdminDeshBoard />}></Route>
    <Route path='/adminSideBar' element={<AdminSideBar />}></Route>
+   <Route path='/AllTableList' element={<AllTableList />}></Route>
+   <Route path='/AllTableList' element={<AllFoodList />}></Route>
+
+   <Route path='/orderFood' element={<AllEmployeeList />}></Route>
+   <Route path='/orderFood' element={<OrderFood />}></Route>
     
    </Routes>
 
@@ -30,5 +39,5 @@ function App() {
     </>
   )
 }
-
+ 
 export default App
