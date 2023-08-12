@@ -3,6 +3,7 @@ import React from 'react'
 function About() {
   return (
     <div>
+      
         <section className="ftco-section ftco-wrap-about">
         <div className="container">
           <div className="row">
@@ -17,11 +18,11 @@ function About() {
               </div>
               <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
                 paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              <pc className="time">
+              <div className="time">
                 <span>Mon - Fri <strong>8 AM - 11 PM</strong></span>
                 <span><a href="#">+ 1-978-123-4567</a></span>
                 <p />
-              </pc>
+              </div>
             </div>
           </div>
         </div>

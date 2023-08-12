@@ -15,37 +15,37 @@ function MakeReservation() {
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
-                      <label htmlFor>Name</label>
+                      <label >Name</label>
                       <input type="text" className="form-control" placeholder="Your Name" />
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group">
-                      <label htmlFor>Email</label>
+                      <label >Email</label>
                       <input type="text" className="form-control" placeholder="Your Email" />
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group">
-                      <label htmlFor>Phone</label>
+                      <label >Phone</label>
                       <input type="text" className="form-control" placeholder="Phone" />
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group">
-                      <label htmlFor>Phone</label>
+                      <label >Phone</label>
                       <input type="text" className="form-control" id="book_date" placeholder="Date" />
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group">
-                      <label htmlFor>Time</label>
+                      <label >Time</label>
                       <input type="text" className="form-control ui-timepicker-input" id="book_time" placeholder="Time" autoComplete="off" />
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group">
-                      <label htmlFor>Person</label>
+                      <label >Person</label>
                       <div className="select-wrap one-third">
                         <div className="icon"><span className="ion-ios-arrow-down" /></div>
                         <select name id className="form-control">

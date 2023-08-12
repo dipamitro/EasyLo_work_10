@@ -1,0 +1,163 @@
+.vimvixen-hint {
+    background-color: #6d592b !important;
+    border-color: #d2ba70 !important;
+    color: #fffad6 !important;
+  }
+
+  #vimvixen-console-frame {
+    color-scheme: light !important
+  }
+
+  ::placeholder {
+    opacity: 0.5 !important;
+  }
+
+  #edge-translate-panel-body1,
+  .MuiTypography-body1,
+  .nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+  }
+
+  gr-main-header {
+    background-color: #2c3838 !important;
+  }
+
+  .tou-z65h9k,
+  .tou-mignzq,
+  .tou-1b6i2ox,
+  .tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+  }
+
+  .tou-75mvi {
+    background-color: #151e1f !important;
+  }
+
+  .tou-ta9e87,
+  .tou-1w3fhi0,
+  .tou-1b8t2us,
+  .tou-py7lfi,
+  .tou-1lpmd9d,
+  .tou-1frrtv8,
+  .tou-17ezmgn {
+    background-color: #0b0b0a !important;
+  }
+
+  .tou-uknfeu {
+    background-color: #1f180f !important;
+  }
+
+  .tou-6i3zyv {
+    background-color: #435555 !important;
+  }
+
+  div.mermaid-viewer-control-panel .btn {
+    fill: var(--darkreader-neutral-text);
+    background-color: var(--darkreader-neutral-background);
+  }
+
+  svg g rect.er {
+    fill: var(--darkreader-neutral-background) !important;
+  }
+
+  svg g rect.er.entityBox {
+    fill: var(--darkreader-neutral-background) !important;
+  }
+
+  svg g rect.er.attributeBoxOdd {
+    fill: var(--darkreader-neutral-background) !important;
+  }
+
+  svg g rect.er.attributeBoxEven {
+    fill-opacity: 0.8 !important;
+    fill: var(--darkreader-selection-background);
+  }
+
+  svg rect.er.relationshipLabelBox {
+    fill: var(--darkreader-neutral-background) !important;
+  }
+
+  svg g g.nodes rect,
+  svg g g.nodes polygon {
+    fill: var(--darkreader-neutral-background) !important;
+  }
+
+  svg g rect.task {
+    fill: var(--darkreader-selection-background) !important;
+  }
+
+  svg line.messageLine0,
+  svg line.messageLine1 {
+    stroke: var(--darkreader-neutral-text) !important;
+  }
+
+  div.mermaid .actor {
+    fill: var(--darkreader-neutral-background) !important;
+  }    .body1 {
+    background-color: #1d1c19 !important;
+  }
+
+  .body1 {
+    color-scheme: dark !important;
+  }
+
+  .body1,
+  body1 {
+    background-color: #1d1c19;
+  }
+
+  .body1,
+  body1 {
+    border-color: #7d7464;
+    color: #fff9df;
+  }
+
+  a {
+    color: #7a94ae;
+  }
+
+  table {
+    border-color: #646159;
+  }
+
+  ::placeholder {
+    color: #c6b9a4;
+  }
+
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    background-color: #464425 !important;
+    color: #fff9df !important;
+  }
+
+  ::-webkit-scrollbar {
+    background-color: #262522;
+    color: #beb29c;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #524f49;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #68655c;
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #56534c;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background-color: #1d1c19;
+  }
+
+  ::selection {
+    background-color: #254f7f !important;
+    color: #fff9de !important;
+  }
+
+  ::-moz-selection {
+    background-color: #254f7f !important;
+    color: #fff9de !important;
+  }
