@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import AllEmployeeList from "../EmplyeeAndFoodInfo/AllEmployeeList";
 import FoodTableFatch from "./FoodTableFatch";
-function AllFoodList() {
+import EmplyeeAndTableMarge from "./EmplyeeAndTableMarge";
+function EmplyeeAsingTable() {
   return (
     <div>
       <div className="body2">
@@ -234,7 +235,7 @@ function AllFoodList() {
                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" font-size="1.375rem" class="iconify iconify--bx" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm9-8.586l6 6V15l.001 5H6v-9.585l6-6.001z"></path><path fill="currentColor" d="M12 17c2.206 0 4-1.794 4-4s-1.794-4-4-4s-4 1.794-4 4s1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2s-2-.897-2-2s.897-2 2-2z"></path></svg>
                             </i>
                           <span className="vsm-title">
-                          <Link to={'/allEmployeeList'}> All Emplyee List</Link></span>
+                          <Link to={'./allEmployeeList'}> All Emplyee List</Link></span>
                           
                         </a>
                       </div>
@@ -519,7 +520,7 @@ function AllFoodList() {
                               </tr>
                             </tbody>
                           </table> */}
-                         <FoodTableFatch />
+                         <EmplyeeAndTableMarge />
                         </div>
                       </div>
                     </div>
@@ -593,6 +594,6 @@ function AllFoodList() {
   );
 }
 
-export default AllFoodList;
+export default EmplyeeAsingTable;
 
 

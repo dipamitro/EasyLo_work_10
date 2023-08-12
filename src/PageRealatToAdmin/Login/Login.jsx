@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Login.css";
 import "./main.css";
 import "./util.css";
-import Justforcheck from "./justforcheck";
 import AdminDeshBoard from "../AdminDeshBoard/AdminDeshBoard";
 const Login = () => {
   const [userToken, setUserToken] = useState("");
@@ -146,7 +144,7 @@ const Login = () => {
                 </div>
               </div>
             )}
-        <AdminDeshBoard />
+       
     </div>
   );
 };

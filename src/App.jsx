@@ -15,6 +15,9 @@ import OrderFood from './EmplyeeAndFoodInfo/OrderFood';
 import AllTableList from './EmplyeeAndFoodInfo/AllTableList';
 import AllFoodList from './EmplyeeAndFoodInfo/AllFoodList';
 import AllEmployeeList from './EmplyeeAndFoodInfo/AllEmployeeList';
+import EmployeeFatch from './EmplyeeAndFoodInfo/EmployeeFatch';
+import EmplyeeAndTableMarge from './EmplyeeAndFoodInfo/EmplyeeAndTableMarge';
+import EmplyeeAsingTable from './EmplyeeAndFoodInfo/EmplyeeAsingTable';
 
 
 function App() {
@@ -27,11 +30,14 @@ function App() {
    <Route path='/logIn' element={<Login />}></Route>
    <Route path='/adminDeshBoard' element={<AdminDeshBoard />}></Route>
    <Route path='/adminSideBar' element={<AdminSideBar />}></Route>
-   <Route path='/AllTableList' element={<AllTableList />}></Route>
-   <Route path='/AllTableList' element={<AllFoodList />}></Route>
+   <Route path='/allTableList' element={<AllTableList />}></Route>
+   <Route path='/allFoodList' element={<AllFoodList />}></Route>
 
-   <Route path='/orderFood' element={<AllEmployeeList />}></Route>
+   <Route path='/employeeFatch' element={<EmployeeFatch />}></Route>
+   <Route path='/allEmployeeList' element={<AllEmployeeList />}></Route>
    <Route path='/orderFood' element={<OrderFood />}></Route>
+   <Route path='/emplyeeAndTableMarge' element={<EmplyeeAndTableMarge />}></Route>
+   <Route path='/emplyeeAsingTable' element={<EmplyeeAsingTable />}></Route>
     
    </Routes>
 
