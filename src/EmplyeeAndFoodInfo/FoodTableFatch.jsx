@@ -7,7 +7,7 @@ const FoodTableFatch = () => {
 
   useEffect(() => {
     // Fetch data from the API
-    fetch('https://restaurantapi.bssoln.com/api/Food/get')
+    fetch('https://restaurantapi.bssoln.com/api/Food/datatable')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -39,14 +39,24 @@ const FoodTableFatch = () => {
         <thead>
           <tr>
             <th>Food ID</th>
+            <th>Image</th>
             <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Discount Type</th>
+            <th>Discount price</th>
           </tr>
         </thead>
         <tbody>
           {foodData.map(food => (
             <tr key={food.foodId}>
-              <td>{food.foodId}</td>
-              <td>{food.name}</td>
+              <td  className="txteclio">{food.foodId}</td>
+              <td className="txteclio">{food.image}</td>
+              <td className="txteclio">{food.name}</td>
+              <td className="txteclio">{food.description}</td>
+              <td className="txteclio">{food.price}</td>
+              <td className="txteclio">{food.discountType}</td>
+              <td className="txteclio">{food.discountPrice}</td>
             </tr>
           ))}
         </tbody>

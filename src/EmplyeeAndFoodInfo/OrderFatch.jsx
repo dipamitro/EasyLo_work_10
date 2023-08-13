@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from 'react';
 
-const EmployeeFatch = () => {
-  const [employeeData, setEmployeeData] = useState([]);
+const OrderFatch = () => {
+  const [orderData, setOrderData] = useState([]);
   useEffect(() => {
-    fetch('https://restaurantapi.bssoln.com/api/Employee/datatable')
+    fetch('https://restaurantapi.bssoln.com/api/order/datatable')
     // promice mane ektar por ekta kaj kore
     // Api er data guloke json a convert kore
       .then(response => response.json()) 
     //   shei jeson a data k khuje ane check Api
-      .then(json => setEmployeeData(json.data))
+      .then(json => setOrderData(json.data))
       .finally(() => {
       })
   }, [])
   
   return (
     <div>
-      <h2>Employee Table</h2>
+      <h2>order Table</h2>
       <table aria-busy="false"
                             aria-colcount={3}
                             className="table b-table table-striped table-hover table-bordered border mb-0">
@@ -42,20 +42,22 @@ const EmployeeFatch = () => {
             <th role="columnheader"
                                   scope="col"
                                   aria-colindex={3}>Email</th>
+            <th role="columnheader"
+                                  scope="col"
+                                  aria-colindex={4}>Action</th>
             {/* Add more table headers as needed */}
           </tr>
         </thead>
         <tbody>
-          {employeeData.map((employee, i) => (
+          {orderData.map((order, i) => (
             <tr key={i}>
-              <td>{employee.user.image}</td>
-              <td>{employee.user.id}</td>
-              <td>{employee.user.nid}</td>
-              <td>{employee.user.fullName}</td>
-              <td>{employee.designation}</td>
-              <td>{employee.user.userName}</td> 
-              <td>{employee.user.email}</td>
-              
+              < td className="txteclio">{order.id}</td>
+              < td className="txteclio">{order.orderNumber}</td>
+              < td className="txteclio">{order.amount}</td>
+              < td className="txteclio">{order.orderStatus}</td>
+              < td className="txteclio">{order.orderTime}</td>
+             
+             
             </tr>
           ))}
         </tbody>
@@ -65,5 +67,5 @@ const EmployeeFatch = () => {
   );
 };
 
-export default EmployeeFatch;
+export default OrderFatch;
 
