@@ -5,6 +5,7 @@ import "./util.css";
 import AdminDeshBoard from "../AdminDeshBoard/AdminDeshBoard";
 import OrderFatch from "../../EmplyeeAndFoodInfo/OrderFatch";
 import FoodTableFatch from "../../EmplyeeAndFoodInfo/FoodTableFatch";
+import CreateNewEmployee from "../../EmplyeeAndFoodInfo/CreateNewEmployee";
 const Login = () => {
   const [userToken, setUserToken] = useState("");
   const [username, setUsername] = useState("");
@@ -146,8 +147,7 @@ const Login = () => {
                 </div>
               </div>
             )}
-       <OrderFatch />
-      <FoodTableFatch />
+     
 
     </div>
   );
