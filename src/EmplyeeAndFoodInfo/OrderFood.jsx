@@ -1,4 +1,3 @@
-
 import OrderFatch from './OrderFatch'
 import React from "react";
 import { Link } from "react-router-dom";
@@ -358,10 +357,9 @@ function OrderFood() {
                           </i>
                         </div>
                         <div>
-                          Analytics Dashboard
+                          Admin Dashboard
                           <div className="page-title-subheading">
-                            This is an example dashboard created using build-in
-                            elements and components.
+                           API Calling
                           </div>
                         </div>
                       </div>
@@ -423,7 +421,7 @@ function OrderFood() {
                           </div>
                         </div>
                         <div className="card-body">
-                         <EmployeeFatch />
+                         <OrderFatch />
                         </div>
                       </div>
                     </div>
@@ -432,7 +430,7 @@ function OrderFood() {
               </div>
               <div className="app-footer">
                 <div className="app-footer__inner text-center">
-                  Copyright 2022 DashboardPack.com
+                  DashboardBss.com
                 </div>
               </div>
             </div>

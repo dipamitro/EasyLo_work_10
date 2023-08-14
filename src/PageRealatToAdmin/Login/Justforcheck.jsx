@@ -128,7 +128,7 @@
                           
                           </i></div>
 //                         <div>
-//                           Analytics Dashboard
+//                           Admin Dashboard
 //                           <div className="page-title-subheading">
 //                             This is an example dashboard created using build-in elements and components.
 //                           </div>
@@ -847,7 +847,7 @@
 //               </div>
 //               <div className="app-footer">
 //                 <div className="app-footer__inner text-center">
-//                   Copyright 2022 DashboardPack.com
+//                   DashboardBss.com
 //                 </div>
 //               </div>
 //             </div>

@@ -19,6 +19,7 @@ import EmployeeFatch from './EmplyeeAndFoodInfo/EmployeeFatch';
 import EmplyeeAndTableMarge from './EmplyeeAndFoodInfo/EmplyeeAndTableMarge';
 import EmplyeeAsingTable from './EmplyeeAndFoodInfo/EmplyeeAsingTable';
 import CreateNewEmployee from './EmplyeeAndFoodInfo/CreateNewEmployee';
+import CreateFood from './PageRealatToAdmin/AdminDeshBoard/CreateFood';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
    <Route path='/emplyeeAndTableMarge' element={<EmplyeeAndTableMarge />}></Route>
    <Route path='/emplyeeAsingTable' element={<EmplyeeAsingTable />}></Route>
    <Route path='/CreateNewEmployee' element={<CreateNewEmployee />}></Route>
+   <Route path='/createFood' element={<CreateFood />}></Route>
     
    </Routes>
 

@@ -4,11 +4,9 @@ import TableNoWithEmplyee from './TableNoWithEmplyee'
 
 function EmplyeeAndTableMarge() {
   return (
-    <div style={{display:"flex"}}>
+    <div >
         <EmployeeWithTable />
-        <TableNoWithEmplyee />
     </div>
   )
 }
-
 export default EmplyeeAndTableMarge

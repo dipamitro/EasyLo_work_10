@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
+import TableNoWithEmplyee from './TableNoWithEmplyee';
 const AllTableList = () => {
   const [employeeData, setEmployeeData] = useState([]);
   useEffect(() => {
@@ -405,10 +406,9 @@ const AllTableList = () => {
                           </i>
                         </div>
                         <div>
-                          Analytics Dashboard
+                          Admin Dashboard
                           <div className="page-title-subheading">
-                            This is an example dashboard created using build-in
-                            elements and components.
+                           API Calling
                           </div>
                         </div>
                       </div>
@@ -471,7 +471,7 @@ const AllTableList = () => {
                         </div>
                         <div className="card-body">
                         <h2>Employee Assing With Table</h2>
-                          <table  className="table b-table table-striped table-hover table-bordered border mb-0">
+                          {/* <table  className="table b-table table-striped table-hover table-bordered border mb-0">
                             <thead>
                               <tr>
                                 <th>employeeId</th>
@@ -486,7 +486,8 @@ const AllTableList = () => {
                                 </tr>
                               ))}
                             </tbody>
-                          </table>
+                          </table> */}
+                          <TableNoWithEmplyee />
                         </div>
                       </div>
                     </div>
@@ -495,7 +496,7 @@ const AllTableList = () => {
               </div>
               <div className="app-footer">
                 <div className="app-footer__inner text-center">
-                  Copyright 2022 DashboardPack.com
+                  DashboardBss.com
                 </div>
               </div>
             </div>

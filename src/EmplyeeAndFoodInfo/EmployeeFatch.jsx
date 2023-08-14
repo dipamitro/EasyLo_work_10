@@ -74,10 +74,10 @@ const EmployeeFatch = () => {
                                   aria-colindex={4}>Name</th>
             <th role="columnheader"
                                   scope="col"
-                                  aria-colindex={5}>Position</th>
+                                  aria-colindex={5}>Designation</th>
             <th role="columnheader"
                                   scope="col"
-                                  aria-colindex={6}>Username</th>
+                                  aria-colindex={6}>Phone</th>
             <th role="columnheader"
                                   scope="col"
                                   aria-colindex={3}>Email</th>

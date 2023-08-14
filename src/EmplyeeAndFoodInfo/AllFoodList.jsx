@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import AllEmployeeList from "../EmplyeeAndFoodInfo/AllEmployeeList";
 import FoodTableFatch from "./FoodTableFatch";
+import CreateFood from "../PageRealatToAdmin/AdminDeshBoard/CreateFood";
 function AllFoodList() {
   return (
     <div>
@@ -353,10 +354,9 @@ function AllFoodList() {
                           </i>
                         </div>
                         <div>
-                          Analytics Dashboard
+                          Food List
                           <div className="page-title-subheading">
-                            This is an example dashboard created using build-in
-                            elements and components.
+                           API Calling
                           </div>
                         </div>
                       </div>
@@ -402,6 +402,7 @@ function AllFoodList() {
                               className
                             />
                           </svg>
+                          <Link to={'/createFood'} ></Link>
                           Create New
                         </button>
                       </div>
@@ -546,6 +547,7 @@ function AllFoodList() {
                             </tbody>
                           </table> */}
                          <FoodTableFatch />
+                         <CreateFood />
                         </div>
                       </div>
                     </div>
@@ -554,7 +556,7 @@ function AllFoodList() {
               </div>
               <div className="app-footer">
                 <div className="app-footer__inner text-center">
-                  Copyright 2022 DashboardPack.com
+                  DashboardBss.com
                 </div>
               </div>
             </div>
@@ -615,6 +617,7 @@ function AllFoodList() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }

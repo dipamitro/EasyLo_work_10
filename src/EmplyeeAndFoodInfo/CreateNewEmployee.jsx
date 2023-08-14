@@ -24,7 +24,7 @@ const CreateNewEmployee = () => {
               <Col>
                 <Form.Group controlId="firstName">
                   <Form.Label>First Name</Form.Label>
-                  <Form.Control type="text" placeholder="First Name" />
+                  <input type="text" placeholder="First Name" />
                 </Form.Group>
               </Col>
               <Col>
