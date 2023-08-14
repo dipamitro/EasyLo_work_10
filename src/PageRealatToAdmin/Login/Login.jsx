@@ -5,6 +5,7 @@ import "./util.css";
 import AdminDeshBoard from "../AdminDeshBoard/AdminDeshBoard";
 import OrderFatch from "../../EmplyeeAndFoodInfo/OrderFatch";
 import FoodTableFatch from "../../EmplyeeAndFoodInfo/FoodTableFatch";
+import CreateNewEmployee from "../../EmplyeeAndFoodInfo/CreateNewEmployee";
 const Login = () => {
   const [userToken, setUserToken] = useState("");
   const [username, setUsername] = useState("");
@@ -35,33 +36,32 @@ const Login = () => {
       });
   };
 
-  const handleAccessDashboard = () => {
-    const dashboardUrl = "https://restaurantapi.bssoln.com/api/AdminDashboard";
+  // const handleAccessDashboard = () => {
+  //   const dashboardUrl = "https://restaurantapi.bssoln.com/api/AdminDashboard";
 
-    fetch(dashboardUrl, {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${userToken}`,
-      },
-    })
-      .then((response) => response.json())
-      .then((dashboardData) => {
-        console.log("Admin Dashboard Data:", dashboardData);
-        history.push("/adminDeshBoard");
-        // Display the dashboard data on the webpage
-      })
-      // .catch(error => {
-      //   console.error('Dashboard Error:', error);
-      // });
-      .catch((error) => {
-        console.error("Dashboard Error:", error);
-      });
-  };
+  //   fetch(dashboardUrl, {
+  //     method: "GET",
+  //     headers: {
+  //       Authorization: `Bearer ${userToken}`,
+  //     },
+  //   })
+  //     .then((response) => response.json())
+  //     .then((dashboardData) => {
+  //       console.log("Admin Dashboard Data:", dashboardData);
+  //       history.push("/adminDeshBoard");
+  //     })
+  //     // .catch(error => {
+  //     //   console.error('Dashboard Error:', error);
+  //     // });
+  //     .catch((error) => {
+  //       console.error("Dashboard Error:", error);
+  //     });
+  // };
   return (
     <div className="bod2y1">
             {userToken ? (
               <div>
-                <div onClick={handleAccessDashboard}>
+                <div >
                   <AdminDeshBoard />
                 </div>
               </div>
@@ -146,8 +146,7 @@ const Login = () => {
                 </div>
               </div>
             )}
-       <OrderFatch />
-      <FoodTableFatch />
+     
 
     </div>
   );

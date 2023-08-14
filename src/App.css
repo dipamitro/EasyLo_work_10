@@ -1,51 +1,4 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
-/*!
- * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
  :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -3219,3 +3172,35 @@ textarea.form-control {
     line-height: 1;
 
   }
+  table,th {
+    border-collapse: collapse;
+  }
+  
+  td{
+    border-bottom: 1px solid rgb(192, 199, 209);
+    border-top: 1px solid rgb(199, 204, 212);
+    padding: 8px;
+  }
+  .txteclip{overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+  }
+  .redd{
+    fill:#e41111
+  }
+  .redd:hover{
+    fill:#713838;
+    
+  }
+  .grent{
+    fill: #075f0d;
+  }
+  .grent:hover{
+    fill: #688f6b;
+  }
+  .txteclio{
+  max-width: 200px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;}

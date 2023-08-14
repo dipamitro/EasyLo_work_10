@@ -1,0 +1,8 @@
+.modal-content{
+    background-color: aliceblue;
+    width: 100%;
+}
+.modal-dialog {
+    max-width: 1351px;
+    margin: 1.75rem auto;
+}

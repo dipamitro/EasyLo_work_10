@@ -18,6 +18,7 @@ import AllEmployeeList from './EmplyeeAndFoodInfo/AllEmployeeList';
 import EmployeeFatch from './EmplyeeAndFoodInfo/EmployeeFatch';
 import EmplyeeAndTableMarge from './EmplyeeAndFoodInfo/EmplyeeAndTableMarge';
 import EmplyeeAsingTable from './EmplyeeAndFoodInfo/EmplyeeAsingTable';
+import CreateNewEmployee from './EmplyeeAndFoodInfo/CreateNewEmployee';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
    <Route path='/orderFood' element={<OrderFood />}></Route>
    <Route path='/emplyeeAndTableMarge' element={<EmplyeeAndTableMarge />}></Route>
    <Route path='/emplyeeAsingTable' element={<EmplyeeAsingTable />}></Route>
+   <Route path='/CreateNewEmployee' element={<CreateNewEmployee />}></Route>
     
    </Routes>
 
