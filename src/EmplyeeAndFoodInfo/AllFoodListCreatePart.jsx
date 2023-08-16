@@ -1,26 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
-import TableNoWithEmplyee from './TableNoWithEmplyee';
-const AllTableList = () => {
-  const [employeeData, setEmployeeData] = useState([]);
-  useEffect(() => {
-    fetch('https://restaurantapi.bssoln.com/api/EmployeeTable/datatable')
-    // promice mane ektar por ekta kaj kore
-    // Api er data guloke json a convert kore
-      .then(response => response.json())
-    //   shei jeson a data k khuje ane check Api
-      .then(json => setEmployeeData(json.data))
-      .finally(() => {
-      })
-  }, [])
+import FoodTableFatch from "./FoodTableFatch";
+import CreateFood from "../PageRealatToAdmin/AdminDeshBoard/CreateFood";
+function AllFoodListCreatePart() {
   return (
     <div>
       <div className="body2">
-        <noscript>
-          &lt;strong&gt;We're sorry but ArchitectUI doesn't work properly
-          without JavaScript enabled. Please enable it to
-          continue.&lt;/strong&gt;
-        </noscript>
         <div id="app">
           <div className="app-container app-theme-white">
             <div className="app-header header-shadow">
@@ -195,7 +180,8 @@ const AllTableList = () => {
             <div className="app-sidebar sidebar-shadow">
               <div className="app-header__logo">
                 <h4>Admin</h4>
-
+                
+                
                 <div className="header__pane ml-auto">
                   <button
                     type="button"
@@ -221,22 +207,28 @@ const AllTableList = () => {
                       <div className="vsm-header">Employee</div>
                       <div className="vsm-item first-item open-item parent-active-item">
                         <a href="#" className="vsm-link">
-                        <i className="vsm-icon icon-gradient bg-tempting-azure " >
+                          {/* <i className="vsm-icon " /> */}
+
+
+                          <i className="vsm-icon icon-gradient bg-tempting-azure " >
                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" font-size="1.375rem" class="iconify iconify--bx" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm9-8.586l6 6V15l.001 5H6v-9.585l6-6.001z"></path><path fill="currentColor" d="M12 17c2.206 0 4-1.794 4-4s-1.794-4-4-4s-4 1.794-4 4s1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2s-2-.897-2-2s.897-2 2-2z"></path></svg>
                             </i>
-
                           <span className="vsm-title">
-                            <Link to={"/adminDeshBoard"}> Dashboards</Link>
-                          </span>
+                            <Link to={'/adminDeshBoard'}> Dashboards</Link></span>
+                          
                         </a>
                         <div className="vsm-dropdown">
                           <div className="vsm-list">
                             <div className="vsm-item ">
                               <a
                                 href="#"
-                                className="vsm-link router-link-exact-active router-link-active" style={{color:'#69AA8A'}}
+                                className="vsm-link router-link-exact-active router-link-active" style={{color:"#69AA8A"}}
+                                
                               >
-                                <span className="vsm-title">Analytics</span>
+                                
+                                <span className="vsm-title">
+                                  Analytics
+                                </span>
                               </a>
                             </div>
                           </div>
@@ -254,67 +246,42 @@ const AllTableList = () => {
                       </div>
                       <div className="vsm-header">Food</div>
                       <div className="vsm-item first-item">
-                        <a href="#" className="vsm-link">
-                          <i className="vsm-icon ">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              height="1em"
-                              viewBox="0 0 512 512"
-                            >
-                              <path d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
-                            </svg>
-                          </i>
+                        <a href="#" className="vsm-link" style={{background:' rgb(234, 255, 244)'}}>
+                           <i className="vsm-icon ">
+                          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                            </i>
                           <span className="vsm-title">
-                            <Link to={"/allFoodList"}> All Food List</Link>
-                          </span>
+                            <Link to={'/allFoodList'}> All Food List</Link>
+                            
+                            </span>
+                          
                         </a>
                       </div>
-
+                     
+                    
                       <div className="vsm-header">Table</div>
-                      <div className="vsm-item first-item" style={{ background: '#eafff4'}}>
+                      <div className="vsm-item first-item">
                         <a href="#widgets/chart-boxes-3" className="vsm-link">
-                          <i className="vsm-icon ">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink"
-                              aria-hidden="true"
-                              role="img"
-                              font-size="1.375rem"
-                              class="iconify iconify--bx"
-                              width="1em"
-                              height="1em"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                fill="currentColor"
-                                d="M4 21h15.893c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zm0-2v-5h4v5H4zM14 7v5h-4V7h4zM8 7v5H4V7h4zm2 12v-5h4v5h-4zm6 0v-5h3.894v5H16zm3.893-7H16V7h3.893v5z"
-                              ></path>
-                            </svg>
+                           <i className="vsm-icon " >
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" font-size="1.375rem" class="iconify iconify--bx" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21h15.893c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zm0-2v-5h4v5H4zM14 7v5h-4V7h4zM8 7v5H4V7h4zm2 12v-5h4v5h-4zm6 0v-5h3.894v5H16zm3.893-7H16V7h3.893v5z"></path></svg>
+
+
+
+                          
                           </i>
-                          <span className="vsm-title" >
-                            <Link to={"/allTableList"}>Table List</Link>
-                          </span>
+                          <span className="vsm-title">
+                            <Link to={'/allTableList'}>Table List</Link>
+                            </span>
                         </a>
                       </div>
                       <div className="vsm-item first-item">
                         <a href="#widgets/chart-boxes-3" className="vsm-link">
-                          <i className="vsm-icon ">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink"
-                              aria-hidden="true"
-                              role="img"
-                              font-size="1.375rem"
-                              class="iconify iconify--bx"
-                              width="1em"
-                              height="1em"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                fill="currentColor"
-                                d="M12 2a5 5 0 1 0 5 5a5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3a3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z"
-                              ></path>
-                            </svg>{" "}
+                           <i className="vsm-icon " >
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" font-size="1.375rem" class="iconify iconify--bx" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21h15.893c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zm0-2v-5h4v5H4zM14 7v5h-4V7h4zM8 7v5H4V7h4zm2 12v-5h4v5h-4zm6 0v-5h3.894v5H16zm3.893-7H16V7h3.893v5z"></path></svg>
+
+
+
+                          
                           </i>
                           <span className="vsm-title">
                             <Link to={'/emplyeeAsingTable'}>Emplyee & Table</Link>
@@ -324,40 +291,22 @@ const AllTableList = () => {
                       <div className="vsm-header">Order</div>
                       <div className="vsm-item first-item">
                         <a href="#" className="vsm-link">
-                          <i className="vsm-icon ">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              height="1em"
-                              viewBox="0 0 512 512"
-                            >
-                              <path d="M61.1 224C45 224 32 211 32 194.9c0-1.9 .2-3.7 .6-5.6C37.9 168.3 78.8 32 256 32s218.1 136.3 223.4 157.3c.5 1.9 .6 3.7 .6 5.6c0 16.1-13 29.1-29.1 29.1H61.1zM144 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm240 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zM272 96a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zM16 304c0-26.5 21.5-48 48-48H448c26.5 0 48 21.5 48 48s-21.5 48-48 48H64c-26.5 0-48-21.5-48-48zm16 96c0-8.8 7.2-16 16-16H464c8.8 0 16 7.2 16 16v16c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V400z" />
-                            </svg>
-                          </i>
-                          <span className="vsm-title">
-                            <Link to={"/orderFood"}>Order Food</Link>
-                          </span>
+                         <i className="vsm-icon ">
+                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M61.1 224C45 224 32 211 32 194.9c0-1.9 .2-3.7 .6-5.6C37.9 168.3 78.8 32 256 32s218.1 136.3 223.4 157.3c.5 1.9 .6 3.7 .6 5.6c0 16.1-13 29.1-29.1 29.1H61.1zM144 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm240 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zM272 96a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zM16 304c0-26.5 21.5-48 48-48H448c26.5 0 48 21.5 48 48s-21.5 48-48 48H64c-26.5 0-48-21.5-48-48zm16 96c0-8.8 7.2-16 16-16H464c8.8 0 16 7.2 16 16v16c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V400z"/></svg>
+                            </i>
+                          <span className="vsm-title"><Link to={'/orderFood'}>Order Food</Link></span>
+                          
                         </a>
                       </div>
                       <div className="vsm-header">Charts</div>
                       <div className="vsm-item first-item">
                         <a href="#charts/chartjs" className="vsm-link">
-                          <i className="vsm-icon ">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink"
-                              aria-hidden="true"
-                              role="img"
-                              font-size="1.375rem"
-                              class="iconify iconify--bx"
-                              width="1em"
-                              height="1em"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                fill="currentColor"
-                                d="M12 2a5 5 0 1 0 5 5a5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3a3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z"
-                              ></path>
-                            </svg>{" "}
+                           <i className="vsm-icon " >
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" font-size="1.375rem" class="iconify iconify--bx" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21h15.893c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zm0-2v-5h4v5H4zM14 7v5h-4V7h4zM8 7v5H4V7h4zm2 12v-5h4v5h-4zm6 0v-5h3.894v5H16zm3.893-7H16V7h3.893v5z"></path></svg>
+
+
+
+                          
                           </i>
                           <span className="vsm-title">ChartJS</span>
                         </a>
@@ -395,25 +344,23 @@ const AllTableList = () => {
                     <div className="page-title-wrapper">
                       <div className="page-title-heading">
                         <div className="page-title-icon">
-                          <i className="vsm-icon ">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              height="1em"
-                              viewBox="0 0 576 512"
-                            >
-                              <path d="M304 240V16.6c0-9 7-16.6 16-16.6C443.7 0 544 100.3 544 224c0 9-7.6 16-16.6 16H304zM32 272C32 150.7 122.1 50.3 239 34.3c9.2-1.3 17 6.1 17 15.4V288L412.5 444.5c6.7 6.7 6.2 17.7-1.5 23.1C371.8 495.6 323.8 512 272 512C139.5 512 32 404.6 32 272zm526.4 16c9.3 0 16.6 7.8 15.4 17c-7.7 55.9-34.6 105.6-73.9 142.3c-6 5.6-15.4 5.2-21.2-.7L320 288H558.4z" />
-                            </svg>
+                              <i className="vsm-icon " >
+                         
+
+                          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><path d="M304 240V16.6c0-9 7-16.6 16-16.6C443.7 0 544 100.3 544 224c0 9-7.6 16-16.6 16H304zM32 272C32 150.7 122.1 50.3 239 34.3c9.2-1.3 17 6.1 17 15.4V288L412.5 444.5c6.7 6.7 6.2 17.7-1.5 23.1C371.8 495.6 323.8 512 272 512C139.5 512 32 404.6 32 272zm526.4 16c9.3 0 16.6 7.8 15.4 17c-7.7 55.9-34.6 105.6-73.9 142.3c-6 5.6-15.4 5.2-21.2-.7L320 288H558.4z"/></svg>
+
+                          
                           </i>
                         </div>
                         <div>
-                          Admin Dashboard
+                          Food  Add List
                           <div className="page-title-subheading">
                            API Calling
                           </div>
                         </div>
                       </div>
                       <div className="page-title-actions">
-                        <button
+                        {/* <button
                           type="button"
                           className="btn-shadow mr-3 btn btn-dark"
                         >
@@ -433,8 +380,8 @@ const AllTableList = () => {
                               className
                             />
                           </svg>
-                        </button>
-                        <button
+                        </button> */}
+                        {/* <button
                           type="button"
                           className="btn-shadow d-inline-flex align-items-center btn btn-success"
                         >
@@ -454,8 +401,9 @@ const AllTableList = () => {
                               className
                             />
                           </svg>
+                          <Link to={'/createFood'} ></Link>
                           Create New
-                        </button>
+                        </button> */}
                       </div>
                     </div>
                   </div>
@@ -466,28 +414,13 @@ const AllTableList = () => {
                         <div className="card-header-tab card-header">
                           <div className="card-header-title font-size-lg text-capitalize font-weight-normal">
                             <i className="header-icon lnr-laptop-phone mr-3 text-muted opacity-6" />
-                            Tables Examples
+                           Add New Food
                           </div>
                         </div>
                         <div className="card-body">
-                        <h2>Employee Assing With Table</h2>
-                          {/* <table  className="table b-table table-striped table-hover table-bordered border mb-0">
-                            <thead>
-                              <tr>
-                                <th>employeeId</th>
-                                <th>ID</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              {employeeData.map((employee, i) => (
-                                <tr key={i}>
-                                  <td>{employee.employee.employeeId}</td>
-                                  <td>{employee.employee.name}</td>
-                                </tr>
-                              ))}
-                            </tbody>
-                          </table> */}
-                          <TableNoWithEmplyee />
+                          
+                        
+                         <CreateFood />
                         </div>
                       </div>
                     </div>
@@ -557,8 +490,11 @@ const AllTableList = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }
 
-export default AllTableList;
+export default AllFoodListCreatePart;
+
+

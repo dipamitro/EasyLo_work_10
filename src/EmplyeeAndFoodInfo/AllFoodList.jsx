@@ -102,9 +102,9 @@ function AllFoodList() {
                             </div>
                           </div>
                           <div className="widget-content-left  ml-3 header-user-info">
-                            <div className="widget-heading">Alina Mclourd</div>
+                            <div className="widget-heading">Arica Moleurd</div>
                             <div className="widget-subheading">
-                              VP People Manager
+                              Bss Manager
                             </div>
                           </div>
                           <div className="widget-content-right header-user-info ml-3">
@@ -402,8 +402,8 @@ function AllFoodList() {
                               className
                             />
                           </svg>
-                          <Link to={'/createFood'} ></Link>
-                          Create New
+                          <Link to={'/allFoodListCreatePart'} > Create New</Link>
+                         
                         </button>
                       </div>
                     </div>
@@ -419,135 +419,9 @@ function AllFoodList() {
                           </div>
                         </div>
                         <div className="card-body">
-                          {/* <table
-                            aria-busy="false"
-                            aria-colcount={3}
-                            className="table b-table table-striped table-hover table-bordered border mb-0"
-                          >
-                            <thead >
-                              <tr role="row">
-                                <th
-                                  
-                                >
-                                  First Name
-                                </th>
-                                <th
-                                  
-                                >
-                                  Last Name
-                                </th>
-                                <th
-                                 
-                                >
-                                  Age
-                                </th>
-                              </tr>
-                            </thead>
-                           
-                            <tbody >
-                              <tr role="row">
-                                <td role="cell" aria-colindex={1}>
-                                  Dickerson
-                                </td>
-                                <td role="cell" aria-colindex={2}>
-                                  Macdonald
-                                </td>
-                                <td role="cell" aria-colindex={3}>
-                                  40
-                                </td>
-                              </tr>
-                              <tr role="row">
-                                <td role="cell" aria-colindex={1}>
-                                  Larsen
-                                </td>
-                                <td role="cell" aria-colindex={2}>
-                                  Shaw
-                                </td>
-                                <td role="cell" aria-colindex={3}>
-                                  21
-                                </td>
-                              </tr>
-                              <tr role="row">
-                                <td role="cell" aria-colindex={1}>
-                                  Geneva
-                                </td>
-                                <td role="cell" aria-colindex={2}>
-                                  Wilson
-                                </td>
-                                <td role="cell" aria-colindex={3}>
-                                  89
-                                </td>
-                              </tr>
-                              <tr role="row">
-                                <td role="cell" aria-colindex={1}>
-                                  Dickerson
-                                </td>
-                                <td role="cell" aria-colindex={2}>
-                                  Macdonald
-                                </td>
-                                <td role="cell" aria-colindex={3}>
-                                  40
-                                </td>
-                              </tr>
-                              <tr role="row">
-                                <td role="cell" aria-colindex={1}>
-                                  Larsen
-                                </td>
-                                <td role="cell" aria-colindex={2}>
-                                  Shaw
-                                </td>
-                                <td role="cell" aria-colindex={3}>
-                                  21
-                                </td>
-                              </tr>
-                              <tr role="row">
-                                <td role="cell" aria-colindex={1}>
-                                  Geneva
-                                </td>
-                                <td role="cell" aria-colindex={2}>
-                                  Wilson
-                                </td>
-                                <td role="cell" aria-colindex={3}>
-                                  89
-                                </td>
-                              </tr>
-                              <tr role="row">
-                                <td role="cell" aria-colindex={1}>
-                                  Dickerson
-                                </td>
-                                <td role="cell" aria-colindex={2}>
-                                  Macdonald
-                                </td>
-                                <td role="cell" aria-colindex={3}>
-                                  40
-                                </td>
-                              </tr>
-                              <tr role="row">
-                                <td role="cell" aria-colindex={1}>
-                                  Larsen
-                                </td>
-                                <td role="cell" aria-colindex={2}>
-                                  Shaw
-                                </td>
-                                <td role="cell" aria-colindex={3}>
-                                  21
-                                </td>
-                              </tr>
-                              <tr role="row">
-                                <td role="cell" aria-colindex={1}>
-                                  Geneva
-                                </td>
-                                <td role="cell" aria-colindex={2}>
-                                  Wilson
-                                </td>
-                                <td role="cell" aria-colindex={3}>
-                                  89
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table> */}
+                          
                          <FoodTableFatch />
-                         <CreateFood />
+                         
                         </div>
                       </div>
                     </div>

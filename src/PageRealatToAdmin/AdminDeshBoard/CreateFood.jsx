@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import Form from 'react-bootstrap/Form';
 function CreateFood() {
   const [formData, setFormData] = useState({
     name: '',
     description: '',
-    price: 0,
-    discountType: 0,
-    discount: 0,
-    discountPrice: 0,
+    price: '',
+    discountType: '',
+    discount: '',
+    discountPrice: '',
     image: '',
     base64: '',
   });
@@ -31,10 +31,8 @@ function CreateFood() {
         'https://restaurantapi.bssoln.com/api/Food/create',
         formData
       );
-
       console.log('Response:', response.data);
-      
-    } catch (error) {
+    } catch (error)  {
       console.error('Error:', error);
     }
   };
@@ -51,6 +49,8 @@ function CreateFood() {
     <div>
       <h2>Create Food</h2>
       <form onSubmit={handleSubmit}>
+      <label>
+    Name:
         <input
           type="text"
           name="name"
@@ -58,6 +58,9 @@ function CreateFood() {
           value={formData.name}
           onChange={handleChange}
         />
+         </label>
+         <label>
+Description:
         <input
           type="text"
           name="description"
@@ -65,27 +68,37 @@ function CreateFood() {
           value={formData.description}
           onChange={handleChange}
         />
+         </label>
+        
+
+        <label>
+          Price
         <input
-          type="text"
+          type="number"
           name="price"
           placeholder="price"
           value={formData.price}
           onChange={handleChange}
         />
-        <input
-          type="number"
+
+        </label>
+        <label htmlFor=""> DiscountType<input
+          type="text"
           name="discountType"
           placeholder="discountType"
           value={formData.discountType}
           onChange={handleChange}
-        />
-        <input
+        /></label>
+       <label htmlFor="">
+       <input
           type="number"
           name="discount"
           placeholder="discount"
           value={formData.discount}
           onChange={handleChange}
         />
+       </label>
+       <label htmlFor=""></label>
         <input
           type="number"
           name="discountPrice"
@@ -107,7 +120,6 @@ function CreateFood() {
           value={formData.price}
           onChange={handleChange}
         />
-        
         <button onSubmit={handleSubmit} type="submit">Create</button>
       </form>
     </div>

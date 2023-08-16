@@ -58,46 +58,32 @@ const EmployeeFatch = () => {
       <table aria-busy="false"
                             aria-colcount={3}
                             className="table b-table table-striped table-hover table-bordered border mb-0">
-     <thead role="rowgroup">
-          <tr role="row">
-            <th    role="columnheader"
-                                  scope="col"
-                                  aria-colindex={1}>Image</th>
-            <th role="columnheader"
-                                  scope="col"
-                                  aria-colindex={2}>ID</th>
-            <th role="columnheader"
-                                  scope="col"
-                                  aria-colindex={3}>NID</th>
-            <th role="columnheader"
-                                  scope="col"
-                                  aria-colindex={4}>Name</th>
-            <th role="columnheader"
-                                  scope="col"
-                                  aria-colindex={5}>Designation</th>
-            <th role="columnheader"
-                                  scope="col"
-                                  aria-colindex={6}>Phone</th>
-            <th role="columnheader"
-                                  scope="col"
-                                  aria-colindex={3}>Email</th>
-            <th role="columnheader"
-                                  scope="col"
-                                  aria-colindex={3}>Action</th>
-            {/* Add more table headers as needed */}
+     <thead >
+          <tr >
+            <th>Image</th>
+            <th>ID</th>
+            <th>NID</th>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Action</th>
+           
           </tr>
         </thead>
         <tbody>
           {employeeData.map((employee, i) => (
             <tr key={i}>
-              <td className='txteclio'>{employee.user.image}</td>
+
+<td className="txtecli"><img src={`https://restaurantapi.bssoln.com/images/user/${employee.user.image}`}  alt="img" /></td>
+              
               <td className='txteclio'>{employee.user.id}</td>
               <td className='txteclio'>{employee.user.nid}</td>
               <td className='txteclio'>{employee.user.fullName}</td>
               <td className='txteclio'>{employee.designation}</td>
               <td className='txteclio'>{employee.user.userName}</td> 
               <td className='txteclio'>{employee.user.email}</td>
-              <td >
+              <td>
                 
               <button
                         onClick={() => handleDelete(employee.id)} >
@@ -106,8 +92,7 @@ const EmployeeFatch = () => {
                       </button>
                 
             
-        </td>
-              <td> <button
+         <button style={{margin:"0px 0px 0px 15px"}}
                         onClick={() => handleEdit(employee.id)} > <span className='hovricone' >
               <svg className='grent'  xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z"/></svg></span> </button> </td>
               

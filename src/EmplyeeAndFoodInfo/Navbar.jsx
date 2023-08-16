@@ -95,9 +95,9 @@ function Navbar() {
                   </div>
                 </div>
                 <div className="widget-content-left  ml-3 header-user-info">
-                  <div className="widget-heading">Alina Mclourd</div>
+                  <div className="widget-heading">Arica Moleurd</div>
                   <div className="widget-subheading">
-                    VP People Manager
+                    Bss Manager
                   </div>
                 </div>
                 <div className="widget-content-right header-user-info ml-3">

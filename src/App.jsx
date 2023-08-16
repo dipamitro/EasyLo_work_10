@@ -20,6 +20,7 @@ import EmplyeeAndTableMarge from './EmplyeeAndFoodInfo/EmplyeeAndTableMarge';
 import EmplyeeAsingTable from './EmplyeeAndFoodInfo/EmplyeeAsingTable';
 import CreateNewEmployee from './EmplyeeAndFoodInfo/CreateNewEmployee';
 import CreateFood from './PageRealatToAdmin/AdminDeshBoard/CreateFood';
+import AllFoodListCreatePart from './EmplyeeAndFoodInfo/AllFoodListCreatePart';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
    <Route path='/emplyeeAsingTable' element={<EmplyeeAsingTable />}></Route>
    <Route path='/CreateNewEmployee' element={<CreateNewEmployee />}></Route>
    <Route path='/createFood' element={<CreateFood />}></Route>
+   <Route path='/allFoodListCreatePart' element={<AllFoodListCreatePart />}></Route>
     
    </Routes>
 
