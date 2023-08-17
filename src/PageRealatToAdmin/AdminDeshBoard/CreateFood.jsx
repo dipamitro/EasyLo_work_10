@@ -12,24 +12,32 @@ function CreateFood() {
     image: '',
     base64: '',
   });
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setFormData({
       name: e.target.name.value,
       description: e.target.description.value,
       price: e.target.price.value,
-      discountType: e.target.discountType.value,
+      discountType:e.target.discountType.value,
       discount: e.target.discount.value,
       discountPrice: e.target.discountPrice.value,
       image: '',
       base64: '',
     });
-    console.log(formData)
+    console.log('Before',formData)
     try {
       const response = await axios.post(
         'https://restaurantapi.bssoln.com/api/Food/create',
-        formData
+        {
+          name: formData.name,
+          description: formData.description,
+          price: formData.price,
+          discountType:formData.discountType,
+          discount: formData.discount,
+          discountPrice: formData.discountPrice,
+          image: '',
+          base64: ''
+        }
       );
       console.log('Response:', response.data);
     } catch (error)  {
@@ -41,14 +49,14 @@ function CreateFood() {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
+      [e.target.name]: value,
     }));
   };
 
   return (
     <div>
       <h2>Create Food</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(e)=> handleSubmit(e)} >
       <label>
     Name:
         <input
@@ -89,7 +97,7 @@ Description:
           value={formData.discountType}
           onChange={handleChange}
         /></label>
-       <label htmlFor="">
+       <label htmlFor=""> discount
        <input
           type="number"
           name="discount"
@@ -98,7 +106,7 @@ Description:
           onChange={handleChange}
         />
        </label>
-       <label htmlFor=""></label>
+       <label htmlFor="">discountPrice</label>
         <input
           type="number"
           name="discountPrice"
@@ -110,17 +118,17 @@ Description:
           type="text"
           name="price"
           placeholder="price"
-          value={formData.price}
+          value={formData.image}
           onChange={handleChange}
         />
          <input
           type="text"
           name="price"
           placeholder="price"
-          value={formData.price}
+          value={formData.base64}
           onChange={handleChange}
         />
-        <button onSubmit={handleSubmit} type="submit">Create</button>
+        <button type='submit'>Create</button>
       </form>
     </div>
   );

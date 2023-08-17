@@ -2,8 +2,7 @@
     
       height: 100vh;
         
-        
-        background-image: url('https://preview.colorlib.com/theme/feliciano/images/bg_2.jpg');
+      background:linear-gradient(201deg, #0000004f 0%, #0000009e 100%),url('https://preview.colorlib.com/theme/feliciano/images/bg_2.jpg');
                 background-size:cover ;
                 background-position: 100% 100%;
                 position: relative;

@@ -11,6 +11,45 @@ const TableNoWithEmplyee = () => {
       .then((json) => setEmployeeData(json.data))
       .finally(() => {});
   }, []);
+  const handleDelete = (id) => {
+    fetch(`https://restaurantapi.bssoln.com/api/Table/delete/${id}`, {
+      method: "DELETE",
+    });
+    setEmployeeData(employeeData.filter((employee) => employee.id !== id));
+    console.log(id);
+    // .then(response => response.json())
+    // .then((data) => {
+    //     if (data.acknowledged) {
+    //       console.log("Employee deleted successfully");
+
+    //     } else {
+    //       console.error("Failed to delete employee.");
+    //     }
+    //   })
+    // .catch((error) => {
+    //   console.error("Error:", error);
+    // });
+  };
+
+  const handleEdit = (id) => {
+    fetch(`https://restaurantapi.bssoln.com/api/Table/update/${id}`, {
+      method: "PUT",
+    });
+    setEmployeeData(employeeData.filter((employee) => employee.id !== id));
+    console.log(id);
+    // .then(response => response.json())
+    // .then((data) => {
+    //     if (data.acknowledged) {
+    //       console.log("Employee deleted successfully");
+
+    //     } else {
+    //       console.error("Failed to delete employee.");
+    //     }
+    //   })
+    // .catch((error) => {
+    //   console.error("Error:", error);
+    // });
+  };
 
   return (
     <div>
@@ -45,18 +84,18 @@ const TableNoWithEmplyee = () => {
   
       
         
-          <p>Table Number: {table.tableNumber}</p>
+          {/* <p>Table Number: {table.tableNumber}</p> */}
           {table.employees.length > 0 ? (
             <div>
-              <p>Employee(s) at this table:</p>
-              <ul>
+              {/* <p>Employee Name at this table:</p> */}
+              <ul style={{color:'#3AC18C',fontSize:'15px'}} >
                 {table.employees.map(employee => (
                   <li key={employee.employeeId}>{employee.name}</li>
                 ))}
               </ul>
             </div>
           ) : (
-            <p>No employees at this table.</p>
+            <p>No employee at this table.</p>
           )}
         
      
