@@ -470,6 +470,31 @@ pre code {
   }
 }
 
+
+
+/* @media only screen and (min-width: 1500px) {
+  .slider-item .overlay {
+    position: absolute;
+    top: 0;
+    bottom: -213px !important;
+    left: 0;
+    right: 0;
+    background: #000000;
+    opacity: 0.7;
+}
+}
+@media only screen and (max-width: 1499px) {
+  .slider-item .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0px !important;
+    left: 0;
+    right: 0;
+    background: #000000;
+    opacity: 0.7;
+}
+} */
+
 .container-fluid {
   width: 100%;
   padding-right: 15px;
@@ -2559,7 +2584,7 @@ h5,
     background-position: center center !important;
   }
 }
-.slider-item .overlay {
+/* .slider-item .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2567,7 +2592,7 @@ h5,
   right: 0;
   background: #000000;
   opacity: 0.7;
-}
+} */
 .slider-item .slider-text {
   color: #fff;
   height: 750px;
